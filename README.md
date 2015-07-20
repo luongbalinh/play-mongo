@@ -45,7 +45,10 @@ that make creating, building, and deploying SBT projects easier.
 *  [MongoDB] (https://www.mongodb.org/)
 
 Once the prerequisites have been installed, start Mongodb:
+
+
     > mongod
+
 
 Create a database named *users-db*, a collection named *counters*; and finally insert a new document to collection 
 *counters* with the following body (*\_id* will be created automatically for this document). Collection *counters* 

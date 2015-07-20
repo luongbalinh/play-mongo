@@ -34,19 +34,9 @@ ExecutionContext) extends Controller {
     }
   }
 
-  //  def update(id: Long) = Action.async(BodyParsers.parse.json) { request =>
-  //      logger.info(s"Updating user with id $id")
-  //    request.body.validate[User].map { user =>
-  //      userService.update(id, Json.toJson(user)).map { lastError =>
-  //        logger.debug(s"Successfully updated with LastError: $lastError")
-  //        Created(s"User Updated")
-  //      }
-  //    }.getOrElse(Future.successful(BadRequest("invalid json")))
-  //  }
   def update(id: Long) = Action.async(parse.json) { request =>
     val updates = request.body
     logger.info(s"Updating user with id $id and updates = $updates")
-
     userService.update(id, updates) map {
       case Success(_) => Ok
       case Failure(e) => InternalServerError(UpdateFailed withDetails e.getMessage)

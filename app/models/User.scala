@@ -6,8 +6,7 @@ case class User(override val id: Option[Long] = None,
                 firstName: String,
                 lastName: String,
                 age: Int,
-                active: Boolean
-                ,
+                active: Boolean,
                 createdDate: Option[ZonedDateTime] = None,
                 updatedDate: Option[ZonedDateTime] = None
                    ) extends IdModel[User] {
@@ -24,8 +23,7 @@ object User {
           (JsPath \ "firstName").read[String] and
           (JsPath \ "lastName").read[String] and
           (JsPath \ "age").read[Int] and
-          (JsPath \ "active").read[Boolean]
-          and
+          (JsPath \ "active").read[Boolean] and
           (JsPath \ "createdDate").readNullable[ZonedDateTime] and
           (JsPath \ "updatedDate").readNullable[ZonedDateTime]
       )(User.apply _)
@@ -35,8 +33,7 @@ object User {
           (JsPath \ "firstName").write[String] and
           (JsPath \ "lastName").write[String] and
           (JsPath \ "age").write[Int] and
-          (JsPath \ "active").write[Boolean]
-          and
+          (JsPath \ "active").write[Boolean] and
           (JsPath \ "createdDate").writeNullable[ZonedDateTime] and
           (JsPath \ "updatedDate").writeNullable[ZonedDateTime]
       )(unlift(User.unapply))

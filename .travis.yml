@@ -1,0 +1,33 @@
+language: scala
+scala:
+- 2.11.6
+jdk:
+- openjdk7
+- oraclejdk7
+- oraclejdk8
+env:
+  matrix:
+  - ACTIVATOR_VERSION=1.3.2
+  allow_failures:
+  - openjdk7
+  - oraclejdk7
+before_script:
+- nvm install 0.10.33
+- export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256m -Xmx1g"
+- echo $SBT_OPTS
+- npm install -g grunt grunt-cli
+- wget http://downloads.typesafe.com/typesafe-activator/${ACTIVATOR_VERSION}/typesafe-activator-${ACTIVATOR_VERSION}-minimal.zip
+- unzip -qo typesafe-activator-${ACTIVATOR_VERSION}-minimal.zip
+script:
+- activator-${ACTIVATOR_VERSION}-minimal/activator clean compile
+- activator-${ACTIVATOR_VERSION}-minimal/activator test
+notifications:
+  email:
+    recipients:
+    - linhluongba@gmail.com
+    on_success: always
+    on_failure: always
+cache:
+  directories:
+  - "$HOME/.ivy2/cache"
+#  - "/home/travis/.embedmongo/linux"
