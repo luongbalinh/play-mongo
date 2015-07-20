@@ -1,0 +1,44 @@
+# play-mongo
+
+A template for Play 2.4.2 with Reactivemongo
+
+## Get started
+
+Clone the repository, ensure you have sbt in your path, and code!
+
+## Git workflow
+
+Always create a feature branch for a new feature. Branches are merged back to develop branch through a pull request.
+Only reviewers are able to merge pull requests.
+
+Always try to rebase whenever you are updating your feature branch.
+
+[Article to follow to avoid rebase hell](http://www.jarrodspillers.com/git/2009/08/19/git-merge-vs-git-rebase-avoiding-rebase-hell.html)
+
+## Intellij
+
+You can import the project to Intellij by
+ 
+    File -> Open -> {path to repo} -> build.sbt
+
+TDD in Intellij with Play could be painful. In 14.1.2 version and below, you may want to delegate the build process
+ to an external SBT compilation server
+
+To start a compile server
+    
+    activator ~ test:compile
+    
+or
+
+    sbt ~ test:compile
+
+In case that the two above ways do not work, try
+
+    ~ test:compile
+
+`~` will signal the compilation server to continously listen to and re-compile updated files.
+
+    
+Finally, ensure that you disable the `make` process for your tests
+
+    Run -> Edit Configurations -> Defaults -> ScalaTest -> Before Launch -> remove `make`

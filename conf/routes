@@ -1,0 +1,18 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+#
+# Note: @controllers syntax signifies the actual controller instance, retrieved via GlobalSettings.getController().
+# ~~~~
+
+# Single endpoint for serving AngularJS
+GET         /                    controllers.Application.index
+
+# User management API
+POST        /user                controllers.UserController.create
+GET         /users/:id           controllers.UserController.findById(id: Long)
+PUT         /users/:id           controllers.UserController.update(id: Long)
+DELETE      /users/:id           controllers.UserController.delete(id: Long)
+GET         /users               controllers.UserController.findAll
+
+# Map static resources from the /public folder to the /assets URL path
+GET         /assets/*file        controllers.Assets.versioned(path="/public", file: Asset)
