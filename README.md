@@ -1,7 +1,7 @@
 Play 2.4.x (Scala) Reactivemongo Template
 ===========
 
-**Scala - Play - ReactiveMongo - Guice**
+**Play (Scala) - ReactiveMongo - Guice**
 
 A full-stack web application using Play 2.4.2 for endpoint backend, Reactivemongo for reactive MongoDB driver, Guice
  for dependency injection, Spec2 and Mockito for unit testing and integration testing, Frisby for endpoint testing, and 
@@ -39,26 +39,42 @@ Twitter bootstrap CSS framework, because well, im not a web designer.
 Getting Started
 ----------
 
-Your development environment will require:
-*  [SBT/Activator](https://www.typesafe.com/get-started) - activator wraps around SBT to provide additional features 
+Prerequisites:
+*  [Activator(SBT)](https://www.typesafe.com/get-started) - activator wraps around SBT to provide additional features 
 that make creating, building, and deploying SBT projects easier. 
 *  [MongoDB] (https://www.mongodb.org/)
 
-Once the prerequisites have been installed, you will be able to execute the following from a terminal.
+Once the prerequisites have been installed, start Mongodb:
+    > mongod
 
-```
-../play-mongo >  activator "~run 9000"
-```
+Create a database named *users-db*, a collection named *counters*; and finally insert a new document to collection 
+*counters* with the following body (*\_id* will be created automatically for this document). Collection *counters* 
+stores the index for the next user. 
+
+
+    {
+        "collection" : "users",
+        "c" : 1
+    }
+
+
+[Robomongo](http://robomongo.org/) is a nice MongoDB GUI tool.
+
+Start the Play project:
+
+    ../play-mongo >  activator "~run 9000"
+
+Now, you will be able to execute the following from a terminal.
 
 This should fetch all the dependencies and start a Web Server listening on *localhost:9000*. Open a web browser at 
 *localhost:9000*, you should be able to see a web interface that allows you to view all users, create a new user, 
 and update an existing user. 
 
-*~* will make SBT to 
-keep looking at changes of th source code and automatically re-compile the project as soon as the changes have 
+*~* will make SBT to keep looking at changes of the source code and automatically re-compile the project as soon as the changes have 
 been saved. 
 
-Note: This will create two MongoDB collections for you automatically: *users* and *counters*.
+Note that, in this example, a collection named *users* will be created automatically under database *users-db* when 
+the first new user is created from the web interface.
 
 ## Intellij
 
