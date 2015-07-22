@@ -20,6 +20,7 @@ resolvers += "Sonatype Snapshots" at "https://oss.sonatype.org/content/repositor
 
 libraryDependencies ++= Seq(
   ws,
+  specs2 % Test,
   "javax.inject" % "javax.inject" % "1",
   "com.google.inject" % "guice" % "4.0",
   "org.reactivemongo" %% "play2-reactivemongo" % "0.11.1.play24",

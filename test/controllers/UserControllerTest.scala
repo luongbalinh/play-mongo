@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit
  * You can mock out a whole application including requests, plugins etc.
  * For more information, consult the wiki.
  */
-class UsersIT extends Specification {
+class UserControllerTest extends Specification {
 
   val timeout: FiniteDuration = FiniteDuration(5, TimeUnit.SECONDS)
 

@@ -1,9 +1,8 @@
 package controllers
 
 import org.specs2.mutable._
-
-import play.api.test._
 import play.api.test.Helpers._
+import play.api.test._
 
 /**
  * You can mock out a whole application including requests, plugins etc.
@@ -24,6 +23,14 @@ class ApplicationIT extends Specification {
         val home = route(FakeRequest(GET, "/")).get
         status(home) must equalTo(OK)
         contentType(home) must beSome.which(_ == "text/html")
+      }
+    }
+
+    "be healthy" in {
+      running(FakeApplication()) {
+        val health = route(FakeRequest(GET, "/health")).get
+        status(health) must equalTo(OK)
+        contentAsString(health) must equalTo("The application is healthy.")
       }
     }
 

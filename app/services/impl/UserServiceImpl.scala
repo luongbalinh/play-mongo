@@ -2,8 +2,7 @@ package services.impl
 
 import java.time.ZonedDateTime
 import javax.inject.{Inject, Singleton}
-
-import dao.UserDAO
+import dao.traits.UserDAO
 import models.User
 import org.slf4j.{Logger, LoggerFactory}
 import play.api.libs.json.{JsObject, JsValue, Json}
@@ -22,10 +21,6 @@ import scala.util.{Failure, Success, Try}
 @Singleton
 class UserServiceImpl @Inject()(userDAO: UserDAO)(implicit ctx: ExecutionContext) extends UserService {
   private final val logger: Logger = LoggerFactory.getLogger(classOf[UserServiceImpl])
-
-  override def findAll(): Future[List[User]] = {
-    userDAO.findAll()
-  }
 
   override def create(user: User): Future[Try[User]] = {
     val userToSave = user.copy(id = user.id, createdDate = Some(ZonedDateTime.now),
@@ -54,6 +49,10 @@ class UserServiceImpl @Inject()(userDAO: UserDAO)(implicit ctx: ExecutionContext
   override def delete(id: Long): Future[Try[Unit]] = {
     logger.info(s"Deleted user with id = $id")
     userDAO.delete(id)
+  }
+
+  override def findAll(): Future[List[User]] = {
+    userDAO.findAll()
   }
 
 }

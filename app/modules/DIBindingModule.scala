@@ -1,8 +1,8 @@
 package modules
 
 import com.google.inject.AbstractModule
-import dao.UserDAO
-import dao.mongo.impl.UserDAOMongo
+import dao.mongo.impl.{CounterDAOMongo, UserDAOMongo}
+import dao.traits.{CounterDAO, UserDAO}
 import play.api.{Configuration, Environment}
 import reactivemongo.api.{DB, MongoDriver}
 import services.UserService
@@ -40,6 +40,7 @@ case class DIBindingModule(environment: Environment, configuration: Configuratio
   }
 
   private def bindDAOs(): Unit = {
+    bind(classOf[CounterDAO]).to(classOf[CounterDAOMongo])
     bind(classOf[UserDAO]).to(classOf[UserDAOMongo])
   }
 

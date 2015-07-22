@@ -15,8 +15,6 @@ import scala.util.Try
  */
 trait UserService {
 
-  def findAll(): Future[List[User]]
-
   def create(c: User): Future[Try[User]]
 
   def read(id: Long): Future[Option[User]]
@@ -25,4 +23,5 @@ trait UserService {
 
   def delete(id: Long): Future[Try[Unit]]
 
+  def findAll(): Future[List[User]]
 }

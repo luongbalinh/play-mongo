@@ -11,7 +11,7 @@ import scala.concurrent.Future
  *
  * This class should be available in Play 3.0
  *
- * It can be configured to...
+ * It can be configured to:
  *
  * - filter paths by a whitelist of path prefixes
  * - allow only requests with origins from a whitelist (by default all origins are allowed)

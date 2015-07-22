@@ -20,9 +20,10 @@ ExecutionContext) extends Controller {
 
   def create = Action.async(parse.json) {
     request =>
+      println(s"Creating a new user")
       request.body.validate[User] fold(
           validationError,
-          saveUser
+          createUser
           )
   }
 
@@ -64,7 +65,7 @@ ExecutionContext) extends Controller {
     }
   }
 
-  private def saveUser: (User) => Future[Result] = { user =>
+  private def createUser: (User) => Future[Result] = { user =>
     userService.create(user) map {
       case Success(savedUser) => Ok(Json.toJson(savedUser))
       case Failure(e) => InternalServerError(SaveFailed withDetails e.getMessage)

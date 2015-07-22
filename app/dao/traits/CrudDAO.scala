@@ -1,4 +1,4 @@
-package dao
+package dao.traits
 
 import models.IdModel
 import play.api.libs.json.JsValue

@@ -30,6 +30,10 @@ class Application extends Controller {
     Ok(views.html.index(javascripts))
   }
 
+  def health = Action {
+    Ok("The application is healthy.")
+  }
+
   private def findScripts(base: File): Seq[String] = {
     val baseUri = base.toURI
     directoryFlatMap(base, scriptMapper).
