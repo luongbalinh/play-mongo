@@ -27,7 +27,7 @@ ExecutionContext) extends Controller {
           )
   }
 
-  def findById(id: Long) = Action.async { request =>
+  def read(id: Long) = Action.async { request =>
     logger.info(s"Finding user by id = $id")
     userService.read(id) map {
       case Some(user) => Ok(Json.toJson(user))

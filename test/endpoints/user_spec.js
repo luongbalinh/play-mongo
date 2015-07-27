@@ -1,17 +1,9 @@
-/**
- * Tests for user endpoints.
- *
- * @author luongbalinh (Software Engineer - RedMart)
- *         <linhluongba@gmail.com>
- * @since 22/7/15
- */
-
-
 var frisby = require('frisby');
+var testUser = {"id": -1, "firstName": "TestFirstName", "lastName": "TestSecondName", "age": 20, "active": true};
 
 frisby.globalSetup({
   timeout: 10000,
-  retry: 2
+  retry: 2,
 });
 
 console.log('Starting Frisby tests for UserController');
@@ -40,10 +32,7 @@ frisby.create('GET all users')
     .toss();
 
 frisby.create('create a new user')
-    .post(URL + '/user',
-    {"id": -1, "firstName": "TestFirstName", "lastName": "TestSecondName", "age": 20, "active": true},
-    {json: true},
-    {headers: {'Content-Type': 'application/json'}})
+    .post(URL + '/user', testUser, {json: true}, {headers: {'Content-Type': 'application/json'}})
     .expectStatus(200)
     .toss();
 
@@ -52,4 +41,29 @@ frisby.create('find a user by id')
     .expectStatus(200)
     .expectHeaderContains('content-type', 'application/json')
     .expectBodyContains('{"id":-1,"firstName":"TestFirstName","lastName":"TestSecondName","age":20,"active":true,"createdDate":')
+    .after(function (json) {
+      frisby.create('update a user by id')
+          .put(URL + '/users/-1',
+          {"id": -1, "firstName": "NewTestFirstName", "lastName": "NewTestSecondName", "age": 230, "active": false},
+          {json: true},
+          {headers: {'Content-Type': 'application/json'}})
+          .expectStatus(200)
+          .toss()
+    })
     .toss();
+
+
+// Now you can use 'json' in additional requests
+frisby.create('find the updated user')
+    .get(URL + '/users/-1')
+    .expectStatus(200)
+    .after(function (json) {
+      frisby.create('delete a user by id')
+          .delete(URL + '/users/-1')
+          .expectStatus(200)
+          .after(function (json) {
+
+          })
+          .toss();
+    })
+    .toss()

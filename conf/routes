@@ -11,7 +11,7 @@ GET           /health                    controllers.Application.health
 
 # User management API
 POST          /user                controllers.UserController.create
-GET           /users/:id           controllers.UserController.findById(id: Long)
+GET           /users/:id           controllers.UserController.read(id: Long)
 PUT           /users/:id           controllers.UserController.update(id: Long)
 DELETE        /users/:id           controllers.UserController.delete(id: Long)
 GET           /users               controllers.UserController.findAll

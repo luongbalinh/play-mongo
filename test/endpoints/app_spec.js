@@ -1,12 +1,3 @@
-/**
- * Tests for endpoints of Application.
- *
- * @author luongbalinh (Software Engineer - RedMart)
- *         <linhluongba@gmail.com>
- * @since 24/6/15
- */
-
-
 var frisby = require('frisby');
 
 frisby.globalSetup({
