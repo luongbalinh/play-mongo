@@ -1,9 +1,9 @@
-package util
+package utils
 
 import scala.concurrent.{ExecutionContext, Future, Promise}
 import scala.util.Try
 
-object futureutils {
+object FutureUtils {
 
   implicit class WaterfallFuture[T](f: Future[T])(implicit val ctx: ExecutionContext) {
 

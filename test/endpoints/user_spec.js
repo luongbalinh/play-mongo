@@ -3,7 +3,7 @@ var testUser = {"id": -1, "firstName": "TestFirstName", "lastName": "TestSecondN
 
 frisby.globalSetup({
   timeout: 10000,
-  retry: 2,
+  retry: 2
 });
 
 console.log('Starting Frisby tests for UserController');

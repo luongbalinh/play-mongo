@@ -9,7 +9,7 @@ import play.api.mvc._
 
 class Application extends Controller {
 
-  private final val logger: Logger = LoggerFactory.getLogger(classOf[Application])
+  private val logger: Logger = LoggerFactory.getLogger(classOf[Application])
 
   def index = Action {
     logger.info("Serving index page...")
@@ -18,9 +18,9 @@ class Application extends Controller {
       if (Play.isDev) {
         // Load all .js and .coffeescript files within app/assets
         Option(Play.getFile("app/assets")).
-            filter(_.exists).
-            map(findScripts).
-            getOrElse(Nil)
+          filter(_.exists).
+          map(findScripts).
+          getOrElse(Nil)
       } else {
         // Concatenated and minified by UglifyJS
         "concat.min.js" :: Nil
@@ -37,7 +37,7 @@ class Application extends Controller {
   private def findScripts(base: File): Seq[String] = {
     val baseUri = base.toURI
     directoryFlatMap(base, scriptMapper).
-        map(f => baseUri.relativize(f.toURI).getPath)
+      map(f => baseUri.relativize(f.toURI).getPath)
   }
 
   private def scriptMapper(file: File): Option[File] = {

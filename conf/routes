@@ -7,14 +7,14 @@
 GET           /                    controllers.Application.index
 
 # Health check
-GET           /health                    controllers.Application.health
+GET           /health              controllers.Application.health
 
 # User management API
-POST          /user                controllers.UserController.create
-GET           /users/:id           controllers.UserController.read(id: Long)
-PUT           /users/:id           controllers.UserController.update(id: Long)
-DELETE        /users/:id           controllers.UserController.delete(id: Long)
-GET           /users               controllers.UserController.findAll
+GET           /users/:id           controllers.UserController.findUser(id: Long)
+GET           /users               controllers.UserController.findAllUsers
+POST          /users               controllers.UserController.insertUser
+DELETE        /users/:id           controllers.UserController.removeUser(id: Long)
+PUT           /users/:id           controllers.UserController.updateUser(id: Long)
 
 # Map static resources from the /public folder to the /assets URL path
 GET           /assets/*file        controllers.Assets.versioned(path="/public", file: Asset)

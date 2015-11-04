@@ -1,10 +1,6 @@
 package models
 
-trait IdModel[T] {
+trait IdModel[ID, T] {
 
-  // id should start from 1
-  val id: Option[Long] = None
-
-  // update id
-  def withNewId(id: Long): T
+  def id: Option[ID]
 }

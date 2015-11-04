@@ -1,21 +1,13 @@
-package util
+package utils
 
 import java.time.format.DateTimeFormatter
 import java.time.{Instant, ZoneId, ZonedDateTime}
 
-import util.Time._
 import play.api.data.validation.ValidationError
 import play.api.libs.json._
+import utils.Time._
 
 import scala.util.{Failure, Success, Try}
-
-/**
- * Reads and Writes for [[ZonedDateTime]]
- *
- * @author luongbalinh (Software Engineer - RedMart)
- *         <linhluongba@gmail.com>
- * @since 19/7/15
- */
 
 object ZonedDateTimeReadWrite {
 

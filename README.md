@@ -65,9 +65,10 @@ stores the index for the next user.
 
 Start the Play project:
 
-    ../play-mongo >  activator "~run 9000"
+    ../play-mongo >  activator "~run 9000" 
 
-Now, you will be able to execute the following from a terminal.
+You can select a specific configuration for running the application using *-Dconfig.file* option. Now, you will be 
+able to execute the following from a terminal.
 
 This should fetch all the dependencies and start a Web Server listening on *localhost:9000*. Open a web browser at 
 *localhost:9000*, you should be able to see a web interface that allows you to view all users, create a new user, 

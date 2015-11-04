@@ -3,80 +3,78 @@ package controllers
 import javax.inject.Inject
 
 import models._
-import org.slf4j.{Logger, LoggerFactory}
+import org.slf4j.LoggerFactory
 import play.api.data.validation.ValidationError
 import play.api.libs.json._
 import play.api.mvc._
 import services.UserService
 
-import scala.concurrent.{ExecutionContext, Future}
-import scala.util.{Failure, Success}
+import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.Future
 
-class UserController @Inject()(val userService: UserService)(implicit val ctx:
-ExecutionContext) extends Controller {
-  private final val logger: Logger = LoggerFactory.getLogger(classOf[UserController])
+class UserController @Inject()(userService: UserService) extends Controller {
 
-  import UserController._
+  private val logger = LoggerFactory.getLogger(classOf[UserController])
 
-  def create = Action.async(parse.json) {
-    request =>
-      println(s"Creating a new user")
-      request.body.validate[User] fold(
-          validationError,
-          createUser
-          )
-  }
-
-  def read(id: Long) = Action.async { request =>
-    logger.info(s"Finding user by id = $id")
-    userService.read(id) map {
-      case Some(user) => Ok(Json.toJson(user))
-      case None => NotFound
+  def findUser(id: Long) = Action.async { request =>
+    userService.findUser(id) map {
+      case Some(user) =>
+        logger.info(s"Found a user with id=$id")
+        Ok(Json.toJson(user))
+      case None =>
+        logger.info(s"Cannot find a user with id=$id")
+        NotFound(s"Cannot find a user with id=$id")
     }
   }
 
-  def update(id: Long) = Action.async(parse.json) { request =>
-    val updates = request.body
-    logger.info(s"Updating user with id $id and updates = $updates")
-    userService.update(id, updates) map {
-      case Success(_) => Ok
-      case Failure(e) => InternalServerError(UpdateFailed withDetails e.getMessage)
+  def findAllUsers = Action.async { request =>
+    userService.findAllUsers() map { users => {
+      logger.info(s"Found ${users.size} users.")
+      Ok(Json.toJson(users))
+    }
     }
   }
 
-  def delete(id: Long) = Action.async { request =>
-    logger.info(s"Deleting user with id $id")
-    userService.delete(id) map {
-      case Success(_) => Ok
-      case Failure(e) => InternalServerError(DeleteFailed withDetails e.getMessage)
+  def insertUser() = Action.async(parse.json) { request =>
+    request.body.validate[User] fold(invalid = handleValidationErrors, valid = saveUser)
+  }
+
+  def removeUser(id: Long) = Action.async { request =>
+    logger.info(s"Removing user with id $id")
+    userService.removeUser(id) map {
+      case true => Ok(s"Successfully deleted user with id=$id")
+      case false => NotFound(s"Failed to delete user with id=$id")
     }
   }
 
-  def findAll = Action.async { request =>
-    logger.info(s"Finding all users")
-    userService.findAll() map { res =>
-      Ok(Json.toJson(res))
+  def updateUser(id: Long) = Action.async(parse.json) { request =>
+    val update = request.body
+
+    userService.updateUser(id, update) map { user =>
+      Ok(Json.toJson(user))
+    } recover {
+      case e: Exception =>
+        logger.error(s"Failed to update user with id=$id; update Json=$update", e)
+        BadRequest(s"Failed to update user id = $id ${e.getMessage}")
     }
   }
 
-  private def validationError: (Seq[(JsPath, Seq[ValidationError])]) => Future[Result] = { errors =>
+  private def handleValidationErrors: Seq[(JsPath, Seq[ValidationError])] => Future[Result] = { errors =>
     Future {
-      BadRequest(InvalidJson withDetails JsError.toJson(errors))
+      logger.error(s"Failed to create a user due to invalid json format: ${JsError.toJson(errors)}")
+      BadRequest(s"Invalid json format: ${JsError.toJson(errors)}")
     }
   }
 
-  private def createUser: (User) => Future[Result] = { user =>
-    userService.create(user) map {
-      case Success(savedUser) => Ok(Json.toJson(savedUser))
-      case Failure(e) => InternalServerError(SaveFailed withDetails e.getMessage)
+  private def saveUser: User => Future[Result] = { user =>
+    userService.insertUser(user) map {
+      case savedUser =>
+        logger.info(s"Successfully created user=$savedUser")
+        Ok(Json.toJson(savedUser))
+    } recover {
+      case e: Exception =>
+        logger.error(s"Failed to insert user $user", e)
+        BadRequest(s"Failed to insert user: $user")
     }
   }
 }
-
-object UserController {
-  val InvalidJson = Error("UserInvalidJson", "Invalid json category format")
-  val SaveFailed = Error("UserCreatedFailed", "Failed to create user")
-  val UpdateFailed = Error("UserUpdateFailed", "Failed to update user")
-  val DeleteFailed = Error("UserDeleteFailed", "Failed to delete user")
-}
-

@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 
-    <property file="application.conf" />
+  <property file="application.conf"/>
 
-    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
-            <Pattern>
-                %d{yyyy-MM-dd_HH:mm:ss} %-5level [%file:%line] - %msg%n
-            </Pattern>
-        </encoder>
-    </appender>
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <Pattern>
+        %d{yyyy-MM-dd_HH:mm:ss} %-5level [%file:%line] - %msg%n
+      </Pattern>
+    </encoder>
+  </appender>
 
-    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/application.log</file>
-        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
-            <Pattern>
-                %d{yyyy-MM-dd_HH:mm:ss} %-5level [%file:%line] - %msg%n
-            </Pattern>
-        </encoder>
+  <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>logs/application.log</file>
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <Pattern>
+        %d{yyyy-MM-dd_HH:mm:ss} %-5level [%file:%line] - %msg%n
+      </Pattern>
+    </encoder>
 
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <!-- daily rollover -->
-            <fileNamePattern>logs/application.%d{yyyy-MM-dd}.log</fileNamePattern>
-            <!-- keep 30 days' worth of history -->
-            <maxHistory>30</maxHistory>
-        </rollingPolicy>
-    </appender>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <!-- daily rollover -->
+      <fileNamePattern>logs/application.%d{yyyy-MM-dd}.log</fileNamePattern>
+      <!-- keep 30 days' worth of history -->
+      <maxHistory>30</maxHistory>
+    </rollingPolicy>
+  </appender>
 
-    <logger name="ROOT" level="INFO" />
-    <logger name="play" level="INFO" />
-    <logger name="controllers" level="INFO" />
-    <logger name="play.mongo" level="DEBUG" />
-    <logger name="engine" level="INFO" />
+  <logger name="ROOT" level="INFO"/>
+  <logger name="play" level="INFO"/>
+  <logger name="controllers" level="INFO"/>
+  <logger name="play.mongo" level="DEBUG"/>
+  <logger name="engine" level="INFO"/>
 
-    <root level="INFO">
-        <appender-ref ref="FILE" />
-        <appender-ref ref="STDOUT" />
-    </root>
+  <root level="INFO">
+    <appender-ref ref="FILE"/>
+    <appender-ref ref="STDOUT"/>
+  </root>
 
 </configuration>
