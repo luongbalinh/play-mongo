@@ -1,6 +1,5 @@
 package services
 
-import dao.FakeMongo
 import dao.impl.{CounterDaoMongo, UserDaoMongo}
 import models.User
 import org.scalatest._
@@ -11,6 +10,7 @@ import play.modules.reactivemongo.ReactiveMongoApi
 import reactivemongo.api.DB
 import reactivemongo.api.collections.bson.BSONCollection
 import utils.AwaitHelper._
+import utils.FakeMongo
 import utils.UserTestFactory._
 
 import scala.concurrent.ExecutionContext.Implicits.global

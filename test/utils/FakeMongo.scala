@@ -1,4 +1,5 @@
-package dao
+package utils
+
 import de.flapdoodle.embed.mongo.config.{MongodConfigBuilder, Net}
 import de.flapdoodle.embed.mongo.distribution.Version
 import de.flapdoodle.embed.mongo.{MongodExecutable, MongodProcess, MongodStarter}

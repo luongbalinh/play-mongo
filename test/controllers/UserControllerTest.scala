@@ -3,7 +3,7 @@ package controllers
 import java.time.ZonedDateTime
 
 import dao.impl.{CounterDaoMongo, UserDaoMongo}
-import dao.{FakeMongo, UserDao}
+import dao.UserDao
 import models.User
 import modules.{CommonModule, TestDaoModule}
 import org.scalatest.{BeforeAndAfterAll, MustMatchers}
@@ -18,6 +18,7 @@ import play.api.test._
 import play.modules.reactivemongo.{ReactiveMongoApi, ReactiveMongoModule}
 import reactivemongo.api.DB
 import utils.AwaitHelper._
+import utils.FakeMongo
 import utils.UserJsonTestFactory._
 import utils.UserTestFactory._
 
