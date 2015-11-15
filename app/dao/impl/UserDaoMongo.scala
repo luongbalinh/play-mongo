@@ -7,7 +7,8 @@ import dao.exception.UserDaoException
 import dao.{CounterDao, UserDao}
 import models.User
 import play.api.libs.concurrent.Execution.Implicits._
-import play.api.libs.json.{JsValue, Json}
+import play.api.libs.json.JsValue
+import play.api.libs.json.Json._
 import play.modules.reactivemongo.ReactiveMongoApi
 import play.modules.reactivemongo.json._
 import reactivemongo.bson.BSONObjectID
@@ -47,13 +48,15 @@ class UserDaoMongo @Inject()(reactiveMongoApi: ReactiveMongoApi, counterDao: Cou
     dao.remove("id" $eq id) map (_.n > 0)
 
   override def updateUser(id: Long, update: JsValue): Future[User] = {
-    dao.update("id" $eq id, Json.obj("$set" -> update)) flatMap { lastError =>
+    dao.update("id" $eq id, obj("$set" -> update)) flatMap { lastError =>
       if (lastError.ok) {
         findUser(id) map {
           case Some(user) => user
           case None =>
-            throw UserDaoException(s"Cannot get user id=$id after updating of collection ${UserDaoMongo
-              .CollectionName}")
+            throw UserDaoException(s"Cannot get user id=$id after updating of collection ${
+              UserDaoMongo
+                .CollectionName
+            }")
         }
       }
       else {

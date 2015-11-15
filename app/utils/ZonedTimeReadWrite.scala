@@ -4,6 +4,7 @@ import java.time.format.DateTimeFormatter
 import java.time.{Instant, ZoneId, ZonedDateTime}
 
 import play.api.data.validation.ValidationError
+import play.api.libs.json.Json._
 import play.api.libs.json._
 import utils.Time._
 
@@ -22,7 +23,7 @@ object ZonedDateTimeReadWrite {
 
   implicit val zonedDateTimeWrites: Writes[ZonedDateTime] = new Writes[ZonedDateTime] {
     override def writes(d: ZonedDateTime): JsValue = {
-      Json.obj("$date" -> getEpochMillis(d))
+      obj("$date" -> getEpochMillis(d))
     }
   }
 

@@ -4,7 +4,9 @@ import dao.FakeMongo
 import dao.impl.{CounterDaoMongo, UserDaoMongo}
 import models.User
 import org.scalatest._
-import play.api.libs.json.Json
+import play.api.libs.json.Json._
+import play.api.test.FakeApplication
+import play.api.{Application, GlobalSettings}
 import play.modules.reactivemongo.ReactiveMongoApi
 import reactivemongo.api.DB
 import reactivemongo.api.collections.bson.BSONCollection
@@ -91,11 +93,25 @@ with ShouldMatchers with GivenWhenThen with BeforeAndAfterEach with BeforeAndAft
     addUser(user01)
 
     When("tries to update that user")
-    val result: User = awaitResult(userService.updateUser(1l, Json.obj("firstName" -> "updatedName")))
+    val result: User = awaitResult(userService.updateUser(1l, obj("firstName" -> "updatedName")))
 
     Then("the user is updated successfully")
     result.firstName shouldBe "updatedName"
   }
+
+  val appConfig: Map[String, Any] = Map(
+
+  )
+
+  val theFakeApp = FakeApplication(
+    additionalConfiguration = appConfig,
+    withGlobal = Some(new GlobalSettings {
+      override def onStart(app: Application): Unit = {
+      }
+    })
+  )
+
+  implicit lazy val config = theFakeApp.configuration
 
   private var fakeMongo: FakeMongo = _
   private var reactiveMongoApi: ReactiveMongoApi = _

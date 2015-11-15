@@ -2,6 +2,7 @@ package utils
 
 import models.User
 import play.api.libs.json.JsSuccess
+import utils.AwaitHelper._
 
 object UserTestFactory {
   val users: List[User] = JsonFileHelper.fileToJson("users.json").validate[List[User]] match {

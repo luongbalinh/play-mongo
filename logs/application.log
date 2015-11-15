@@ -1,101 +1,378 @@
-2015-11-04_12:34:24 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2015-11-04_12:34:26 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-2#-1687620748] stopped.
-2015-11-04_12:35:39 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2015-11-04_12:35:40 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
-2015-11-04_12:35:40 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-2#511764944] stopped.
-2015-11-04_12:37:41 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2015-11-04_12:37:42 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
-2015-11-04_12:37:42 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
-2015-11-04_12:37:42 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+2015-11-15_15:58:04 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_15:58:06 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_15:58:07 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-11-15_15:58:07 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
 		[localhost:38128]
-2015-11-04_12:37:44 INFO  [UserController.scala:72] - Successfully created user=Some(User(Some(1),first1,last1,20,true,Some(2015-11-04T12:37:44.266+08:00[Asia/Singapore]),Some(2015-11-04T12:37:44.267+08:00[Asia/Singapore])))
-2015-11-04_12:37:44 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
-2015-11-04_12:37:44 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
-2015-11-04_12:37:44 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(1582209164) (ignored, channel closed)
-2015-11-04_12:37:44 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-1397277047] is stopping.
-2015-11-04_12:37:44 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
-2015-11-04_12:37:44 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-1397277047] stopped.
-2015-11-04_12:38:10 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2015-11-04_12:38:11 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
-2015-11-04_12:38:12 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
-2015-11-04_12:38:12 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+2015-11-15_15:58:10 INFO  [UserController.scala:72] - Successfully created user=Some(User(Some(1),first1,last1,20,true,Some(2015-11-15T15:58:09.803+08:00[Asia/Singapore]),Some(2015-11-15T15:58:09.804+08:00[Asia/Singapore])))
+2015-11-15_15:58:10 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_15:58:10 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_15:58:10 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_15:58:10 INFO  [utils.scala:46] - The node set is now available
+2015-11-15_15:58:10 INFO  [utils.scala:46] - The primary is now available
+2015-11-15_15:58:10 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-11-15_15:58:10 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#2005209903] is stopping.
+2015-11-15_15:58:10 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-11-15_15:58:10 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#2005209903] stopped.
+2015-11-15_15:58:11 INFO  [ReactiveMongoApi.scala:55] - ReactiveMongoApi starting...
+2015-11-15_15:58:11 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_15:58:11 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_15:58:11 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_15:58:11 INFO  [ReactiveMongoApi.scala:55] - ReactiveMongoApi starting...
+2015-11-15_15:58:11 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_15:58:11 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_15:58:11 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_15:58:11 INFO  [ReactiveMongoApi.scala:55] - ReactiveMongoApi starting...
+2015-11-15_15:58:11 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_15:58:12 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_16:00:30 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_16:00:31 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_16:00:32 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-11-15_16:00:32 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
 		[localhost:38128]
-2015-11-04_12:38:13 INFO  [UserController.scala:72] - Successfully created user=Some(User(Some(1),first1,last1,20,true,Some(2015-11-04T12:38:13.084+08:00[Asia/Singapore]),Some(2015-11-04T12:38:13.085+08:00[Asia/Singapore])))
-2015-11-04_12:38:13 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
-2015-11-04_12:38:13 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
-2015-11-04_12:38:13 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,12,10,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(-401118492))
-2015-11-04_12:38:13 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-178763468] is stopping.
-2015-11-04_12:38:13 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
-2015-11-04_12:38:13 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-178763468] stopped.
-2015-11-04_12:43:16 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2015-11-04_12:43:17 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
-2015-11-04_12:43:17 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
-2015-11-04_12:43:17 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+2015-11-15_16:00:34 INFO  [UserController.scala:72] - Successfully created user=Some(User(Some(1),first1,last1,20,true,Some(2015-11-15T16:00:34.347+08:00[Asia/Singapore]),Some(2015-11-15T16:00:34.347+08:00[Asia/Singapore])))
+2015-11-15_16:00:34 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_16:00:34 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_16:00:35 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_16:00:35 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-11-15_16:00:35 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(-2099253420) (ignored, channel closed)
+2015-11-15_16:00:35 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#853783310] is stopping.
+2015-11-15_16:00:35 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-11-15_16:00:35 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#853783310] stopped.
+2015-11-15_16:00:35 INFO  [ReactiveMongoApi.scala:55] - ReactiveMongoApi starting...
+2015-11-15_16:00:35 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_16:00:35 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_16:00:35 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_16:00:35 INFO  [ReactiveMongoApi.scala:55] - ReactiveMongoApi starting...
+2015-11-15_16:00:35 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_16:00:35 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_16:00:36 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_16:00:36 INFO  [ReactiveMongoApi.scala:55] - ReactiveMongoApi starting...
+2015-11-15_16:00:36 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_16:00:36 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_16:02:19 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_16:02:21 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_16:02:22 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-11-15_16:02:22 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
 		[localhost:38128]
-2015-11-04_12:43:18 INFO  [UserController.scala:72] - Successfully created user=Some(User(Some(1),first1,last1,20,true,Some(2015-11-04T12:43:18.678+08:00[Asia/Singapore]),Some(2015-11-04T12:43:18.679+08:00[Asia/Singapore])))
-2015-11-04_12:43:18 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
-2015-11-04_12:43:18 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
-2015-11-04_12:43:18 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,12,10,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(-11915318))
-2015-11-04_12:43:18 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1096165791] is stopping.
-2015-11-04_12:43:18 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
-2015-11-04_12:43:18 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1096165791] stopped.
-2015-11-04_12:43:34 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2015-11-04_12:43:35 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
-2015-11-04_12:43:36 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
-2015-11-04_12:43:36 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+2015-11-15_16:02:24 INFO  [UserController.scala:72] - Successfully created user=Some(User(Some(1),first1,last1,20,true,Some(2015-11-15T16:02:24.212+08:00[Asia/Singapore]),Some(2015-11-15T16:02:24.213+08:00[Asia/Singapore])))
+2015-11-15_16:02:24 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_16:02:24 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_16:02:25 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_16:02:25 INFO  [utils.scala:46] - The node set is now available
+2015-11-15_16:02:25 INFO  [utils.scala:46] - The primary is now available
+2015-11-15_16:02:25 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-11-15_16:02:25 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(1333922269) (ignored, channel closed)
+2015-11-15_16:02:25 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(1831491248) (ignored, channel closed)
+2015-11-15_16:02:25 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(1588381403) (ignored, channel closed)
+2015-11-15_16:02:25 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(-109773851) (ignored, channel closed)
+2015-11-15_16:02:25 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(-1114964615) (ignored, channel closed)
+2015-11-15_16:02:25 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(-797686386) (ignored, channel closed)
+2015-11-15_16:02:25 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(-73117407) (ignored, channel closed)
+2015-11-15_16:02:25 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(1958828476) (ignored, channel closed)
+2015-11-15_16:02:25 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(-1478589780) (ignored, channel closed)
+2015-11-15_16:02:25 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-1170300926] is stopping.
+2015-11-15_16:02:25 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-11-15_16:02:25 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-1170300926] stopped.
+2015-11-15_16:02:25 INFO  [ReactiveMongoApi.scala:55] - ReactiveMongoApi starting...
+2015-11-15_16:02:25 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_16:02:25 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_16:02:25 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_16:02:25 INFO  [ReactiveMongoApi.scala:55] - ReactiveMongoApi starting...
+2015-11-15_16:02:25 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_16:02:25 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_16:02:25 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_16:02:25 INFO  [ReactiveMongoApi.scala:55] - ReactiveMongoApi starting...
+2015-11-15_16:02:25 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_16:02:25 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_16:04:23 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_16:04:25 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_16:04:26 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-11-15_16:04:26 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
 		[localhost:38128]
-2015-11-04_12:43:37 INFO  [UserController.scala:72] - Successfully created user=Some(User(Some(1),first1,last1,20,true,Some(2015-11-04T12:43:37.371+08:00[Asia/Singapore]),Some(2015-11-04T12:43:37.371+08:00[Asia/Singapore])))
-2015-11-04_12:44:30 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
-2015-11-04_12:44:30 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
-2015-11-04_12:44:30 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(1618287397) (ignored, channel closed)
-2015-11-04_12:44:30 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1070520685] is stopping.
-2015-11-04_12:44:30 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
-2015-11-04_12:44:30 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1070520685] stopped.
-2015-11-04_12:44:45 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2015-11-04_12:44:46 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
-2015-11-04_12:44:46 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
-2015-11-04_12:44:46 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+2015-11-15_16:04:28 INFO  [UserController.scala:72] - Successfully created user=Some(User(Some(1),first1,last1,20,true,Some(2015-11-15T16:04:27.807+08:00[Asia/Singapore]),Some(2015-11-15T16:04:27.807+08:00[Asia/Singapore])))
+2015-11-15_16:04:28 ERROR [UserController.scala:64] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2015-11-15_16:04:28 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_16:04:28 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-11-15_16:04:28 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,12,10,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(-1301563875))
+2015-11-15_16:04:28 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-1625731963] is stopping.
+2015-11-15_16:04:28 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-11-15_16:04:28 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-1625731963] stopped.
+2015-11-15_22:58:25 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_22:58:27 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_22:58:28 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-11-15_22:58:28 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
 		[localhost:38128]
-2015-11-04_12:44:47 INFO  [UserController.scala:72] - Successfully created user=Some(User(Some(1),first1,last1,20,true,Some(2015-11-04T12:44:47.541+08:00[Asia/Singapore]),Some(2015-11-04T12:44:47.542+08:00[Asia/Singapore])))
-2015-11-04_12:44:47 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
-2015-11-04_12:44:47 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
-2015-11-04_12:44:47 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(910429541) (ignored, channel closed)
-2015-11-04_12:44:47 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-1660272222] is stopping.
-2015-11-04_12:44:47 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
-2015-11-04_12:44:47 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-1660272222] stopped.
-2015-11-04_13:41:37 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2015-11-04_13:41:37 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
-2015-11-04_13:41:38 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
-2015-11-04_13:41:38 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+2015-11-15_22:58:30 INFO  [UserController.scala:72] - Successfully created user=Some(User(Some(1),first1,last1,20,true,Some(2015-11-15T22:58:30.148+08:00[Asia/Singapore]),Some(2015-11-15T22:58:30.148+08:00[Asia/Singapore])))
+2015-11-15_22:58:30 ERROR [UserController.scala:64] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2015-11-15_22:58:30 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_22:58:30 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-11-15_22:58:30 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,12,10,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(607015690))
+2015-11-15_22:58:30 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1639526404] is stopping.
+2015-11-15_22:58:30 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1639526404] stopped.
+2015-11-15_22:58:30 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-11-15_23:11:39 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_23:11:41 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_23:11:41 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-11-15_23:11:41 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
 		[localhost:38128]
-2015-11-04_13:41:39 INFO  [UserController.scala:72] - Successfully created user=Some(User(Some(1),first1,last1,20,true,Some(2015-11-04T13:41:39.392+08:00[Asia/Singapore]),Some(2015-11-04T13:41:39.393+08:00[Asia/Singapore])))
-2015-11-04_13:41:39 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
-2015-11-04_13:41:39 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
-2015-11-04_13:41:39 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,13,11,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(-719762750))
-2015-11-04_13:41:39 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-2113393613] is stopping.
-2015-11-04_13:41:39 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
-2015-11-04_13:41:39 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-2113393613] stopped.
-2015-11-04_13:46:39 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2015-11-04_13:46:40 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
-2015-11-04_13:46:40 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
-2015-11-04_13:46:40 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+2015-11-15_23:11:43 INFO  [UserController.scala:72] - Successfully created user=Some(User(Some(1),first1,last1,20,true,Some(2015-11-15T23:11:43.203+08:00[Asia/Singapore]),Some(2015-11-15T23:11:43.204+08:00[Asia/Singapore])))
+2015-11-15_23:11:43 ERROR [UserController.scala:64] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2015-11-15_23:11:43 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_23:11:43 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-11-15_23:11:43 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,14,10,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(-1736408435))
+2015-11-15_23:11:43 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-1670188005] is stopping.
+2015-11-15_23:11:43 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-11-15_23:11:43 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-1670188005] stopped.
+2015-11-15_23:12:46 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_23:12:48 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_23:12:48 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-11-15_23:12:48 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
 		[localhost:38128]
-2015-11-04_13:46:41 INFO  [UserController.scala:72] - Successfully created user=Some(User(Some(1),first1,last1,20,true,Some(2015-11-04T13:46:41.742+08:00[Asia/Singapore]),Some(2015-11-04T13:46:41.742+08:00[Asia/Singapore])))
-2015-11-04_13:46:41 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
-2015-11-04_13:46:41 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
-2015-11-04_13:46:42 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,12,10,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(1296810488))
-2015-11-04_13:46:42 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-1867844426] is stopping.
-2015-11-04_13:46:42 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
-2015-11-04_13:46:42 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-1867844426] stopped.
-2015-11-04_13:53:43 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2015-11-04_13:53:44 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
-2015-11-04_13:53:45 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
-2015-11-04_13:53:45 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+2015-11-15_23:12:50 INFO  [UserController.scala:72] - Successfully created user=Some(User(Some(1),first1,last1,20,true,Some(2015-11-15T23:12:50.466+08:00[Asia/Singapore]),Some(2015-11-15T23:12:50.466+08:00[Asia/Singapore])))
+2015-11-15_23:12:50 ERROR [UserController.scala:64] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2015-11-15_23:12:51 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_23:12:51 INFO  [utils.scala:46] - The node set is now available
+2015-11-15_23:12:51 INFO  [utils.scala:46] - The primary is now available
+2015-11-15_23:12:51 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-11-15_23:12:51 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,17,11,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(1024438765))
+2015-11-15_23:12:51 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,18,12,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(1024438765))
+2015-11-15_23:12:51 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,19,13,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(1024438765))
+2015-11-15_23:12:51 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,20,14,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(1024438765))
+2015-11-15_23:12:51 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,21,15,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(1024438765))
+2015-11-15_23:12:51 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,22,16,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(1024438765))
+2015-11-15_23:12:51 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,23,17,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(1024438765))
+2015-11-15_23:12:51 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,24,18,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(1024438765))
+2015-11-15_23:12:51 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,25,19,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(1024438765))
+2015-11-15_23:12:51 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-1974315446] is stopping.
+2015-11-15_23:12:51 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-11-15_23:12:51 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-1974315446] stopped.
+2015-11-15_23:29:42 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_23:29:43 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_23:29:44 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-11-15_23:29:44 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
 		[localhost:38128]
-2015-11-04_13:53:46 INFO  [UserController.scala:72] - Successfully created user=Some(User(Some(1),first1,last1,20,true,Some(2015-11-04T13:53:46.122+08:00[Asia/Singapore]),Some(2015-11-04T13:53:46.122+08:00[Asia/Singapore])))
-2015-11-04_13:53:46 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
-2015-11-04_13:53:46 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
-2015-11-04_13:53:46 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(1347049014) (ignored, channel closed)
-2015-11-04_13:53:46 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#539074585] is stopping.
-2015-11-04_13:53:46 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
-2015-11-04_13:53:46 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#539074585] stopped.
+2015-11-15_23:29:46 INFO  [UserController.scala:72] - Successfully created user=Some(User(Some(1),first1,last1,20,true,Some(2015-11-15T23:29:45.860+08:00[Asia/Singapore]),Some(2015-11-15T23:29:45.861+08:00[Asia/Singapore])))
+2015-11-15_23:29:46 ERROR [UserController.scala:64] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2015-11-15_23:29:46 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_23:29:46 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-11-15_23:29:46 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(-961127549) (ignored, channel closed)
+2015-11-15_23:29:46 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1559833745] is stopping.
+2015-11-15_23:29:46 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-11-15_23:29:46 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1559833745] stopped.
+2015-11-15_23:30:43 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_23:30:45 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_23:30:45 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-11-15_23:30:45 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:38128]
+2015-11-15_23:30:47 INFO  [UserController.scala:72] - Successfully created user=Some(User(Some(1),first1,last1,20,true,Some(2015-11-15T23:30:47.513+08:00[Asia/Singapore]),Some(2015-11-15T23:30:47.514+08:00[Asia/Singapore])))
+2015-11-15_23:30:47 ERROR [UserController.scala:64] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2015-11-15_23:37:09 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_23:37:10 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_23:37:11 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-11-15_23:37:11 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:38128]
+2015-11-15_23:37:12 INFO  [UserController.scala:73] - Successfully created user=Some(User(Some(1),first1,last1,20,true,Some(2015-11-15T23:37:12.747+08:00[Asia/Singapore]),Some(2015-11-15T23:37:12.747+08:00[Asia/Singapore])))
+2015-11-15_23:37:13 ERROR [UserController.scala:65] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2015-11-15_23:37:13 INFO  [UserController.scala:23] - Found a user with id=1
+2015-11-15_23:37:13 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_23:37:13 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-11-15_23:37:13 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(561089989) (ignored, channel closed)
+2015-11-15_23:37:13 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-1519676210] is stopping.
+2015-11-15_23:37:13 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-11-15_23:37:13 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-1519676210] stopped.
+2015-11-15_23:37:54 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_23:37:55 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_23:37:56 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-11-15_23:37:56 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:38128]
+2015-11-15_23:37:57 INFO  [UserController.scala:73] - Successfully created user=Some(User(Some(1),first1,last1,20,true,Some(2015-11-15T23:37:57.645+08:00[Asia/Singapore]),Some(2015-11-15T23:37:57.645+08:00[Asia/Singapore])))
+2015-11-15_23:37:57 ERROR [UserController.scala:65] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2015-11-15_23:37:58 INFO  [UserController.scala:23] - Found a user with id=1
+2015-11-15_23:37:58 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_23:37:58 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-11-15_23:37:58 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(-790935441) (ignored, channel closed)
+2015-11-15_23:37:58 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#534207608] is stopping.
+2015-11-15_23:37:58 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-11-15_23:37:58 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#534207608] stopped.
+2015-11-15_23:38:40 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_23:38:41 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_23:38:42 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-11-15_23:38:42 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:38128]
+2015-11-15_23:38:43 INFO  [UserController.scala:73] - Successfully created user=Some(User(Some(1),first1,last1,20,true,Some(2015-11-15T23:38:43.543+08:00[Asia/Singapore]),Some(2015-11-15T23:38:43.544+08:00[Asia/Singapore])))
+2015-11-15_23:38:43 ERROR [UserController.scala:65] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2015-11-15_23:38:44 INFO  [UserController.scala:23] - Found a user with id=1
+2015-11-15_23:38:44 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_23:38:44 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-11-15_23:38:44 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,17,10,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(-481217322))
+2015-11-15_23:38:44 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-390449878] is stopping.
+2015-11-15_23:38:44 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-11-15_23:38:44 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-390449878] stopped.
+2015-11-15_23:39:33 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_23:39:35 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_23:39:35 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-11-15_23:39:35 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:38128]
+2015-11-15_23:39:37 INFO  [UserController.scala:73] - Successfully created user=Some(User(Some(1),first1,last1,20,true,Some(2015-11-15T23:39:37.098+08:00[Asia/Singapore]),Some(2015-11-15T23:39:37.102+08:00[Asia/Singapore])))
+2015-11-15_23:39:37 ERROR [UserController.scala:65] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2015-11-15_23:39:37 INFO  [UserController.scala:23] - Found a user with id=1
+2015-11-15_23:39:37 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_23:39:37 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-11-15_23:39:37 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(730297042) (ignored, channel closed)
+2015-11-15_23:39:37 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1315885741] is stopping.
+2015-11-15_23:39:37 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-11-15_23:39:37 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1315885741] stopped.
+2015-11-15_23:41:10 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_23:41:11 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_23:41:12 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-11-15_23:41:12 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:38128]
+2015-11-15_23:41:13 INFO  [UserController.scala:73] - Successfully created user=Some(User(Some(1),first1,last1,20,true,Some(2015-11-15T23:41:13.620+08:00[Asia/Singapore]),Some(2015-11-15T23:41:13.621+08:00[Asia/Singapore])))
+2015-11-15_23:41:13 ERROR [UserController.scala:65] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2015-11-15_23:41:14 INFO  [UserController.scala:23] - Found a user with id=1
+2015-11-15_23:41:14 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_23:41:14 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-11-15_23:41:14 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,17,10,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(-1692030631))
+2015-11-15_23:41:14 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-1332529515] is stopping.
+2015-11-15_23:41:14 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-11-15_23:41:14 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-1332529515] stopped.
+2015-11-15_23:41:57 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-11-15_23:41:59 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-11-15_23:42:00 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-11-15_23:42:00 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:38128]
+2015-11-15_23:42:05 ERROR [utils.scala:51] - Got an error, no more attempts to do. Completing with a failure...
+reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$: MongoError['No primary node is available!']
+	at reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$.<clinit>(actors.scala) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.6.jar:0.13.8-M5]
+	at reactivemongo.core.actors.MongoDBSystem$class.pickChannel(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.LegacyDBSystem.pickChannel(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$4.applyOrElse(actors.scala:304) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:170) ~[scala-library-2.11.6.jar:0.13.8-M5]
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:467) ~[akka-actor_2.11-2.3.13.jar:na]
+	at reactivemongo.core.actors.LegacyDBSystem.aroundReceive(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.13.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.6.jar:na]
+2015-11-15_23:42:05 ERROR [UserController.scala:77] - Failed to insert user User(None,first1,last1,20,true,None,None)
+reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$: MongoError['No primary node is available!']
+	at reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$.<clinit>(actors.scala) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.6.jar:0.13.8-M5]
+	at reactivemongo.core.actors.MongoDBSystem$class.pickChannel(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.LegacyDBSystem.pickChannel(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$4.applyOrElse(actors.scala:304) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:170) ~[scala-library-2.11.6.jar:0.13.8-M5]
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:467) ~[akka-actor_2.11-2.3.13.jar:na]
+	at reactivemongo.core.actors.LegacyDBSystem.aroundReceive(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) ~[akka-actor_2.11-2.3.13.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.6.jar:na]
+2015-11-15_23:42:05 ERROR [UserController.scala:65] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2015-11-15_23:42:08 ERROR [utils.scala:51] - Got an error, no more attempts to do. Completing with a failure...
+reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$: MongoError['No primary node is available!']
+	at reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$.<clinit>(actors.scala) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.6.jar:0.13.8-M5]
+	at reactivemongo.core.actors.MongoDBSystem$class.pickChannel(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.LegacyDBSystem.pickChannel(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$4.applyOrElse(actors.scala:304) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:170) ~[scala-library-2.11.6.jar:0.13.8-M5]
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:467) ~[akka-actor_2.11-2.3.13.jar:na]
+	at reactivemongo.core.actors.LegacyDBSystem.aroundReceive(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.13.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.6.jar:na]
+2015-11-15_23:42:08 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-11-15_23:42:08 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-11-15_23:42:18 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Failure(akka.pattern.AskTimeoutException: Ask timed out on [Actor[akka://reactivemongo/user/Monitor-6#-397357135]] after [10000 ms])]
+2015-11-15_23:42:18 WARN  [Play.scala:109] - Error stopping plugin
+java.util.concurrent.TimeoutException: Futures timed out after [10 seconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.ready(Promise.scala:219) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.ready(Promise.scala:153) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.Await$$anonfun$ready$1.apply(package.scala:169) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.Await$$anonfun$ready$1.apply(package.scala:169) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:53) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.Await$.ready(package.scala:169) ~[scala-library-2.11.6.jar:na]
+	at play.modules.reactivemongo.ReactiveMongoPlugin$$anonfun$onStop$2.apply(ReactiveMongoPlugin.scala:64) ~[play2-reactivemongo_2.11-0.11.7.play24.jar:0.11.7.play24]
+	at play.modules.reactivemongo.ReactiveMongoPlugin$$anonfun$onStop$2.apply(ReactiveMongoPlugin.scala:57) ~[play2-reactivemongo_2.11-0.11.7.play24.jar:0.11.7.play24]
+	at scala.Option.foreach(Option.scala:257) [scala-library-2.11.6.jar:0.13.8-M5]
+	at play.modules.reactivemongo.ReactiveMongoPlugin.onStop(ReactiveMongoPlugin.scala:57) ~[play2-reactivemongo_2.11-0.11.7.play24.jar:0.11.7.play24]
+	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1.apply(Play.scala:109) [play_2.11-2.4.3.jar:2.4.3]
+	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1.apply(Play.scala:108) [play_2.11-2.4.3.jar:2.4.3]
+	at scala.collection.Iterator$class.foreach(Iterator.scala:750) [scala-library-2.11.6.jar:0.13.8-M5]
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1202) [scala-library-2.11.6.jar:0.13.8-M5]
+	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72) [scala-library-2.11.6.jar:0.13.8-M5]
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:54) [scala-library-2.11.6.jar:0.13.8-M5]
+	at play.api.Play$$anonfun$stop$1.apply(Play.scala:108) [play_2.11-2.4.3.jar:2.4.3]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) [play_2.11-2.4.3.jar:2.4.3]
+	at play.api.Play$.stop(Play.scala:107) [play_2.11-2.4.3.jar:2.4.3]
+	at play.core.server.NettyServer$$anonfun$stop$1.apply(NettyServer.scala:159) [play-netty-server_2.11-2.4.3.jar:2.4.3]
+	at play.core.server.NettyServer$$anonfun$stop$1.apply(NettyServer.scala:159) [play-netty-server_2.11-2.4.3.jar:2.4.3]
+	at scala.Option.foreach(Option.scala:257) [scala-library-2.11.6.jar:0.13.8-M5]
+	at play.core.server.NettyServer.stop(NettyServer.scala:159) [play-netty-server_2.11-2.4.3.jar:2.4.3]
+	at play.api.test.TestServer$$anonfun$start$1.apply$mcV$sp(TestServer.scala:81) [play-test_2.11-2.4.3.jar:2.4.3]
+	at play.api.test.TestServerProcess$$anonfun$shutdown$1.apply(TestServer.scala:102) [play-test_2.11-2.4.3.jar:2.4.3]
+	at play.api.test.TestServerProcess$$anonfun$shutdown$1.apply(TestServer.scala:102) [play-test_2.11-2.4.3.jar:2.4.3]
+	at scala.collection.immutable.List.foreach(List.scala:381) [scala-library-2.11.6.jar:0.13.8-M5]
+	at play.api.test.TestServerProcess.shutdown(TestServer.scala:102) [play-test_2.11-2.4.3.jar:2.4.3]
+	at play.api.test.TestServer.stop(TestServer.scala:57) [play-test_2.11-2.4.3.jar:2.4.3]
+	at org.scalatestplus.play.OneServerPerSuite$$anonfun$run$1.apply(OneServerPerSuite.scala:179) [play_2.11-1.4.0-M4.jar:1.4.0-M4]
+	at org.scalatestplus.play.OneServerPerSuite$$anonfun$run$1.apply(OneServerPerSuite.scala:179) [play_2.11-1.4.0-M4.jar:1.4.0-M4]
+	at org.scalatest.CompositeStatus.whenCompleted(Status.scala:377) [scalatest_2.11-2.2.5.jar:na]
+	at org.scalatestplus.play.OneServerPerSuite$class.run(OneServerPerSuite.scala:179) [play_2.11-1.4.0-M4.jar:1.4.0-M4]
+	at controllers.UserControllerTest.org$scalatest$BeforeAndAfterAll$$super$run(UserControllerTest.scala:27) [test-classes/:na]
+	at org.scalatest.BeforeAndAfterAll$class.liftedTree1$1(BeforeAndAfterAll.scala:257) [scalatest_2.11-2.2.5.jar:na]
+	at org.scalatest.BeforeAndAfterAll$class.run(BeforeAndAfterAll.scala:256) [scalatest_2.11-2.2.5.jar:na]
+	at controllers.UserControllerTest.run(UserControllerTest.scala:27) [test-classes/:na]
+	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:466) [scalatest_2.11-2.2.5.jar:na]
+	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:677) [scalatest_2.11-2.2.5.jar:na]
+	at sbt.TestRunner.runTest$1(TestFramework.scala:76) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestRunner.run(TestFramework.scala:85) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:185) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFunction.apply(TestFramework.scala:207) [testing-0.13.8.jar:0.13.8]
+	at sbt.Tests$$anonfun$9.apply(Tests.scala:216) [actions-0.13.8.jar:0.13.8]
+	at sbt.Tests$$anonfun$9.apply(Tests.scala:216) [actions-0.13.8.jar:0.13.8]
+	at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44) [task-system-0.13.8.jar:0.13.8]
+	at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44) [task-system-0.13.8.jar:0.13.8]
+	at sbt.std.Transform$$anon$4.work(System.scala:63) [task-system-0.13.8.jar:0.13.8]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226) [tasks-0.13.8.jar:0.13.8]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226) [tasks-0.13.8.jar:0.13.8]
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17) [control-0.13.8.jar:0.13.8]
+	at sbt.Execute.work(Execute.scala:235) [tasks-0.13.8.jar:0.13.8]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226) [tasks-0.13.8.jar:0.13.8]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226) [tasks-0.13.8.jar:0.13.8]
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159) [tasks-0.13.8.jar:0.13.8]
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28) [tasks-0.13.8.jar:0.13.8]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_45]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_45]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_45]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_45]

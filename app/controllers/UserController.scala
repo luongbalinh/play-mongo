@@ -5,6 +5,7 @@ import javax.inject.Inject
 import models._
 import org.slf4j.LoggerFactory
 import play.api.data.validation.ValidationError
+import play.api.libs.json.Json.toJson
 import play.api.libs.json._
 import play.api.mvc._
 import services.UserService
@@ -20,7 +21,7 @@ class UserController @Inject()(userService: UserService) extends Controller {
     userService.findUser(id) map {
       case Some(user) =>
         logger.info(s"Found a user with id=$id")
-        Ok(Json.toJson(user))
+        Ok(toJson(user))
       case None =>
         logger.info(s"Cannot find a user with id=$id")
         NotFound(s"Cannot find a user with id=$id")
@@ -30,7 +31,7 @@ class UserController @Inject()(userService: UserService) extends Controller {
   def findAllUsers = Action.async { request =>
     userService.findAllUsers() map { users => {
       logger.info(s"Found ${users.size} users.")
-      Ok(Json.toJson(users))
+      Ok(toJson(users))
     }
     }
   }
@@ -51,7 +52,7 @@ class UserController @Inject()(userService: UserService) extends Controller {
     val update = request.body
 
     userService.updateUser(id, update) map { user =>
-      Ok(Json.toJson(user))
+      Ok(toJson(user))
     } recover {
       case e: Exception =>
         logger.error(s"Failed to update user with id=$id; update Json=$update", e)
@@ -70,7 +71,7 @@ class UserController @Inject()(userService: UserService) extends Controller {
     userService.insertUser(user) map {
       case savedUser =>
         logger.info(s"Successfully created user=$savedUser")
-        Ok(Json.toJson(savedUser))
+        Ok(toJson(savedUser))
     } recover {
       case e: Exception =>
         logger.error(s"Failed to insert user $user", e)
