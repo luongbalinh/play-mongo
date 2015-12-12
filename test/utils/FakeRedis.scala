@@ -1,10 +1,10 @@
 package utils
 
-import org.slf4j.{Logger, LoggerFactory}
+import play.api.Logger
 import redis.embedded.RedisServer
 
 class FakeRedis {
-  private val logger: Logger = LoggerFactory.getLogger(classOf[FakeRedis])
+  private val logger= Logger(this.getClass)
 
   var redisServer: RedisServer = _
 

@@ -9,6 +9,7 @@ import play.api.libs.json.Json._
 import play.api.libs.json.{JsObject, JsValue}
 
 import scala.concurrent.Future
+import utils.ZonedDateTimeReadWrite._
 
 class UserServiceImpl @Inject()(userDao: UserDao) extends UserService {
 

@@ -3,7 +3,7 @@ package controllers
 import javax.inject.Inject
 
 import models._
-import org.slf4j.LoggerFactory
+import play.api.Logger
 import play.api.data.validation.ValidationError
 import play.api.libs.json.Json.toJson
 import play.api.libs.json._
@@ -15,12 +15,11 @@ import scala.concurrent.Future
 
 class UserController @Inject()(userService: UserService) extends Controller {
 
-  private val logger = LoggerFactory.getLogger(classOf[UserController])
+  private val logger = Logger(this.getClass)
 
   def findUser(id: Long) = Action.async { request =>
     userService.findUser(id) map {
       case Some(user) =>
-        logger.info(s"Found a user with id=$id")
         Ok(toJson(user))
       case None =>
         logger.info(s"Cannot find a user with id=$id")
@@ -69,7 +68,7 @@ class UserController @Inject()(userService: UserService) extends Controller {
 
   private def saveUser: User => Future[Result] = { user =>
     userService.insertUser(user) map {
-      case savedUser =>
+      case Some(savedUser) =>
         logger.info(s"Successfully created user=$savedUser")
         Ok(toJson(savedUser))
     } recover {

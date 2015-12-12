@@ -17,6 +17,8 @@ case class User(
 ) extends IdModelLong[User]
 
 object User {
+
+  import utils.ZonedDateTimeReadWrite._
   implicit val jsonFormat = Json.format[User]
 
   implicit val byteStringFormat = new ByteStringFormatter[User] {

@@ -6,17 +6,16 @@ import org.scalatest._
 import play.api.libs.json.Json._
 import play.api.test.FakeApplication
 import play.api.{Application, GlobalSettings}
-import play.modules.reactivemongo.ReactiveMongoApi
 import reactivemongo.api.DB
 import reactivemongo.api.collections.bson.BSONCollection
 import utils.AwaitHelper._
-import utils.FakeMongo
+import utils.FakeDB
 import utils.UserTestFactory._
 
 import scala.concurrent.ExecutionContext.Implicits.global
 
 class UserServiceIntegrationTest extends FlatSpec
-with ShouldMatchers with GivenWhenThen with BeforeAndAfterEach with BeforeAndAfterAll {
+with ShouldMatchers with GivenWhenThen with BeforeAndAfterEach with BeforeAndAfterAll with FakeDB{
   "UserService" should "find a user given its Id" in {
     Given("a user")
     addUser(user01)
@@ -59,7 +58,7 @@ with ShouldMatchers with GivenWhenThen with BeforeAndAfterEach with BeforeAndAft
 
     When("UserService tries to insert that new user")
     val result = awaitResult(userDao.insertUser(user01))
-    db.collection[BSONCollection](CounterDaoMongo.CollectionName).drop()
+    api.db.collection[BSONCollection](CounterDaoMongo.CollectionName).drop()
 
     Then("the user is inserted successfully with a id=1")
     result.get.id.get shouldBe 1l
@@ -113,42 +112,29 @@ with ShouldMatchers with GivenWhenThen with BeforeAndAfterEach with BeforeAndAft
 
   implicit lazy val config = theFakeApp.configuration
 
-  private var fakeMongo: FakeMongo = _
-  private var reactiveMongoApi: ReactiveMongoApi = _
-  private var db: DB = _
-
   private var counterDao: CounterDaoMongo = _
   private var userDao: UserDaoMongo = _
 
   private var userService: UserServiceImpl = _
 
   override def beforeAll() = {
-    initDb()
+    startDB("users-db")
     initDAOs()
     initServices()
   }
 
   override def afterAll() = {
-    reactiveMongoApi.connection.actorSystem.shutdown()
-    reactiveMongoApi.connection.actorSystem.awaitTermination()
-    fakeMongo.stop()
+    stopDB()
   }
 
   override def afterEach(): Unit = {
-    db.collection[BSONCollection](UserDaoMongo.CollectionName).drop()
-    db.collection[BSONCollection](CounterDaoMongo.CollectionName).drop()
-  }
-
-  private def initDb() = {
-    fakeMongo = new FakeMongo(38128)
-    fakeMongo.start()
-    reactiveMongoApi = fakeMongo.createMockedReactiveMongoApi("users-db")
-    db = reactiveMongoApi.db
+    api.db.collection[BSONCollection](UserDaoMongo.CollectionName).drop()
+    api.db.collection[BSONCollection](CounterDaoMongo.CollectionName).drop()
   }
 
   private def initDAOs() = {
-    counterDao = new CounterDaoMongo(reactiveMongoApi)
-    userDao = new UserDaoMongo(reactiveMongoApi, counterDao)
+    counterDao = new CounterDaoMongo(api)
+    userDao = new UserDaoMongo(api, counterDao)
   }
 
   private def initServices() = {

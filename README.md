@@ -1,26 +1,35 @@
-Play 2.4.x (Scala) Reactivemongo Template
+Play 2.4.4 (Scala) Reactivemongo Template
 ===========
 
-**Play (Scala) - ReactiveMongo - Guice**
+**Play (Scala) - ReactiveMongo - Redis - Guice**
 
-A full-stack web application using Play 2.4.2 for endpoint backend, Reactivemongo for reactive MongoDB driver, Guice
- for dependency injection, Spec2 and Mockito for unit testing and integration testing, Frisby for endpoint testing, and 
+A full-stack web application using Play 2.4.4 for endpoint backend, Reactivemongo for reactive MongoDB driver, Redis for Cache, Guice
+ for dependency injection, ScalaTest and Mockito for unit testing and integration testing, FlapDoodle embedded Mongo driver, embedded Redis driver, Frisby for endpoint testing, and 
  AngularJs, Bookstrap and Coffee script for frontend.
 
 
-* **PlayFramework** - a high velocity web framework for Java and Scala. This project currently uses 2.4.2 with the 
+* **PlayFramework** - a high velocity web framework for Java and Scala. This project currently uses 2.4.4 with the
 Scala API. Play 2.4.x recommends to get rid of global settings, i.e. (Global.scala), and use dependency injection as the best practices for both writing code and testing.
   * [PlayFramework Docs](http://www.playframework.com/documentation/)
 
 * **PlayReactiveMongo**  a non-blocking MongoDB driver. It also provides some useful additions for handling JSON.
   * [Play-ReactiveMongo github](https://github.com/ReactiveMongo/Play-ReactiveMongo)
   
+* **RediScala**  Non-blocking, Reactive Redis driver for Scala.
+  * [RedisScala](https://github.com/etaty/rediscala)
+    
 * **Guice** - a framework for Dependency injection.
   * [Play-Guice](http://www.typesafe.com/activator/template/play-guice)
   
-* **Spec2** - the default testing framework in Play. It provides helpers and application stubs to make testing easier.
-  * [Play Spec2 Docs](https://www.playframework.com/documentation/2.4.x/ScalaTestingWithSpecs2)
-  
+* **ScalaTest** - a good testing framework for Play. It provides helpers and application stubs to make testing easier.
+  * [ScalaTest](http://www.scalatest.org/)
+
+* **FlapDoodle embedded Mongo**  an embedded reactive mongo
+  * [RedisScala](https://github.com/etaty/rediscala)
+    
+* **RediScala**  Non-blocking, Reactive Redis driver for Scala.
+  * [RedisScala](https://github.com/etaty/rediscala)
+      
 * **Frisby** - a framework for testing endpoints.
   * [Frisby](http://frisbyjs.com/)
     
@@ -42,7 +51,7 @@ Getting Started
 Prerequisites:
 *  [Activator(SBT)](https://www.typesafe.com/get-started) - activator wraps around SBT to provide additional features 
 that make creating, building, and deploying SBT projects easier. 
-*  [MongoDB] (https://www.mongodb.org/)
+*  [MongoDB] (https://www.mongodb.org/). [Robomongo](http://robomongo.org/) is a nice MongoDB GUI tool.
 
 Once the prerequisites have been installed, start Mongodb:
 
@@ -50,37 +59,18 @@ Once the prerequisites have been installed, start Mongodb:
     > mongod
 
 
-Create a database named *users-db*, a collection named *counters*; and finally insert a new document to collection 
-*counters* with the following body (*\_id* will be created automatically for this document). Collection *counters* 
-stores the index for the next user. 
-
-
-    {
-        "collection" : "users",
-        "c" : 1
-    }
-
-
-[Robomongo](http://robomongo.org/) is a nice MongoDB GUI tool.
-
 Start the Play project:
 
-    ../play-mongo >  activator "~run 9000" 
+    ../play-mongo >  activator -Dconfig.file=conf/application.test.conf "~run 9000" 
 
-You can select a specific configuration for running the application using *-Dconfig.file* option. Now, you will be 
-able to execute the following from a terminal.
-
-This should fetch all the dependencies and start a Web Server listening on *localhost:9000*. Open a web browser at 
+You can select a specific configuration for running the application using *-Dconfig.file* option. *~* will make SBT keep looking at changes of the source code and automatically re-compile the project as soon as the changes have been saved. This should fetch all the dependencies and start a Web Server listening on *localhost:9000*. Open a web browser at 
 *localhost:9000*, you should be able to see a web interface that allows you to view all users, create a new user, 
 and update an existing user. 
-
-*~* will make SBT to keep looking at changes of the source code and automatically re-compile the project as soon as the changes have 
-been saved. 
 
 Note that, in this example, a collection named *users* will be created automatically under database *users-db* when 
 the first new user is created from the web interface.
 
-## Intellij
+## Testing SBT project in Intellij
 
 You can import the project to Intellij by
  
