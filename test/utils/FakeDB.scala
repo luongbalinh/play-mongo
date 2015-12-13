@@ -6,7 +6,8 @@ import scala.concurrent.ExecutionContext
 
 trait FakeDB {
 
-  val fakeMongo: FakeMongo = new FakeMongo(38128)
+  val embeddedPort = 38128
+  val fakeMongo: FakeMongo = new FakeMongo(embeddedPort)
 
   var api: ReactiveMongoApi = _
 

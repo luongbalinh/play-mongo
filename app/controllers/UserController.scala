@@ -17,7 +17,7 @@ class UserController @Inject()(userService: UserService) extends Controller {
 
   private val logger = Logger(this.getClass)
 
-  def findUser(id: Long) = Action.async { request =>
+  def findUser(id: Long) = Action.async {
     userService.findUser(id) map {
       case Some(user) =>
         Ok(toJson(user))
@@ -27,11 +27,10 @@ class UserController @Inject()(userService: UserService) extends Controller {
     }
   }
 
-  def findAllUsers = Action.async { request =>
-    userService.findAllUsers() map { users => {
+  def findAllUsers = Action.async {
+    userService.findAllUsers() map { users =>
       logger.info(s"Found ${users.size} users.")
       Ok(toJson(users))
-    }
     }
   }
 
@@ -39,24 +38,13 @@ class UserController @Inject()(userService: UserService) extends Controller {
     request.body.validate[User] fold(invalid = handleValidationErrors, valid = saveUser)
   }
 
-  def removeUser(id: Long) = Action.async { request =>
+  def removeUser(id: Long) = Action.async {
     logger.info(s"Removing user with id $id")
-    userService.removeUser(id) map {
-      case true => Ok(s"Successfully deleted user with id=$id")
-      case false => NotFound(s"Failed to delete user with id=$id")
-    }
+    userService.removeUser(id) map { _ => Ok(s"Successfully deleted user with id=$id") }
   }
 
   def updateUser(id: Long) = Action.async(parse.json) { request =>
-    val update = request.body
-
-    userService.updateUser(id, update) map { user =>
-      Ok(toJson(user))
-    } recover {
-      case e: Exception =>
-        logger.error(s"Failed to update user with id=$id; update Json=$update", e)
-        BadRequest(s"Failed to update user id = $id ${e.getMessage}")
-    }
+    userService.updateUser(id, request.body) map { user => Ok(toJson(user)) }
   }
 
   private def handleValidationErrors: Seq[(JsPath, Seq[ValidationError])] => Future[Result] = { errors =>
@@ -68,13 +56,9 @@ class UserController @Inject()(userService: UserService) extends Controller {
 
   private def saveUser: User => Future[Result] = { user =>
     userService.insertUser(user) map {
-      case Some(savedUser) =>
+      case savedUser =>
         logger.info(s"Successfully created user=$savedUser")
         Ok(toJson(savedUser))
-    } recover {
-      case e: Exception =>
-        logger.error(s"Failed to insert user $user", e)
-        BadRequest(s"Failed to insert user: $user")
     }
   }
 }

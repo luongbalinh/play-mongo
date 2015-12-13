@@ -1,11 +1,13 @@
 package controllers
 
 import java.io.File
+import javax.inject.Singleton
 
 import play.api.Play.current
 import play.api.mvc._
 import play.api.{Logger, Play}
 
+@Singleton
 class Application extends Controller {
 
   private val logger = Logger(this.getClass)
@@ -41,9 +43,15 @@ class Application extends Controller {
 
   private def scriptMapper(file: File): Option[File] = {
     val name = file.getName
-    if (name.endsWith(".js")) Some(file)
-    else if (name.endsWith(".coffee")) Some(new File(file.getParent, name.dropRight(6) + "js"))
-    else None
+    if (name.endsWith(".js")) {
+      Some(file)
+    }
+    else if (name.endsWith(".coffee")) {
+      Some(new File(file.getParent, name.dropRight(Application.DropRight) + "js"))
+    }
+    else {
+      None
+    }
   }
 
   private def directoryFlatMap[A](in: File, fileFun: File => Option[A]): Seq[A] = {
@@ -52,4 +60,8 @@ class Application extends Controller {
       case f if f.isFile => fileFun(f)
     }
   }
+}
+
+object Application {
+  val DropRight = 6
 }

@@ -17,9 +17,9 @@ class UserServiceImpl @Inject()(userDao: UserDao) extends UserService {
 
   override def findAllUsers(): Future[List[User]] = userDao.findAllUsers()
 
-  override def insertUser(user: User): Future[Option[User]] = userDao.insertUser(user)
+  override def insertUser(user: User): Future[User] = userDao.insertUser(user)
 
-  override def removeUser(id: Long): Future[Boolean] = userDao.removeUser(id)
+  override def removeUser(id: Long): Future[Unit] = userDao.removeUser(id)
 
   override def updateUser(id: Long, update: JsValue): Future[User] = {
     val updateWithUpdatedDate = update.as[JsObject] ++ obj("updatedDate" -> ZonedDateTime.now)

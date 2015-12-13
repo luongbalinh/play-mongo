@@ -17,7 +17,6 @@ class CacheServiceRedisIntegrationTest
   }
 
   override def beforeEach(): Unit = {
-    configRedis()
     startRedisServer()
     initRedisClient()
   }
@@ -26,16 +25,10 @@ class CacheServiceRedisIntegrationTest
     fakeRedis.stop()
   }
 
-  var host: String = _
-  var port: Int = _
-  var db: Int = _
+  val host: String = "localhost"
+  val port: Int = 20000
+  val db: Int = 0
   var fakeRedis: FakeRedis = _
-
-  private def configRedis(): Unit = {
-    host = "localhost"
-    port = 20000
-    db = 0
-  }
 
   private def startRedisServer(): Unit = {
     fakeRedis = new FakeRedis()

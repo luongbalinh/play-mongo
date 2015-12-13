@@ -2,8 +2,8 @@ package controllers
 
 import java.time.ZonedDateTime
 
-import dao.impl.{CounterDaoMongo, UserDaoMongo}
 import dao.UserDao
+import dao.impl.{CounterDaoMongo, UserDaoMongo}
 import models.User
 import modules.{CommonModule, TestDaoModule}
 import org.scalatest.{BeforeAndAfterAll, MustMatchers}
@@ -16,16 +16,17 @@ import play.api.mvc.Result
 import play.api.test.Helpers._
 import play.api.test._
 import play.modules.reactivemongo.{ReactiveMongoApi, ReactiveMongoModule}
-import reactivemongo.api.DB
 import utils.AwaitHelper._
-import utils.FakeMongo
+import utils.FakeDB
 import utils.UserJsonTestFactory._
 import utils.UserTestFactory._
+import utils.ZonedDateTimeReadWrite._
 
+import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 
 
-class UserControllerTest extends PlaySpec with OneServerPerSuite with MustMatchers with BeforeAndAfterAll {
+class UserControllerTest extends PlaySpec with OneServerPerSuite with MustMatchers with BeforeAndAfterAll with FakeDB {
 
   "Users controller" must {
     "insert a valid user" in {
@@ -37,10 +38,10 @@ class UserControllerTest extends PlaySpec with OneServerPerSuite with MustMatche
       val result: Future[Result] = response.get
       status(result) mustEqual OK
       val userJson = contentAsJson(result)
-      (userJson \ "id").as[Long] mustBe 1l
+      (userJson \ "id").as[Long] mustBe 1L
       (userJson \ "firstName").as[String] mustBe "first1"
       (userJson \ "lastName").as[String] mustBe "last1"
-      (userJson \ "age").as[Long] mustBe 20l
+      (userJson \ "age").as[Long] mustBe 20L
       ((userJson \ "createdDate").validate[ZonedDateTime] match {
         case JsSuccess(_, _) => true
         case _ => false
@@ -84,40 +85,28 @@ class UserControllerTest extends PlaySpec with OneServerPerSuite with MustMatche
   private lazy val appConfig: Map[String, Any] = Map(
     "mongodb.uri" -> "mongodb://localhost:38128/users-db"
   )
-  //  private val mockProvider: MockProvider = new MockProvider()
 
-  private lazy val fakeMongo = new FakeMongo(38128)
-
-  private lazy val fakeReactiveMongoApi = fakeMongo.createMockedReactiveMongoApi("users-db")
-  private var db: DB = _
   private var userDao: UserDao = _
 
   implicit override lazy val app = new GuiceApplicationBuilder()
     .configure(appConfig)
     .disable(classOf[ReactiveMongoModule], classOf[CommonModule])
-    .bindings(bind(classOf[ReactiveMongoApi]).toInstance(fakeReactiveMongoApi))
+    .bindings(bind(classOf[ReactiveMongoApi]).toInstance(api))
     .bindings(TestDaoModule())
     .build()
 
 
   override def beforeAll(): Unit = {
-    fakeMongo.start()
-    initDb()
+    startDB("users-db")
     initDAOs()
   }
 
   override def afterAll(): Unit = {
-    fakeReactiveMongoApi.connection.actorSystem.shutdown()
-    fakeReactiveMongoApi.connection.actorSystem.awaitTermination()
-    fakeMongo.stop()
-  }
-
-  def initDb() = {
-    db = fakeReactiveMongoApi.db
+    stopDB()
   }
 
   def initDAOs(): Unit = {
-    userDao = new UserDaoMongo(fakeReactiveMongoApi, new CounterDaoMongo(fakeReactiveMongoApi))
+    userDao = new UserDaoMongo(api, new CounterDaoMongo(api))
   }
 
   private def addUser(user: User) = awaitResult(userDao.insertUser(user))

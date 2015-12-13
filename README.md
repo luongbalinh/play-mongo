@@ -29,7 +29,7 @@ Scala API. Play 2.4.x recommends to get rid of global settings, i.e. (Global.sca
     
 * **RediScala**  Non-blocking, Reactive Redis driver for Scala.
   * [RedisScala](https://github.com/etaty/rediscala)
-      
+  
 * **Frisby** - a framework for testing endpoints.
   * [Frisby](http://frisbyjs.com/)
     

@@ -6,8 +6,7 @@ import akka.util.ByteString
 import play.api.libs.json.Json
 import redis.ByteStringFormatter
 
-case class User(
-  override val id: Option[Long],
+case class User(override val id: Option[Long],
   firstName: String,
   lastName: String,
   age: Int,

@@ -1,12 +1,12 @@
 package services
 
+import dao.exception.UserDaoException
 import dao.impl.{CounterDaoMongo, UserDaoMongo}
 import models.User
 import org.scalatest._
 import play.api.libs.json.Json._
 import play.api.test.FakeApplication
 import play.api.{Application, GlobalSettings}
-import reactivemongo.api.DB
 import reactivemongo.api.collections.bson.BSONCollection
 import utils.AwaitHelper._
 import utils.FakeDB
@@ -15,13 +15,13 @@ import utils.UserTestFactory._
 import scala.concurrent.ExecutionContext.Implicits.global
 
 class UserServiceIntegrationTest extends FlatSpec
-with ShouldMatchers with GivenWhenThen with BeforeAndAfterEach with BeforeAndAfterAll with FakeDB{
+with ShouldMatchers with GivenWhenThen with BeforeAndAfterEach with BeforeAndAfterAll with FakeDB {
   "UserService" should "find a user given its Id" in {
     Given("a user")
     addUser(user01)
 
     When("tries to find that user")
-    val result: Option[User] = awaitResult(userService.findUser(1l))
+    val result: Option[User] = awaitResult(userService.findUser(1L))
 
     Then("the result is that user")
     result.isDefined shouldBe true
@@ -49,8 +49,8 @@ with ShouldMatchers with GivenWhenThen with BeforeAndAfterEach with BeforeAndAft
 
     Then("the result contains two users with ids 1 and 2")
     result.size shouldBe 2
-    result.head.id shouldEqual Some(1l)
-    result(1).id shouldEqual Some(2l)
+    result.head.id shouldEqual Some(1L)
+    result(1).id shouldEqual Some(2L)
   }
 
   it should "insert a new user" in {
@@ -61,7 +61,7 @@ with ShouldMatchers with GivenWhenThen with BeforeAndAfterEach with BeforeAndAft
     api.db.collection[BSONCollection](CounterDaoMongo.CollectionName).drop()
 
     Then("the user is inserted successfully with a id=1")
-    result.get.id.get shouldBe 1l
+    result.id.get shouldBe 1L
   }
 
   it should "delete an existing user" in {
@@ -69,22 +69,22 @@ with ShouldMatchers with GivenWhenThen with BeforeAndAfterEach with BeforeAndAft
     addUser(user01)
 
     When("tries to delete that user")
-    val result: Boolean = awaitResult(userService.removeUser(1l))
+    val result = awaitResult(userService.removeUser(1L))
 
     Then("the user is deleted successfully")
-    result shouldBe true
-    awaitResult(userService.findUser(1l)).isDefined shouldBe false
+    awaitResult(userService.findUser(1L)).isDefined shouldBe false
   }
 
-  it should "return false when deleting a non-existing user" in {
+  it should "return exception when deleting a non-existing user" in {
     Given("a user")
     addUser(user01)
 
     When("tries to delete a non-existing user")
-    val result: Boolean = awaitResult(userService.removeUser(-1l))
 
-    Then("the return value is false")
-    result shouldBe false
+    Then("return exception")
+    intercept[UserDaoException] {
+      awaitResult(userService.removeUser(-1L))
+    }
   }
 
   it should "update an existing user" in {
@@ -92,7 +92,7 @@ with ShouldMatchers with GivenWhenThen with BeforeAndAfterEach with BeforeAndAft
     addUser(user01)
 
     When("tries to update that user")
-    val result: User = awaitResult(userService.updateUser(1l, obj("firstName" -> "updatedName")))
+    val result: User = awaitResult(userService.updateUser(1L, obj("firstName" -> "updatedName")))
 
     Then("the user is updated successfully")
     result.firstName shouldBe "updatedName"
