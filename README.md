@@ -24,8 +24,8 @@ Scala API. Play 2.4.x recommends to get rid of global settings, i.e. (Global.sca
 * **ScalaTest** - a good testing framework for Play. It provides helpers and application stubs to make testing easier.
   * [ScalaTest](http://www.scalatest.org/)
 
-* **FlapDoodle embedded Mongo**  an embedded reactive mongo
-  * [RedisScala](https://github.com/etaty/rediscala)
+* **Embedded Mongo**  an embedded reactive mongo
+  * [Embedded Mongo](https://github.com/flapdoodle-oss/de.flapdoodle.embed.mongo)
     
 * **RediScala**  Non-blocking, Reactive Redis driver for Scala.
   * [RedisScala](https://github.com/etaty/rediscala)

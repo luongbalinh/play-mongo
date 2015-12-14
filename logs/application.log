@@ -1,15 +1,505 @@
-2015-11-16_00:05:35 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2015-11-16_00:05:36 INFO  [utils.scala:46] - The node set is now available
-2015-11-16_00:05:36 INFO  [utils.scala:46] - The primary is now available
-2015-11-16_00:05:37 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2015-11-16_00:05:38 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
-2015-11-16_00:05:38 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
-2015-11-16_00:05:38 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
-2015-11-16_00:05:38 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+2015-12-13 22:02:47,923 [INFO] from play.core.server.NettyServer in pool-6-thread-2 - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2015-12-13_22:11:43 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_22:11:45 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_22:11:45 INFO  [ReactiveMongoApi.scala:55] - ReactiveMongoApi starting...
+2015-12-13_22:11:45 INFO  [ReactiveMongoApi.scala:64] - ReactiveMongoApi successfully started with DB 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_22:11:46 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-12-13_22:11:46 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_22:11:46 INFO  [Play.scala:97] - Application started (Dev)
+2015-12-13_22:11:46 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_22:11:46 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_22:11:46 INFO  [Application.scala:16] - Serving index page...
+2015-12-13_22:11:46 INFO  [Application.scala:16] - Serving index page...
+2015-12-13_22:12:07 ERROR [utils.scala:50] - The entire node set is unreachable, is there a network problem?
+2015-12-13_22:12:09 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_22:12:09 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_22:12:11 INFO  [Application.scala:16] - Serving index page...
+2015-12-13_22:12:44 INFO  [Application.scala:16] - Serving index page...
+2015-12-13_22:12:52 INFO  [Application.scala:16] - Serving index page...
+2015-12-13_22:13:21 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-12-13_22:13:21 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_22:13:21 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,24,29,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(1591657115))
+2015-12-13_22:13:21 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-1988104685] is stopping.
+2015-12-13_22:13:21 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-12-13_22:13:21 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-1988104685] stopped.
+2015-12-13_22:13:21 INFO  [ReactiveMongoApi.scala:79] - ReactiveMongoApi stopping...
+2015-12-13_22:13:21 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_22:13:21 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-2#-811553207] is stopping.
+2015-12-13_22:13:21 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-2#-811553207] stopped.
+2015-12-13_22:13:21 INFO  [ReactiveMongoApi.scala:83] - ReactiveMongoApi connections stopped. [Success(Closed)]
+2015-12-13_22:13:21 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_22:13:21 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_22:13:21 INFO  [ReactiveMongoApi.scala:55] - ReactiveMongoApi starting...
+2015-12-13_22:13:21 INFO  [ReactiveMongoApi.scala:64] - ReactiveMongoApi successfully started with DB 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_22:13:21 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_22:13:21 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_22:13:21 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-12-13_22:13:21 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_22:13:21 INFO  [Play.scala:97] - Application started (Dev)
+2015-12-13_22:13:21 INFO  [Application.scala:16] - Serving index page...
+2015-12-13_22:13:21 INFO  [Application.scala:16] - Serving index page...
+2015-12-13_22:14:20 INFO  [Application.scala:16] - Serving index page...
+2015-12-13_22:18:47 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-12-13_22:18:47 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_22:18:47 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-11#478258366] is stopping.
+2015-12-13_22:18:47 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-11#478258366] stopped.
+2015-12-13_22:18:47 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-12-13_22:18:47 INFO  [ReactiveMongoApi.scala:79] - ReactiveMongoApi stopping...
+2015-12-13_22:18:47 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_22:18:47 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-8#1572643892] is stopping.
+2015-12-13_22:18:47 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-8#1572643892] stopped.
+2015-12-13_22:18:47 INFO  [ReactiveMongoApi.scala:83] - ReactiveMongoApi connections stopped. [Success(Closed)]
+2015-12-13_22:18:47 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_22:18:47 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_22:18:47 INFO  [ReactiveMongoApi.scala:55] - ReactiveMongoApi starting...
+2015-12-13_22:18:47 INFO  [ReactiveMongoApi.scala:64] - ReactiveMongoApi successfully started with DB 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_22:18:47 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_22:18:47 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_22:18:48 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-12-13_22:18:48 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_22:18:48 INFO  [Play.scala:97] - Application started (Dev)
+2015-12-13_22:18:48 INFO  [Application.scala:16] - Serving index page...
+2015-12-13_22:19:16 INFO  [Application.scala:16] - Serving index page...
+2015-12-13_22:20:35 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-12-13_22:20:35 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_22:20:35 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(1172051102) (ignored, channel closed)
+2015-12-13_22:20:35 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-17#-1366462199] is stopping.
+2015-12-13_22:20:35 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-12-13_22:20:35 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-17#-1366462199] stopped.
+2015-12-13_22:20:35 INFO  [ReactiveMongoApi.scala:79] - ReactiveMongoApi stopping...
+2015-12-13_22:20:35 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_22:20:35 INFO  [ReactiveMongoApi.scala:83] - ReactiveMongoApi connections stopped. [Success(Closed)]
+2015-12-13_22:20:35 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-14#1532489022] is stopping.
+2015-12-13_22:20:35 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-14#1532489022] stopped.
+2015-12-13_22:20:35 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_22:20:36 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_22:20:36 INFO  [ReactiveMongoApi.scala:55] - ReactiveMongoApi starting...
+2015-12-13_22:20:36 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_22:20:36 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_22:20:36 INFO  [ReactiveMongoApi.scala:64] - ReactiveMongoApi successfully started with DB 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_22:20:36 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-12-13_22:20:36 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_22:20:36 INFO  [Play.scala:97] - Application started (Dev)
+2015-12-13_22:20:36 INFO  [Application.scala:16] - Serving index page...
+2015-12-13_22:20:37 ERROR [HttpErrorHandler.scala:216] - 
+
+! @6odn337af - Internal server error, for (GET) [/users] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[RuntimeException: Testing Error here, Linh]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:265) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:191) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:179) [play_2.11-2.4.4.jar:2.4.4]
+	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:212) [play_2.11-2.4.4.jar:2.4.4]
+	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:94) [play_2.11-2.4.4.jar:2.4.4]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$9$$anonfun$apply$1.applyOrElse(PlayDefaultUpstreamHandler.scala:151) [play-netty-server_2.11-2.4.4.jar:2.4.4]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$9$$anonfun$apply$1.applyOrElse(PlayDefaultUpstreamHandler.scala:148) [play-netty-server_2.11-2.4.4.jar:2.4.4]
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36) [scala-library-2.11.7.jar:na]
+	at scala.util.Failure$$anonfun$recover$1.apply(Try.scala:216) [scala-library-2.11.7.jar:na]
+	at scala.util.Try$.apply(Try.scala:192) [scala-library-2.11.7.jar:na]
+	at scala.util.Failure.recover(Try.scala:216) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$$anonfun$recover$1.apply(Future.scala:324) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$$anonfun$recover$1.apply(Future.scala:324) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.7.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.executeScheduled(Execution.scala:109) [play-iteratees_2.11-2.4.4.jar:2.4.4]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:71) [play-iteratees_2.11-2.4.4.jar:2.4.4]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.7.jar:na]
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55) [akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91) [akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91) [akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91) [akka-actor_2.11-2.3.13.jar:na]
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72) [scala-library-2.11.7.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90) [akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) [akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.13.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.7.jar:na]
+Caused by: java.lang.RuntimeException: Testing Error here, Linh
+	at dao.exception.UserDaoException$.apply(UserException.scala:6) ~[classes/:na]
+	at dao.impl.UserDaoMongo.findAllUsers(UserDaoMongo.scala:27) ~[classes/:na]
+	at services.UserServiceImpl.findAllUsers(UserServiceImpl.scala:18) ~[classes/:na]
+	at controllers.UserController$$anonfun$findAllUsers$1.apply(UserController.scala:31) ~[classes/:2.4.4]
+	at controllers.UserController$$anonfun$findAllUsers$1.apply(UserController.scala:30) ~[classes/:2.4.4]
+	at play.api.mvc.Action$.invokeBlock(Action.scala:533) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.mvc.Action$.invokeBlock(Action.scala:530) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.mvc.ActionBuilder$$anon$1.apply(Action.scala:493) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:105) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:105) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:104) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:103) ~[play_2.11-2.4.4.jar:2.4.4]
+	at scala.Option.map(Option.scala:146) ~[scala-library-2.11.7.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:103) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:96) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:741) ~[play-iteratees_2.11-2.4.4.jar:2.4.4]
+	at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:741) ~[play-iteratees_2.11-2.4.4.jar:2.4.4]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.7.jar:na]
+	... 6 common frames omitted
+2015-12-13_22:23:39 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-12-13_22:23:39 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_22:23:39 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(-726341620) (ignored, channel closed)
+2015-12-13_22:23:39 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-23#-1116917992] is stopping.
+2015-12-13_22:23:39 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-12-13_22:23:39 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-23#-1116917992] stopped.
+2015-12-13_22:23:39 INFO  [ReactiveMongoApi.scala:79] - ReactiveMongoApi stopping...
+2015-12-13_22:23:39 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_22:23:39 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-20#-1702456504] is stopping.
+2015-12-13_22:23:39 INFO  [ReactiveMongoApi.scala:83] - ReactiveMongoApi connections stopped. [Success(Closed)]
+2015-12-13_22:23:39 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-20#-1702456504] stopped.
+2015-12-13_22:23:39 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_22:23:39 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_22:23:39 INFO  [ReactiveMongoApi.scala:55] - ReactiveMongoApi starting...
+2015-12-13_22:23:39 INFO  [ReactiveMongoApi.scala:64] - ReactiveMongoApi successfully started with DB 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_22:23:39 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_22:23:39 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_22:23:39 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-12-13_22:23:39 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_22:23:39 INFO  [Play.scala:97] - Application started (Dev)
+2015-12-13_22:23:39 INFO  [Application.scala:16] - Serving index page...
+2015-12-13_22:31:32 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-12-13_22:31:32 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_22:31:32 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(1961583213) (ignored, channel closed)
+2015-12-13_22:31:32 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-29#1068818040] is stopping.
+2015-12-13_22:31:32 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-29#1068818040] stopped.
+2015-12-13_22:31:32 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-12-13_22:31:32 INFO  [ReactiveMongoApi.scala:79] - ReactiveMongoApi stopping...
+2015-12-13_22:31:32 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_22:31:32 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-26#-2003796485] is stopping.
+2015-12-13_22:31:32 INFO  [ReactiveMongoApi.scala:83] - ReactiveMongoApi connections stopped. [Success(Closed)]
+2015-12-13_22:31:32 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-26#-2003796485] stopped.
+2015-12-13_22:31:32 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_22:31:32 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_22:31:32 INFO  [ReactiveMongoApi.scala:55] - ReactiveMongoApi starting...
+2015-12-13_22:31:32 INFO  [ReactiveMongoApi.scala:64] - ReactiveMongoApi successfully started with DB 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_22:31:32 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_22:31:32 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_22:31:32 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-12-13_22:31:32 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_22:31:32 INFO  [Play.scala:97] - Application started (Dev)
+2015-12-13_22:31:32 INFO  [Application.scala:16] - Serving index page...
+2015-12-13_22:31:39 INFO  [Application.scala:16] - Serving index page...
+2015-12-13_22:33:09 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-12-13_22:33:09 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_22:33:09 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,618,196,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(-1151980543))
+2015-12-13_22:33:09 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-35#905936050] is stopping.
+2015-12-13_22:33:09 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-35#905936050] stopped.
+2015-12-13_22:33:09 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-12-13_22:33:09 INFO  [ReactiveMongoApi.scala:79] - ReactiveMongoApi stopping...
+2015-12-13_22:33:09 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_22:33:09 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-32#-1809377067] is stopping.
+2015-12-13_22:33:09 INFO  [ReactiveMongoApi.scala:83] - ReactiveMongoApi connections stopped. [Success(Closed)]
+2015-12-13_22:33:09 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-32#-1809377067] stopped.
+2015-12-13_22:33:09 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_22:33:09 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_22:33:09 INFO  [ReactiveMongoApi.scala:55] - ReactiveMongoApi starting...
+2015-12-13_22:33:09 INFO  [ReactiveMongoApi.scala:64] - ReactiveMongoApi successfully started with DB 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_22:33:09 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_22:33:09 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_22:33:09 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-12-13_22:33:09 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_22:33:09 INFO  [Play.scala:97] - Application started (Dev)
+2015-12-13_22:33:09 INFO  [Application.scala:16] - Serving index page...
+2015-12-13_22:34:53 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-12-13_22:34:53 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_22:34:53 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(1552380575) (ignored, channel closed)
+2015-12-13_22:34:53 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-41#-91696251] is stopping.
+2015-12-13_22:34:53 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-12-13_22:34:53 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-41#-91696251] stopped.
+2015-12-13_22:34:53 INFO  [ReactiveMongoApi.scala:79] - ReactiveMongoApi stopping...
+2015-12-13_22:34:53 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_22:34:53 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-38#-2085006083] is stopping.
+2015-12-13_22:34:53 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-38#-2085006083] stopped.
+2015-12-13_22:34:53 INFO  [ReactiveMongoApi.scala:83] - ReactiveMongoApi connections stopped. [Success(Closed)]
+2015-12-13_22:34:53 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_22:34:53 ERROR [HttpErrorHandler.scala:216] - 
+
+! @6odn500ap - Internal server error, for (GET) [/] ->
+ 
+play.api.UnexpectedException: Unexpected exception[CreationException: Unable to create injector, see the following errors:
+
+1) Could not find a suitable constructor in controllers.ErrorHandler. Classes must have either one (and only one) constructor annotated with @Inject or a zero-argument constructor that is not private.
+  at controllers.ErrorHandler.class(ErrorHandler.scala:10)
+  at play.utils.Reflect$.bindingsFromConfiguration(Reflect.scala:50):
+Binding(interface play.api.http.HttpErrorHandler to ConstructionTarget(class controllers.ErrorHandler)) (via modules: com.google.inject.util.Modules$OverrideModule -> play.api.inject.guice.GuiceableModuleConversions$$anon$1)
+
+1 error]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:165) ~[play-server_2.11-2.4.4.jar:2.4.4]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:121) ~[play-server_2.11-2.4.4.jar:2.4.4]
+	at scala.Option.map(Option.scala:146) ~[scala-library-2.11.7.jar:na]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1.apply(DevServerStart.scala:121) ~[play-server_2.11-2.4.4.jar:2.4.4]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1.apply(DevServerStart.scala:119) ~[play-server_2.11-2.4.4.jar:2.4.4]
+	at scala.util.Success.flatMap(Try.scala:231) ~[scala-library-2.11.7.jar:na]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:119) ~[play-server_2.11-2.4.4.jar:2.4.4]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:111) ~[play-server_2.11-2.4.4.jar:2.4.4]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.7.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) ~[akka-actor_2.11-2.3.13.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.7.jar:na]
+Caused by: com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) Could not find a suitable constructor in controllers.ErrorHandler. Classes must have either one (and only one) constructor annotated with @Inject or a zero-argument constructor that is not private.
+  at controllers.ErrorHandler.class(ErrorHandler.scala:10)
+  at play.utils.Reflect$.bindingsFromConfiguration(Reflect.scala:50):
+Binding(interface play.api.http.HttpErrorHandler to ConstructionTarget(class controllers.ErrorHandler)) (via modules: com.google.inject.util.Modules$OverrideModule -> play.api.inject.guice.GuiceableModuleConversions$$anon$1)
+
+1 error
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:466) ~[guice-4.0.jar:na]
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:155) ~[guice-4.0.jar:na]
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:107) ~[guice-4.0.jar:na]
+	at com.google.inject.Guice.createInjector(Guice.java:96) ~[guice-4.0.jar:na]
+	at com.google.inject.Guice.createInjector(Guice.java:73) ~[guice-4.0.jar:na]
+	at com.google.inject.Guice.createInjector(Guice.java:62) ~[guice-4.0.jar:na]
+	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:126) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:93) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1$$anonfun$2.apply(DevServerStart.scala:153) ~[play-server_2.11-2.4.4.jar:2.4.4]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1$$anonfun$2.apply(DevServerStart.scala:150) ~[play-server_2.11-2.4.4.jar:2.4.4]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:150) ~[play-server_2.11-2.4.4.jar:2.4.4]
+	... 15 common frames omitted
+2015-12-13_22:35:54 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_22:35:54 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_22:35:54 INFO  [ReactiveMongoApi.scala:55] - ReactiveMongoApi starting...
+2015-12-13_22:35:54 INFO  [ReactiveMongoApi.scala:64] - ReactiveMongoApi successfully started with DB 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_22:35:54 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-12-13_22:35:54 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_22:35:54 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_22:35:54 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_22:35:54 INFO  [Play.scala:97] - Application started (Dev)
+2015-12-13_22:35:54 INFO  [Application.scala:16] - Serving index page...
+2015-12-13_22:35:55 ERROR [ErrorHandler.scala:24] - Testing Error here, Linh
+2015-12-13_22:36:50 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-12-13_22:36:50 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_22:36:50 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_22:36:50 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_22:36:50 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(80,761,1034,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=80, cap=80),ResponseInfo(-1725569197))
+2015-12-13_22:36:50 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(900557219) (ignored, channel closed)
+2015-12-13_22:36:50 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(1625731607) (ignored, channel closed)
+2015-12-13_22:36:50 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(-1250535401) (ignored, channel closed)
+2015-12-13_22:36:50 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(-487973692) (ignored, channel closed)
+2015-12-13_22:36:50 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(1878361961) (ignored, channel closed)
+2015-12-13_22:36:50 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(-1852333993) (ignored, channel closed)
+2015-12-13_22:36:50 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(-913842181) (ignored, channel closed)
+2015-12-13_22:36:50 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(1587058102) (ignored, channel closed)
+2015-12-13_22:36:50 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(-94196441) (ignored, channel closed)
+2015-12-13_22:36:50 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-47#-2020886886] is stopping.
+2015-12-13_22:36:50 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-12-13_22:36:50 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-47#-2020886886] stopped.
+2015-12-13_22:36:50 INFO  [ReactiveMongoApi.scala:79] - ReactiveMongoApi stopping...
+2015-12-13_22:36:50 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_22:36:50 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-44#307867444] is stopping.
+2015-12-13_22:36:50 INFO  [ReactiveMongoApi.scala:83] - ReactiveMongoApi connections stopped. [Success(Closed)]
+2015-12-13_22:36:50 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-44#307867444] stopped.
+2015-12-13_22:36:50 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_22:36:50 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_22:36:50 INFO  [ReactiveMongoApi.scala:55] - ReactiveMongoApi starting...
+2015-12-13_22:36:50 INFO  [ReactiveMongoApi.scala:64] - ReactiveMongoApi successfully started with DB 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_22:36:50 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_22:36:50 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_22:36:50 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-12-13_22:36:50 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_22:36:50 INFO  [Play.scala:97] - Application started (Dev)
+2015-12-13_22:36:50 INFO  [Application.scala:16] - Serving index page...
+2015-12-13_22:36:51 ERROR [ErrorHandler.scala:24] - [Ljava.lang.StackTraceElement;@6f472410
+2015-12-13_22:38:03 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-12-13_22:38:03 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_22:38:03 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(1795679591) (ignored, channel closed)
+2015-12-13_22:38:03 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-53#-389872930] is stopping.
+2015-12-13_22:38:03 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-12-13_22:38:03 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-53#-389872930] stopped.
+2015-12-13_22:38:03 INFO  [ReactiveMongoApi.scala:79] - ReactiveMongoApi stopping...
+2015-12-13_22:38:03 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_22:38:03 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-50#-780456548] is stopping.
+2015-12-13_22:38:03 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-50#-780456548] stopped.
+2015-12-13_22:38:03 INFO  [ReactiveMongoApi.scala:83] - ReactiveMongoApi connections stopped. [Success(Closed)]
+2015-12-13_22:38:03 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_22:38:03 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_22:38:03 INFO  [ReactiveMongoApi.scala:55] - ReactiveMongoApi starting...
+2015-12-13_22:38:03 INFO  [ReactiveMongoApi.scala:64] - ReactiveMongoApi successfully started with DB 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_22:38:03 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_22:38:03 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_22:38:03 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-12-13_22:38:03 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_22:38:03 INFO  [Play.scala:97] - Application started (Dev)
+2015-12-13_22:38:03 INFO  [Application.scala:16] - Serving index page...
+2015-12-13_22:38:04 ERROR [ErrorHandler.scala:24] - Error
+dao.exception.UserDaoException: Testing Error here, Linh
+	at dao.impl.UserDaoMongo.findAllUsers(UserDaoMongo.scala:27) ~[classes/:na]
+	at services.UserServiceImpl.findAllUsers(UserServiceImpl.scala:18) ~[classes/:na]
+	at controllers.UserController$$anonfun$findAllUsers$1.apply(UserController.scala:31) ~[classes/:2.4.4]
+	at controllers.UserController$$anonfun$findAllUsers$1.apply(UserController.scala:30) ~[classes/:2.4.4]
+	at play.api.mvc.Action$.invokeBlock(Action.scala:533) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.mvc.Action$.invokeBlock(Action.scala:530) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.mvc.ActionBuilder$$anon$1.apply(Action.scala:493) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:105) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:105) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:104) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:103) ~[play_2.11-2.4.4.jar:2.4.4]
+	at scala.Option.map(Option.scala:146) ~[scala-library-2.11.7.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:103) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:96) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:741) ~[play-iteratees_2.11-2.4.4.jar:2.4.4]
+	at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:741) ~[play-iteratees_2.11-2.4.4.jar:2.4.4]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.7.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) [akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.13.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.7.jar:na]
+2015-12-13_22:39:29 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-12-13_22:39:29 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_22:39:29 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-59#-1314700764] is stopping.
+2015-12-13_22:39:29 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-12-13_22:39:29 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-59#-1314700764] stopped.
+2015-12-13_22:39:29 INFO  [ReactiveMongoApi.scala:79] - ReactiveMongoApi stopping...
+2015-12-13_22:39:29 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_22:39:29 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-56#-578307145] is stopping.
+2015-12-13_22:39:29 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-56#-578307145] stopped.
+2015-12-13_22:39:29 INFO  [ReactiveMongoApi.scala:83] - ReactiveMongoApi connections stopped. [Success(Closed)]
+2015-12-13_22:39:29 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_22:39:29 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_22:39:29 INFO  [ReactiveMongoApi.scala:55] - ReactiveMongoApi starting...
+2015-12-13_22:39:29 INFO  [ReactiveMongoApi.scala:64] - ReactiveMongoApi successfully started with DB 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_22:39:29 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_22:39:29 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_22:39:29 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-12-13_22:39:29 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_22:39:29 INFO  [Play.scala:97] - Application started (Dev)
+2015-12-13_22:39:29 INFO  [Application.scala:16] - Serving index page...
+2015-12-13_22:39:31 INFO  [UserController.scala:32] - Found 2 users.
+2015-12-13_23:14:44 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-12-13_23:14:45 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_23:14:45 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(734632643) (ignored, channel closed)
+2015-12-13_23:14:45 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-65#178617299] is stopping.
+2015-12-13_23:14:45 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-12-13_23:14:45 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-65#178617299] stopped.
+2015-12-13_23:14:45 INFO  [ReactiveMongoApi.scala:79] - ReactiveMongoApi stopping...
+2015-12-13_23:14:45 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_23:14:45 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-62#-603271252] is stopping.
+2015-12-13_23:14:45 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-62#-603271252] stopped.
+2015-12-13_23:14:45 INFO  [ReactiveMongoApi.scala:83] - ReactiveMongoApi connections stopped. [Success(Closed)]
+2015-12-13_23:14:45 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:14:45 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:14:45 INFO  [ReactiveMongoApi.scala:55] - ReactiveMongoApi starting...
+2015-12-13_23:14:45 INFO  [ReactiveMongoApi.scala:64] - ReactiveMongoApi successfully started with DB 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_23:14:45 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_23:14:45 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_23:14:45 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-12-13_23:14:45 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_23:14:45 INFO  [Play.scala:97] - Application started (Dev)
+2015-12-13_23:14:45 INFO  [Application.scala:16] - Serving index page...
+2015-12-13_23:14:46 INFO  [UserController.scala:32] - Found 0 users.
+2015-12-13_23:15:00 INFO  [UserController.scala:60] - Successfully created user=User(Some(1),linh,luong,28,true,Some(2015-12-13T23:15:00.298+08:00[Asia/Singapore]),Some(2015-12-13T23:15:00.298+08:00[Asia/Singapore]))
+2015-12-13_23:15:00 INFO  [UserController.scala:32] - Found 1 users.
+2015-12-13_23:15:09 INFO  [UserController.scala:60] - Successfully created user=User(Some(2),hien,cao,24,true,Some(2015-12-13T23:15:09.093+08:00[Asia/Singapore]),Some(2015-12-13T23:15:09.093+08:00[Asia/Singapore]))
+2015-12-13_23:15:09 INFO  [UserController.scala:32] - Found 2 users.
+2015-12-13_23:15:11 INFO  [UserController.scala:32] - Found 2 users.
+2015-12-13_23:15:15 INFO  [UserController.scala:32] - Found 2 users.
+2015-12-13_23:15:57 INFO  [Application.scala:16] - Serving index page...
+2015-12-13_23:15:58 INFO  [UserController.scala:32] - Found 2 users.
+2015-12-13_23:16:46 INFO  [UserController.scala:25] - Cannot find a user with id=33
+2015-12-13_23:18:05 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-12-13_23:18:05 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_23:18:05 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-71#-1365407923] is stopping.
+2015-12-13_23:18:05 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-71#-1365407923] stopped.
+2015-12-13_23:18:05 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-12-13_23:18:05 INFO  [ReactiveMongoApi.scala:79] - ReactiveMongoApi stopping...
+2015-12-13_23:18:05 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_23:18:05 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-68#-1420608624] is stopping.
+2015-12-13_23:18:05 INFO  [ReactiveMongoApi.scala:83] - ReactiveMongoApi connections stopped. [Success(Closed)]
+2015-12-13_23:18:05 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-68#-1420608624] stopped.
+2015-12-13_23:18:05 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:18:05 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:18:05 INFO  [ReactiveMongoApi.scala:55] - ReactiveMongoApi starting...
+2015-12-13_23:18:05 INFO  [ReactiveMongoApi.scala:64] - ReactiveMongoApi successfully started with DB 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_23:18:05 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_23:18:05 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_23:18:05 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-12-13_23:18:05 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:27017]
+2015-12-13_23:18:05 INFO  [Play.scala:97] - Application started (Dev)
+2015-12-13_23:18:05 ERROR [ErrorHandler.scala:24] - Failed to execute request GET /users
+dao.exception.UserDaoException: Testing mongo error heres
+	at dao.impl.UserDaoMongo.findAllUsers(UserDaoMongo.scala:26) ~[classes/:na]
+	at services.UserServiceImpl.findAllUsers(UserServiceImpl.scala:18) ~[classes/:na]
+	at controllers.UserController$$anonfun$findAllUsers$1.apply(UserController.scala:31) ~[classes/:2.4.4]
+	at controllers.UserController$$anonfun$findAllUsers$1.apply(UserController.scala:31) ~[classes/:2.4.4]
+	at play.api.mvc.ActionBuilder$$anonfun$async$1.apply(Action.scala:456) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.mvc.ActionBuilder$$anonfun$async$1.apply(Action.scala:456) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.mvc.Action$.invokeBlock(Action.scala:533) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.mvc.Action$.invokeBlock(Action.scala:530) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.mvc.ActionBuilder$$anon$1.apply(Action.scala:493) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:105) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:105) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:104) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:103) ~[play_2.11-2.4.4.jar:2.4.4]
+	at scala.Option.map(Option.scala:146) ~[scala-library-2.11.7.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:103) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:96) ~[play_2.11-2.4.4.jar:2.4.4]
+	at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:741) ~[play-iteratees_2.11-2.4.4.jar:2.4.4]
+	at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:741) ~[play-iteratees_2.11-2.4.4.jar:2.4.4]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.7.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) [akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.13.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.7.jar:na]
+2015-12-13_23:26:15 WARN  [SubstituteLogger.java:202] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:26:16 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_23:26:16 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_23:26:16 WARN  [SubstituteLogger.java:202] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:26:17 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:26:17 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:26:17 INFO  [SubstituteLogger.java:154] - ReactiveMongoPlugin starting...
+2015-12-13_23:26:17 INFO  [SubstituteLogger.java:154] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
 		[localhost:38128]
-2015-11-16_00:05:38 ERROR [AbstractProcess.java:117] - failed to call onAfterProcessStart()
+2015-12-13_23:26:17 ERROR [AbstractProcess.java:117] - failed to call onAfterProcessStart()
 java.io.IOException: Could not start process: failed errno:48 Address already in use for socket: 0.0.0.0:38128
-2015-11-16T00:05:38.487+0800 E NETWORK  [initandlisten]   addr already in use
+2015-12-13T23:26:17.403+0800 E NETWORK  [initandlisten]   addr already in use
+2015-12-13T23:26:17.403+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=4G,session_max=20000,eviction=(threads_max=4),statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),,log=(enabled=false),
 
 	at de.flapdoodle.embed.mongo.AbstractMongoProcess.onAfterProcessStart(AbstractMongoProcess.java:79) [de.flapdoodle.embed.mongo-1.50.0.jar:na]
 	at de.flapdoodle.embed.process.runtime.AbstractProcess.<init>(AbstractProcess.java:114) ~[de.flapdoodle.embed.process-1.50.0.jar:na]
@@ -19,12 +509,13 @@ java.io.IOException: Could not start process: failed errno:48 Address already in
 	at de.flapdoodle.embed.mongo.MongodExecutable.start(MongodExecutable.java:34) [de.flapdoodle.embed.mongo-1.50.0.jar:na]
 	at de.flapdoodle.embed.process.runtime.Executable.start(Executable.java:101) [de.flapdoodle.embed.process-1.50.0.jar:na]
 	at utils.FakeMongo.start(FakeMongo.scala:21) [test-classes/:na]
-	at services.UserServiceIntegrationTest.initDb(UserServiceIntegrationTest.scala:144) [test-classes/:na]
-	at services.UserServiceIntegrationTest.beforeAll(UserServiceIntegrationTest.scala:126) [test-classes/:na]
+	at utils.FakeDB$class.startDB(FakeDB.scala:14) [test-classes/:na]
+	at services.UserServiceIntegrationTest.startDB(UserServiceIntegrationTest.scala:16) [test-classes/:na]
+	at services.UserServiceIntegrationTest.beforeAll(UserServiceIntegrationTest.scala:119) [test-classes/:na]
 	at org.scalatest.BeforeAndAfterAll$class.beforeAll(BeforeAndAfterAll.scala:187) [scalatest_2.11-2.2.5.jar:na]
-	at services.UserServiceIntegrationTest.beforeAll(UserServiceIntegrationTest.scala:18) [test-classes/:na]
+	at services.UserServiceIntegrationTest.beforeAll(UserServiceIntegrationTest.scala:16) [test-classes/:na]
 	at org.scalatest.BeforeAndAfterAll$class.run(BeforeAndAfterAll.scala:253) [scalatest_2.11-2.2.5.jar:na]
-	at services.UserServiceIntegrationTest.run(UserServiceIntegrationTest.scala:18) [test-classes/:na]
+	at services.UserServiceIntegrationTest.run(UserServiceIntegrationTest.scala:16) [test-classes/:na]
 	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:466) [scalatest_2.11-2.2.5.jar:na]
 	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:677) [scalatest_2.11-2.2.5.jar:na]
 	at sbt.TestRunner.runTest$1(TestFramework.scala:76) [testing-0.13.8.jar:0.13.8]
@@ -54,18 +545,18 @@ java.io.IOException: Could not start process: failed errno:48 Address already in
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_45]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_45]
 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_45]
-2015-11-16_00:05:38 INFO  [AbstractProcess.java:118] - construct de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@223e98a8
-2015-11-16_00:05:39 ERROR [utils.scala:50] - The entire node set is unreachable, is there a network problem?
-2015-11-16_00:05:42 ERROR [utils.scala:51] - Got an error, no more attempts to do. Completing with a failure...
+2015-12-13_23:26:17 INFO  [AbstractProcess.java:118] - construct de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@6aff9806
+2015-12-13_23:26:17 ERROR [utils.scala:50] - The entire node set is unreachable, is there a network problem?
+2015-12-13_23:26:20 ERROR [utils.scala:51] - Got an error, no more attempts to do. Completing with a failure...
 reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$: MongoError['No primary node is available!']
 	at reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$.<clinit>(actors.scala) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
 	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
 	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
-	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.6.jar:0.13.8-M5]
+	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.7.jar:0.13.8-M5]
 	at reactivemongo.core.actors.MongoDBSystem$class.pickChannel(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
 	at reactivemongo.core.actors.LegacyDBSystem.pickChannel(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
 	at reactivemongo.core.actors.MongoDBSystem$$anonfun$4.applyOrElse(actors.scala:304) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
-	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:170) ~[scala-library-2.11.6.jar:0.13.8-M5]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:170) ~[scala-library-2.11.7.jar:0.13.8-M5]
 	at akka.actor.Actor$class.aroundReceive(Actor.scala:467) ~[akka-actor_2.11-2.3.13.jar:na]
 	at reactivemongo.core.actors.LegacyDBSystem.aroundReceive(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
 	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.11-2.3.13.jar:na]
@@ -73,42 +564,21 @@ reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$: MongoError['N
 	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238) ~[akka-actor_2.11-2.3.13.jar:na]
 	at akka.dispatch.Mailbox.run(Mailbox.scala:220) ~[akka-actor_2.11-2.3.13.jar:na]
 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.13.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.6.jar:na]
-2015-11-16_00:05:42 ERROR [UserController.scala:77] - Failed to insert user User(None,first1,last1,20,true,None,None)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.7.jar:na]
+2015-12-13_23:26:20 ERROR [UserController.scala:52] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2015-12-13_23:26:23 ERROR [utils.scala:51] - Got an error, no more attempts to do. Completing with a failure...
 reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$: MongoError['No primary node is available!']
 	at reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$.<clinit>(actors.scala) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
 	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
 	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
-	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.6.jar:0.13.8-M5]
+	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.7.jar:0.13.8-M5]
 	at reactivemongo.core.actors.MongoDBSystem$class.pickChannel(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
 	at reactivemongo.core.actors.LegacyDBSystem.pickChannel(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
 	at reactivemongo.core.actors.MongoDBSystem$$anonfun$4.applyOrElse(actors.scala:304) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
-	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:170) ~[scala-library-2.11.6.jar:0.13.8-M5]
-	at akka.actor.Actor$class.aroundReceive(Actor.scala:467) ~[akka-actor_2.11-2.3.13.jar:na]
-	at reactivemongo.core.actors.LegacyDBSystem.aroundReceive(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.11-2.3.13.jar:na]
-	at akka.actor.ActorCell.invoke(ActorCell.scala:487) ~[akka-actor_2.11-2.3.13.jar:na]
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238) ~[akka-actor_2.11-2.3.13.jar:na]
-	at akka.dispatch.Mailbox.run(Mailbox.scala:220) ~[akka-actor_2.11-2.3.13.jar:na]
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) ~[akka-actor_2.11-2.3.13.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.6.jar:na]
-2015-11-16_00:05:43 ERROR [UserController.scala:65] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
-2015-11-16_00:05:45 ERROR [utils.scala:51] - Got an error, no more attempts to do. Completing with a failure...
-reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$: MongoError['No primary node is available!']
-	at reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$.<clinit>(actors.scala) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
-	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
-	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
-	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.6.jar:0.13.8-M5]
-	at reactivemongo.core.actors.MongoDBSystem$class.pickChannel(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
-	at reactivemongo.core.actors.LegacyDBSystem.pickChannel(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
-	at reactivemongo.core.actors.MongoDBSystem$$anonfun$4.applyOrElse(actors.scala:304) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
-	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:170) ~[scala-library-2.11.6.jar:0.13.8-M5]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:170) ~[scala-library-2.11.7.jar:0.13.8-M5]
 	at akka.actor.Actor$class.aroundReceive(Actor.scala:467) ~[akka-actor_2.11-2.3.13.jar:na]
 	at reactivemongo.core.actors.LegacyDBSystem.aroundReceive(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
 	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.11-2.3.13.jar:na]
@@ -116,32 +586,27 @@ reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$: MongoError['N
 	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238) ~[akka-actor_2.11-2.3.13.jar:na]
 	at akka.dispatch.Mailbox.run(Mailbox.scala:220) ~[akka-actor_2.11-2.3.13.jar:na]
 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.13.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.6.jar:na]
-2015-11-16_00:05:45 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
-2015-11-16_00:05:45 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
-2015-11-16_00:05:45 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#341710867] is stopping.
-2015-11-16_00:05:45 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#341710867] stopped.
-2015-11-16_00:05:45 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
-2015-11-16_00:06:26 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2015-11-16_00:06:29 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
-2015-11-16_00:06:30 INFO  [Executable.java:102] - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@667e34b1
-2015-11-16_00:06:31 INFO  [utils.scala:46] - The node set is now available
-2015-11-16_00:06:31 INFO  [utils.scala:46] - The primary is now available
-2015-11-16_00:06:35 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-2#-791826133] stopped.
-2015-11-16_00:06:35 INFO  [ProcessControl.java:101] - stopOrDestroyProcess: process hasn't exited 
-2015-11-16_00:07:30 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2015-11-16_00:07:32 INFO  [utils.scala:46] - The node set is now available
-2015-11-16_00:07:32 INFO  [utils.scala:46] - The primary is now available
-2015-11-16_00:07:32 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2015-11-16_00:07:33 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
-2015-11-16_00:07:33 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
-2015-11-16_00:07:33 ERROR [AbstractProcess.java:117] - failed to call onAfterProcessStart()
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.7.jar:na]
+2015-12-13_23:26:23 INFO  [SubstituteLogger.java:154] - ReactiveMongoPlugin stops, closing connections...
+2015-12-13_23:26:23 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_23:26:23 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1131056431] is stopping.
+2015-12-13_23:26:23 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1131056431] stopped.
+2015-12-13_23:26:23 INFO  [SubstituteLogger.java:154] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-12-13_23:28:33 WARN  [SubstituteLogger.java:202] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:28:34 WARN  [SubstituteLogger.java:202] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:28:34 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_23:28:34 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_23:28:34 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:28:34 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:28:35 INFO  [SubstituteLogger.java:154] - ReactiveMongoPlugin starting...
+2015-12-13_23:28:35 INFO  [SubstituteLogger.java:154] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:38128]
+2015-12-13_23:28:35 ERROR [AbstractProcess.java:117] - failed to call onAfterProcessStart()
 java.io.IOException: Could not start process: failed errno:48 Address already in use for socket: 0.0.0.0:38128
-2015-11-16T00:07:33.449+0800 E NETWORK  [initandlisten]   addr already in use
-2015-11-16T00:07:33.450+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=4G,session_max=20000,eviction=(threads_max=4),statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),,log=(enabled=false),
+2015-12-13T23:28:34.900+0800 E NETWORK  [initandlisten]   addr already in use
 
 	at de.flapdoodle.embed.mongo.AbstractMongoProcess.onAfterProcessStart(AbstractMongoProcess.java:79) [de.flapdoodle.embed.mongo-1.50.0.jar:na]
 	at de.flapdoodle.embed.process.runtime.AbstractProcess.<init>(AbstractProcess.java:114) ~[de.flapdoodle.embed.process-1.50.0.jar:na]
@@ -151,12 +616,13 @@ java.io.IOException: Could not start process: failed errno:48 Address already in
 	at de.flapdoodle.embed.mongo.MongodExecutable.start(MongodExecutable.java:34) [de.flapdoodle.embed.mongo-1.50.0.jar:na]
 	at de.flapdoodle.embed.process.runtime.Executable.start(Executable.java:101) [de.flapdoodle.embed.process-1.50.0.jar:na]
 	at utils.FakeMongo.start(FakeMongo.scala:21) [test-classes/:na]
-	at services.UserServiceIntegrationTest.initDb(UserServiceIntegrationTest.scala:144) [test-classes/:na]
-	at services.UserServiceIntegrationTest.beforeAll(UserServiceIntegrationTest.scala:126) [test-classes/:na]
+	at utils.FakeDB$class.startDB(FakeDB.scala:14) [test-classes/:na]
+	at services.UserServiceIntegrationTest.startDB(UserServiceIntegrationTest.scala:16) [test-classes/:na]
+	at services.UserServiceIntegrationTest.beforeAll(UserServiceIntegrationTest.scala:119) [test-classes/:na]
 	at org.scalatest.BeforeAndAfterAll$class.beforeAll(BeforeAndAfterAll.scala:187) [scalatest_2.11-2.2.5.jar:na]
-	at services.UserServiceIntegrationTest.beforeAll(UserServiceIntegrationTest.scala:18) [test-classes/:na]
+	at services.UserServiceIntegrationTest.beforeAll(UserServiceIntegrationTest.scala:16) [test-classes/:na]
 	at org.scalatest.BeforeAndAfterAll$class.run(BeforeAndAfterAll.scala:253) [scalatest_2.11-2.2.5.jar:na]
-	at services.UserServiceIntegrationTest.run(UserServiceIntegrationTest.scala:18) [test-classes/:na]
+	at services.UserServiceIntegrationTest.run(UserServiceIntegrationTest.scala:16) [test-classes/:na]
 	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:466) [scalatest_2.11-2.2.5.jar:na]
 	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:677) [scalatest_2.11-2.2.5.jar:na]
 	at sbt.TestRunner.runTest$1(TestFramework.scala:76) [testing-0.13.8.jar:0.13.8]
@@ -186,21 +652,18 @@ java.io.IOException: Could not start process: failed errno:48 Address already in
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_45]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_45]
 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_45]
-2015-11-16_00:07:33 INFO  [AbstractProcess.java:118] - construct de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@616799e3
-2015-11-16_00:07:33 ERROR [utils.scala:50] - The entire node set is unreachable, is there a network problem?
-2015-11-16_00:07:34 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
-2015-11-16_00:07:34 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
-		[localhost:38128]
-2015-11-16_00:07:37 ERROR [utils.scala:51] - Got an error, no more attempts to do. Completing with a failure...
+2015-12-13_23:28:35 INFO  [AbstractProcess.java:118] - construct de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@2e233ff
+2015-12-13_23:28:35 ERROR [utils.scala:50] - The entire node set is unreachable, is there a network problem?
+2015-12-13_23:28:38 ERROR [utils.scala:51] - Got an error, no more attempts to do. Completing with a failure...
 reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$: MongoError['No primary node is available!']
 	at reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$.<clinit>(actors.scala) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
 	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
 	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
-	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.6.jar:0.13.8-M5]
+	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.7.jar:0.13.8-M5]
 	at reactivemongo.core.actors.MongoDBSystem$class.pickChannel(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
 	at reactivemongo.core.actors.LegacyDBSystem.pickChannel(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
 	at reactivemongo.core.actors.MongoDBSystem$$anonfun$4.applyOrElse(actors.scala:304) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
-	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:170) ~[scala-library-2.11.6.jar:0.13.8-M5]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:170) ~[scala-library-2.11.7.jar:0.13.8-M5]
 	at akka.actor.Actor$class.aroundReceive(Actor.scala:467) ~[akka-actor_2.11-2.3.13.jar:na]
 	at reactivemongo.core.actors.LegacyDBSystem.aroundReceive(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
 	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.11-2.3.13.jar:na]
@@ -208,42 +671,21 @@ reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$: MongoError['N
 	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238) ~[akka-actor_2.11-2.3.13.jar:na]
 	at akka.dispatch.Mailbox.run(Mailbox.scala:220) ~[akka-actor_2.11-2.3.13.jar:na]
 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.13.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.6.jar:na]
-2015-11-16_00:07:37 ERROR [UserController.scala:77] - Failed to insert user User(None,first1,last1,20,true,None,None)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.7.jar:na]
+2015-12-13_23:28:38 ERROR [UserController.scala:52] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2015-12-13_23:28:41 ERROR [utils.scala:51] - Got an error, no more attempts to do. Completing with a failure...
 reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$: MongoError['No primary node is available!']
 	at reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$.<clinit>(actors.scala) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
 	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
 	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
-	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.6.jar:0.13.8-M5]
+	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.7.jar:0.13.8-M5]
 	at reactivemongo.core.actors.MongoDBSystem$class.pickChannel(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
 	at reactivemongo.core.actors.LegacyDBSystem.pickChannel(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
 	at reactivemongo.core.actors.MongoDBSystem$$anonfun$4.applyOrElse(actors.scala:304) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
-	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:170) ~[scala-library-2.11.6.jar:0.13.8-M5]
-	at akka.actor.Actor$class.aroundReceive(Actor.scala:467) ~[akka-actor_2.11-2.3.13.jar:na]
-	at reactivemongo.core.actors.LegacyDBSystem.aroundReceive(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.11-2.3.13.jar:na]
-	at akka.actor.ActorCell.invoke(ActorCell.scala:487) ~[akka-actor_2.11-2.3.13.jar:na]
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238) ~[akka-actor_2.11-2.3.13.jar:na]
-	at akka.dispatch.Mailbox.run(Mailbox.scala:220) ~[akka-actor_2.11-2.3.13.jar:na]
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) ~[akka-actor_2.11-2.3.13.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.6.jar:na]
-2015-11-16_00:07:37 ERROR [UserController.scala:65] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
-2015-11-16_00:07:40 ERROR [utils.scala:51] - Got an error, no more attempts to do. Completing with a failure...
-reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$: MongoError['No primary node is available!']
-	at reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$.<clinit>(actors.scala) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
-	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
-	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
-	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.6.jar:0.13.8-M5]
-	at reactivemongo.core.actors.MongoDBSystem$class.pickChannel(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
-	at reactivemongo.core.actors.LegacyDBSystem.pickChannel(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
-	at reactivemongo.core.actors.MongoDBSystem$$anonfun$4.applyOrElse(actors.scala:304) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
-	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:170) ~[scala-library-2.11.6.jar:0.13.8-M5]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:170) ~[scala-library-2.11.7.jar:0.13.8-M5]
 	at akka.actor.Actor$class.aroundReceive(Actor.scala:467) ~[akka-actor_2.11-2.3.13.jar:na]
 	at reactivemongo.core.actors.LegacyDBSystem.aroundReceive(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
 	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.11-2.3.13.jar:na]
@@ -251,36 +693,524 @@ reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$: MongoError['N
 	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238) ~[akka-actor_2.11-2.3.13.jar:na]
 	at akka.dispatch.Mailbox.run(Mailbox.scala:220) ~[akka-actor_2.11-2.3.13.jar:na]
 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.13.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.6.jar:na]
-2015-11-16_00:07:40 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
-2015-11-16_00:07:40 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
-2015-11-16_00:07:40 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1812648612] is stopping.
-2015-11-16_00:07:40 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1812648612] stopped.
-2015-11-16_00:07:40 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
-2015-11-16_00:09:48 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2015-11-16_00:09:50 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
-2015-11-16_00:09:50 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
-2015-11-16_00:09:50 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.7.jar:na]
+2015-12-13_23:28:41 INFO  [SubstituteLogger.java:154] - ReactiveMongoPlugin stops, closing connections...
+2015-12-13_23:28:41 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_23:28:41 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1700894856] is stopping.
+2015-12-13_23:28:41 INFO  [SubstituteLogger.java:154] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-12-13_23:28:41 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1700894856] stopped.
+2015-12-13_23:33:53 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:33:54 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_23:33:54 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_23:33:54 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:33:55 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:33:55 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:33:55 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-12-13_23:33:55 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
 		[localhost:38128]
-2015-11-16_00:09:52 INFO  [UserController.scala:73] - Successfully created user=Some(User(Some(1),first1,last1,20,true,Some(2015-11-16T00:09:52.049+08:00[Asia/Singapore]),Some(2015-11-16T00:09:52.049+08:00[Asia/Singapore])))
-2015-11-16_00:09:52 ERROR [UserController.scala:65] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
-2015-11-16_00:09:52 INFO  [UserController.scala:23] - Found a user with id=1
-2015-11-16_00:09:52 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
-2015-11-16_00:09:52 INFO  [utils.scala:46] - The node set is now available
-2015-11-16_00:09:52 INFO  [utils.scala:46] - The primary is now available
-2015-11-16_00:09:52 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
-2015-11-16_00:09:52 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(845490940) (ignored, channel closed)
-2015-11-16_00:09:52 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(-88638925) (ignored, channel closed)
-2015-11-16_00:09:52 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(1312849097) (ignored, channel closed)
-2015-11-16_00:09:52 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(-1375914851) (ignored, channel closed)
-2015-11-16_00:09:52 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(283152254) (ignored, channel closed)
-2015-11-16_00:09:52 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(1181155675) (ignored, channel closed)
-2015-11-16_00:09:52 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(1996653521) (ignored, channel closed)
-2015-11-16_00:09:52 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(-215340437) (ignored, channel closed)
-2015-11-16_00:09:52 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(-636387006) (ignored, channel closed)
-2015-11-16_00:09:52 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
-2015-11-16_00:09:52 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1526397196] is stopping.
-2015-11-16_00:09:52 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1526397196] stopped.
+2015-12-13_23:33:55 ERROR [AbstractProcess.java:117] - failed to call onAfterProcessStart()
+java.io.IOException: Could not start process: failed errno:48 Address already in use for socket: 0.0.0.0:38128
+
+	at de.flapdoodle.embed.mongo.AbstractMongoProcess.onAfterProcessStart(AbstractMongoProcess.java:79) [de.flapdoodle.embed.mongo-1.50.0.jar:na]
+	at de.flapdoodle.embed.process.runtime.AbstractProcess.<init>(AbstractProcess.java:114) ~[de.flapdoodle.embed.process-1.50.0.jar:na]
+	at de.flapdoodle.embed.mongo.AbstractMongoProcess.<init>(AbstractMongoProcess.java:53) [de.flapdoodle.embed.mongo-1.50.0.jar:na]
+	at de.flapdoodle.embed.mongo.MongodProcess.<init>(MongodProcess.java:50) [de.flapdoodle.embed.mongo-1.50.0.jar:na]
+	at de.flapdoodle.embed.mongo.MongodExecutable.start(MongodExecutable.java:44) [de.flapdoodle.embed.mongo-1.50.0.jar:na]
+	at de.flapdoodle.embed.mongo.MongodExecutable.start(MongodExecutable.java:34) [de.flapdoodle.embed.mongo-1.50.0.jar:na]
+	at de.flapdoodle.embed.process.runtime.Executable.start(Executable.java:101) [de.flapdoodle.embed.process-1.50.0.jar:na]
+	at utils.FakeMongo.start(FakeMongo.scala:21) [test-classes/:na]
+	at utils.FakeDB$class.startDB(FakeDB.scala:14) [test-classes/:na]
+	at services.UserServiceIntegrationTest.startDB(UserServiceIntegrationTest.scala:16) [test-classes/:na]
+	at services.UserServiceIntegrationTest.beforeAll(UserServiceIntegrationTest.scala:119) [test-classes/:na]
+	at org.scalatest.BeforeAndAfterAll$class.beforeAll(BeforeAndAfterAll.scala:187) [scalatest_2.11-2.2.5.jar:na]
+	at services.UserServiceIntegrationTest.beforeAll(UserServiceIntegrationTest.scala:16) [test-classes/:na]
+	at org.scalatest.BeforeAndAfterAll$class.run(BeforeAndAfterAll.scala:253) [scalatest_2.11-2.2.5.jar:na]
+	at services.UserServiceIntegrationTest.run(UserServiceIntegrationTest.scala:16) [test-classes/:na]
+	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:466) [scalatest_2.11-2.2.5.jar:na]
+	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:677) [scalatest_2.11-2.2.5.jar:na]
+	at sbt.TestRunner.runTest$1(TestFramework.scala:76) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestRunner.run(TestFramework.scala:85) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:185) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFunction.apply(TestFramework.scala:207) [testing-0.13.8.jar:0.13.8]
+	at sbt.Tests$$anonfun$9.apply(Tests.scala:216) [actions-0.13.8.jar:0.13.8]
+	at sbt.Tests$$anonfun$9.apply(Tests.scala:216) [actions-0.13.8.jar:0.13.8]
+	at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44) [task-system-0.13.8.jar:0.13.8]
+	at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44) [task-system-0.13.8.jar:0.13.8]
+	at sbt.std.Transform$$anon$4.work(System.scala:63) [task-system-0.13.8.jar:0.13.8]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226) [tasks-0.13.8.jar:0.13.8]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226) [tasks-0.13.8.jar:0.13.8]
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17) [control-0.13.8.jar:0.13.8]
+	at sbt.Execute.work(Execute.scala:235) [tasks-0.13.8.jar:0.13.8]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226) [tasks-0.13.8.jar:0.13.8]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226) [tasks-0.13.8.jar:0.13.8]
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159) [tasks-0.13.8.jar:0.13.8]
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28) [tasks-0.13.8.jar:0.13.8]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_45]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_45]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_45]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_45]
+2015-12-13_23:33:55 INFO  [AbstractProcess.java:118] - construct de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@136f123c
+2015-12-13_23:33:55 ERROR [utils.scala:50] - The entire node set is unreachable, is there a network problem?
+2015-12-13_23:33:58 ERROR [utils.scala:51] - Got an error, no more attempts to do. Completing with a failure...
+reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$: MongoError['No primary node is available!']
+	at reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$.<clinit>(actors.scala) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.7.jar:0.13.8-M5]
+	at reactivemongo.core.actors.MongoDBSystem$class.pickChannel(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.LegacyDBSystem.pickChannel(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$4.applyOrElse(actors.scala:304) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:170) ~[scala-library-2.11.7.jar:0.13.8-M5]
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:467) ~[akka-actor_2.11-2.3.13.jar:na]
+	at reactivemongo.core.actors.LegacyDBSystem.aroundReceive(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.13.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.7.jar:na]
+2015-12-13_23:33:58 ERROR [UserController.scala:52] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2015-12-13_23:34:01 ERROR [utils.scala:51] - Got an error, no more attempts to do. Completing with a failure...
+reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$: MongoError['No primary node is available!']
+	at reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$.<clinit>(actors.scala) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.7.jar:0.13.8-M5]
+	at reactivemongo.core.actors.MongoDBSystem$class.pickChannel(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.LegacyDBSystem.pickChannel(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$4.applyOrElse(actors.scala:304) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:170) ~[scala-library-2.11.7.jar:0.13.8-M5]
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:467) ~[akka-actor_2.11-2.3.13.jar:na]
+	at reactivemongo.core.actors.LegacyDBSystem.aroundReceive(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.13.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.7.jar:na]
+2015-12-13_23:34:01 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-12-13_23:34:01 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_23:34:01 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#937155226] is stopping.
+2015-12-13_23:34:01 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-12-13_23:34:01 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#937155226] stopped.
+2015-12-13_23:38:35 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:38:36 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:38:36 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-12-13_23:38:36 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:38128]
+2015-12-13_23:38:37 INFO  [UserController.scala:60] - Successfully created user=User(Some(1),first1,last1,20,true,Some(2015-12-13T23:38:37.560+08:00[Asia/Singapore]),Some(2015-12-13T23:38:37.560+08:00[Asia/Singapore]))
+2015-12-13_23:38:37 ERROR [UserController.scala:52] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2015-12-13_23:38:38 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-12-13_23:38:38 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_23:38:38 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(-1769341572) (ignored, channel closed)
+2015-12-13_23:38:38 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#505494670] is stopping.
+2015-12-13_23:38:38 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-12-13_23:38:38 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#505494670] stopped.
+2015-12-13_23:39:18 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:39:19 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:39:20 INFO  [Executable.java:102] - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@4cee7fa0
+2015-12-13_23:39:21 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_23:39:21 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_23:39:24 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_23:39:24 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-2#-26058312] stopped.
+2015-12-13_23:40:35 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:40:36 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:40:37 INFO  [Executable.java:102] - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@4cee7fa0
+2015-12-13_23:40:37 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_23:40:37 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_23:40:40 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_23:40:40 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-2#-607350486] stopped.
+2015-12-13_23:40:41 INFO  [ProcessControl.java:101] - stopOrDestroyProcess: process hasn't exited 
+2015-12-13_23:43:07 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:43:09 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:43:10 INFO  [Executable.java:102] - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@4cee7fa0
+2015-12-13_23:43:11 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_23:43:11 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_23:43:14 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_23:43:14 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-2#508184594] stopped.
+2015-12-13_23:43:14 INFO  [ProcessControl.java:101] - stopOrDestroyProcess: process hasn't exited 
+2015-12-13_23:43:57 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:43:58 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:43:59 INFO  [Executable.java:102] - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@4cee7fa0
+2015-12-13_23:44:00 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_23:44:00 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_23:44:03 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_23:44:03 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-2#-1688610139] stopped.
+2015-12-13_23:44:03 INFO  [ProcessControl.java:101] - stopOrDestroyProcess: process hasn't exited 
+2015-12-13_23:44:19 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:44:21 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:44:22 INFO  [Executable.java:102] - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@4cee7fa0
+2015-12-13_23:44:22 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_23:44:22 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_23:44:26 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_23:44:26 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-2#2023408585] stopped.
+2015-12-13_23:44:26 INFO  [ProcessControl.java:101] - stopOrDestroyProcess: process hasn't exited 
+2015-12-13_23:44:34 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:44:35 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:44:36 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-12-13_23:44:36 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:38128]
+2015-12-13_23:44:37 INFO  [UserController.scala:60] - Successfully created user=User(Some(1),first1,last1,20,true,Some(2015-12-13T23:44:37.800+08:00[Asia/Singapore]),Some(2015-12-13T23:44:37.801+08:00[Asia/Singapore]))
+2015-12-13_23:44:38 ERROR [UserController.scala:52] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2015-12-13_23:44:38 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-12-13_23:44:38 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_23:44:38 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(698169444) (ignored, channel closed)
+2015-12-13_23:44:38 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1372187718] is stopping.
+2015-12-13_23:44:38 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-12-13_23:44:38 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1372187718] stopped.
+2015-12-13_23:45:27 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:45:29 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:45:30 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-12-13_23:45:30 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:38128]
+2015-12-13_23:45:32 INFO  [UserController.scala:60] - Successfully created user=User(Some(1),first1,last1,20,true,Some(2015-12-13T23:45:31.796+08:00[Asia/Singapore]),Some(2015-12-13T23:45:31.797+08:00[Asia/Singapore]))
+2015-12-13_23:46:29 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:46:30 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:46:30 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-12-13_23:46:30 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:38128]
+2015-12-13_23:46:31 INFO  [UserController.scala:60] - Successfully created user=User(Some(1),first1,last1,20,true,Some(2015-12-13T23:46:31.669+08:00[Asia/Singapore]),Some(2015-12-13T23:46:31.669+08:00[Asia/Singapore]))
+2015-12-13_23:46:31 ERROR [UserController.scala:52] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2015-12-13_23:46:32 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-12-13_23:46:32 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_23:46:32 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(749569760) (ignored, channel closed)
+2015-12-13_23:46:32 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1053633278] is stopping.
+2015-12-13_23:46:32 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-12-13_23:46:32 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1053633278] stopped.
+2015-12-13_23:47:25 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:47:26 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:47:27 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-12-13_23:47:27 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:38128]
+2015-12-13_23:47:29 INFO  [UserController.scala:60] - Successfully created user=User(Some(1),first1,last1,20,true,Some(2015-12-13T23:47:29.031+08:00[Asia/Singapore]),Some(2015-12-13T23:47:29.031+08:00[Asia/Singapore]))
+2015-12-13_23:47:29 ERROR [UserController.scala:52] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2015-12-13_23:47:29 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-12-13_23:47:29 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_23:47:29 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_23:47:29 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_23:47:29 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,18,11,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(-1465824459))
+2015-12-13_23:47:29 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,19,12,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(-1465824459))
+2015-12-13_23:47:29 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,20,13,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(-1465824459))
+2015-12-13_23:47:29 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,21,14,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(-1465824459))
+2015-12-13_23:47:29 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,22,15,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(-1465824459))
+2015-12-13_23:47:29 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,23,16,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(-1465824459))
+2015-12-13_23:47:29 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,24,17,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(-1465824459))
+2015-12-13_23:47:29 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,25,18,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(-1465824459))
+2015-12-13_23:47:29 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,26,19,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(-1465824459))
+2015-12-13_23:47:29 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-165372861] is stopping.
+2015-12-13_23:47:29 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-12-13_23:47:29 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#-165372861] stopped.
+2015-12-13_23:47:53 WARN  [SubstituteLogger.java:202] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:47:54 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_23:47:54 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_23:47:54 WARN  [SubstituteLogger.java:202] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:47:55 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:47:55 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:47:55 INFO  [SubstituteLogger.java:154] - ReactiveMongoPlugin starting...
+2015-12-13_23:47:55 ERROR [AbstractProcess.java:117] - failed to call onAfterProcessStart()
+java.io.IOException: Could not start process: failed errno:48 Address already in use for socket: 0.0.0.0:38128
+2015-12-13T23:47:55.554+0800 E NETWORK  [initandlisten]   addr already in use
+
+	at de.flapdoodle.embed.mongo.AbstractMongoProcess.onAfterProcessStart(AbstractMongoProcess.java:79) [de.flapdoodle.embed.mongo-1.50.0.jar:na]
+	at de.flapdoodle.embed.process.runtime.AbstractProcess.<init>(AbstractProcess.java:114) ~[de.flapdoodle.embed.process-1.50.0.jar:na]
+	at de.flapdoodle.embed.mongo.AbstractMongoProcess.<init>(AbstractMongoProcess.java:53) [de.flapdoodle.embed.mongo-1.50.0.jar:na]
+	at de.flapdoodle.embed.mongo.MongodProcess.<init>(MongodProcess.java:50) [de.flapdoodle.embed.mongo-1.50.0.jar:na]
+	at de.flapdoodle.embed.mongo.MongodExecutable.start(MongodExecutable.java:44) [de.flapdoodle.embed.mongo-1.50.0.jar:na]
+	at de.flapdoodle.embed.mongo.MongodExecutable.start(MongodExecutable.java:34) [de.flapdoodle.embed.mongo-1.50.0.jar:na]
+	at de.flapdoodle.embed.process.runtime.Executable.start(Executable.java:101) [de.flapdoodle.embed.process-1.50.0.jar:na]
+	at utils.FakeMongo.start(FakeMongo.scala:21) [test-classes/:na]
+	at utils.FakeDB$class.startDB(FakeDB.scala:15) [test-classes/:na]
+	at services.UserServiceIntegrationTest.startDB(UserServiceIntegrationTest.scala:17) [test-classes/:na]
+	at services.UserServiceIntegrationTest.beforeAll(UserServiceIntegrationTest.scala:121) [test-classes/:na]
+	at org.scalatest.BeforeAndAfterAll$class.beforeAll(BeforeAndAfterAll.scala:187) [scalatest_2.11-2.2.5.jar:na]
+	at services.UserServiceIntegrationTest.beforeAll(UserServiceIntegrationTest.scala:17) [test-classes/:na]
+	at org.scalatest.BeforeAndAfterAll$class.run(BeforeAndAfterAll.scala:253) [scalatest_2.11-2.2.5.jar:na]
+	at services.UserServiceIntegrationTest.run(UserServiceIntegrationTest.scala:17) [test-classes/:na]
+	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:466) [scalatest_2.11-2.2.5.jar:na]
+	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:677) [scalatest_2.11-2.2.5.jar:na]
+	at sbt.TestRunner.runTest$1(TestFramework.scala:76) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestRunner.run(TestFramework.scala:85) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:185) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFunction.apply(TestFramework.scala:207) [testing-0.13.8.jar:0.13.8]
+	at sbt.Tests$$anonfun$9.apply(Tests.scala:216) [actions-0.13.8.jar:0.13.8]
+	at sbt.Tests$$anonfun$9.apply(Tests.scala:216) [actions-0.13.8.jar:0.13.8]
+	at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44) [task-system-0.13.8.jar:0.13.8]
+	at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44) [task-system-0.13.8.jar:0.13.8]
+	at sbt.std.Transform$$anon$4.work(System.scala:63) [task-system-0.13.8.jar:0.13.8]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226) [tasks-0.13.8.jar:0.13.8]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226) [tasks-0.13.8.jar:0.13.8]
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17) [control-0.13.8.jar:0.13.8]
+	at sbt.Execute.work(Execute.scala:235) [tasks-0.13.8.jar:0.13.8]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226) [tasks-0.13.8.jar:0.13.8]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226) [tasks-0.13.8.jar:0.13.8]
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159) [tasks-0.13.8.jar:0.13.8]
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28) [tasks-0.13.8.jar:0.13.8]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_45]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_45]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_45]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_45]
+2015-12-13_23:47:55 INFO  [AbstractProcess.java:118] - construct de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@4d97a22a
+2015-12-13_23:47:55 ERROR [utils.scala:50] - The entire node set is unreachable, is there a network problem?
+2015-12-13_23:47:55 INFO  [SubstituteLogger.java:154] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:38128]
+2015-12-13_23:47:59 ERROR [utils.scala:51] - Got an error, no more attempts to do. Completing with a failure...
+reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$: MongoError['No primary node is available!']
+	at reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$.<clinit>(actors.scala) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.7.jar:0.13.8-M5]
+	at reactivemongo.core.actors.MongoDBSystem$class.pickChannel(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.LegacyDBSystem.pickChannel(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$4.applyOrElse(actors.scala:304) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:170) ~[scala-library-2.11.7.jar:0.13.8-M5]
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:467) ~[akka-actor_2.11-2.3.13.jar:na]
+	at reactivemongo.core.actors.LegacyDBSystem.aroundReceive(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.13.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.7.jar:na]
+2015-12-13_23:47:59 ERROR [UserController.scala:52] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2015-12-13_23:48:02 ERROR [utils.scala:51] - Got an error, no more attempts to do. Completing with a failure...
+reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$: MongoError['No primary node is available!']
+	at reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$.<clinit>(actors.scala) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.7.jar:0.13.8-M5]
+	at reactivemongo.core.actors.MongoDBSystem$class.pickChannel(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.LegacyDBSystem.pickChannel(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$4.applyOrElse(actors.scala:304) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:170) ~[scala-library-2.11.7.jar:0.13.8-M5]
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:467) ~[akka-actor_2.11-2.3.13.jar:na]
+	at reactivemongo.core.actors.LegacyDBSystem.aroundReceive(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.13.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.7.jar:na]
+2015-12-13_23:48:02 INFO  [SubstituteLogger.java:154] - ReactiveMongoPlugin stops, closing connections...
+2015-12-13_23:48:02 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_23:48:12 WARN  [Play.scala:109] - Error stopping plugin
+java.util.concurrent.TimeoutException: Futures timed out after [10 seconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.ready(Promise.scala:219) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.ready(Promise.scala:153) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.Await$$anonfun$ready$1.apply(package.scala:169) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.Await$$anonfun$ready$1.apply(package.scala:169) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:53) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.Await$.ready(package.scala:169) ~[scala-library-2.11.7.jar:na]
+	at play.modules.reactivemongo.ReactiveMongoPlugin$$anonfun$onStop$2.apply(ReactiveMongoPlugin.scala:64) ~[play2-reactivemongo_2.11-0.11.7.play24.jar:0.11.7.play24]
+	at play.modules.reactivemongo.ReactiveMongoPlugin$$anonfun$onStop$2.apply(ReactiveMongoPlugin.scala:57) ~[play2-reactivemongo_2.11-0.11.7.play24.jar:0.11.7.play24]
+	at scala.Option.foreach(Option.scala:257) [scala-library-2.11.7.jar:0.13.8-M5]
+	at play.modules.reactivemongo.ReactiveMongoPlugin.onStop(ReactiveMongoPlugin.scala:57) ~[play2-reactivemongo_2.11-0.11.7.play24.jar:0.11.7.play24]
+	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1.apply(Play.scala:109) [play_2.11-2.4.4.jar:2.4.4]
+	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1.apply(Play.scala:108) [play_2.11-2.4.4.jar:2.4.4]
+	at scala.collection.Iterator$class.foreach(Iterator.scala:742) [scala-library-2.11.7.jar:0.13.8-M5]
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1194) [scala-library-2.11.7.jar:0.13.8-M5]
+	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72) [scala-library-2.11.7.jar:0.13.8-M5]
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:54) [scala-library-2.11.7.jar:0.13.8-M5]
+	at play.api.Play$$anonfun$stop$1.apply(Play.scala:108) [play_2.11-2.4.4.jar:2.4.4]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) [play_2.11-2.4.4.jar:2.4.4]
+	at play.api.Play$.stop(Play.scala:107) [play_2.11-2.4.4.jar:2.4.4]
+	at play.core.server.NettyServer$$anonfun$stop$1.apply(NettyServer.scala:159) [play-netty-server_2.11-2.4.4.jar:2.4.4]
+	at play.core.server.NettyServer$$anonfun$stop$1.apply(NettyServer.scala:159) [play-netty-server_2.11-2.4.4.jar:2.4.4]
+	at scala.Option.foreach(Option.scala:257) [scala-library-2.11.7.jar:0.13.8-M5]
+	at play.core.server.NettyServer.stop(NettyServer.scala:159) [play-netty-server_2.11-2.4.4.jar:2.4.4]
+	at play.api.test.TestServer$$anonfun$start$1.apply$mcV$sp(TestServer.scala:81) [play-test_2.11-2.4.4.jar:2.4.4]
+	at play.api.test.TestServerProcess$$anonfun$shutdown$1.apply(TestServer.scala:102) [play-test_2.11-2.4.4.jar:2.4.4]
+	at play.api.test.TestServerProcess$$anonfun$shutdown$1.apply(TestServer.scala:102) [play-test_2.11-2.4.4.jar:2.4.4]
+	at scala.collection.immutable.List.foreach(List.scala:381) [scala-library-2.11.7.jar:0.13.8-M5]
+	at play.api.test.TestServerProcess.shutdown(TestServer.scala:102) [play-test_2.11-2.4.4.jar:2.4.4]
+	at play.api.test.TestServer.stop(TestServer.scala:57) [play-test_2.11-2.4.4.jar:2.4.4]
+	at org.scalatestplus.play.OneServerPerSuite$$anonfun$run$1.apply(OneServerPerSuite.scala:179) [play_2.11-1.4.0-M4.jar:1.4.0-M4]
+	at org.scalatestplus.play.OneServerPerSuite$$anonfun$run$1.apply(OneServerPerSuite.scala:179) [play_2.11-1.4.0-M4.jar:1.4.0-M4]
+	at org.scalatest.CompositeStatus.whenCompleted(Status.scala:377) [scalatest_2.11-2.2.5.jar:na]
+	at org.scalatestplus.play.OneServerPerSuite$class.run(OneServerPerSuite.scala:179) [play_2.11-1.4.0-M4.jar:1.4.0-M4]
+	at controllers.UserControllerTest.org$scalatest$BeforeAndAfterAll$$super$run(UserControllerTest.scala:29) [test-classes/:na]
+	at org.scalatest.BeforeAndAfterAll$class.liftedTree1$1(BeforeAndAfterAll.scala:257) [scalatest_2.11-2.2.5.jar:na]
+	at org.scalatest.BeforeAndAfterAll$class.run(BeforeAndAfterAll.scala:256) [scalatest_2.11-2.2.5.jar:na]
+	at controllers.UserControllerTest.run(UserControllerTest.scala:29) [test-classes/:na]
+	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:466) [scalatest_2.11-2.2.5.jar:na]
+	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:677) [scalatest_2.11-2.2.5.jar:na]
+	at sbt.TestRunner.runTest$1(TestFramework.scala:76) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestRunner.run(TestFramework.scala:85) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:185) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFunction.apply(TestFramework.scala:207) [testing-0.13.8.jar:0.13.8]
+	at sbt.Tests$$anonfun$9.apply(Tests.scala:216) [actions-0.13.8.jar:0.13.8]
+	at sbt.Tests$$anonfun$9.apply(Tests.scala:216) [actions-0.13.8.jar:0.13.8]
+	at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44) [task-system-0.13.8.jar:0.13.8]
+	at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44) [task-system-0.13.8.jar:0.13.8]
+	at sbt.std.Transform$$anon$4.work(System.scala:63) [task-system-0.13.8.jar:0.13.8]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226) [tasks-0.13.8.jar:0.13.8]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226) [tasks-0.13.8.jar:0.13.8]
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17) [control-0.13.8.jar:0.13.8]
+	at sbt.Execute.work(Execute.scala:235) [tasks-0.13.8.jar:0.13.8]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226) [tasks-0.13.8.jar:0.13.8]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226) [tasks-0.13.8.jar:0.13.8]
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159) [tasks-0.13.8.jar:0.13.8]
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28) [tasks-0.13.8.jar:0.13.8]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_45]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_45]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_45]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_45]
+2015-12-13_23:48:12 INFO  [SubstituteLogger.java:154] - ReactiveMongo Connections stopped. [Failure(akka.pattern.AskTimeoutException: Ask timed out on [Actor[akka://reactivemongo/user/Monitor-6#2080662683]] after [10000 ms])]
+2015-12-13_23:48:57 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:48:58 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:48:59 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-12-13_23:48:59 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:38128]
+2015-12-13_23:49:00 INFO  [UserController.scala:60] - Successfully created user=User(Some(1),first1,last1,20,true,Some(2015-12-13T23:49:00.248+08:00[Asia/Singapore]),Some(2015-12-13T23:49:00.248+08:00[Asia/Singapore]))
+2015-12-13_23:49:00 ERROR [UserController.scala:52] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2015-12-13_23:49:00 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-12-13_23:49:00 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_23:49:00 ERROR [utils.scala:50] - (State: Closing) UNHANDLED MESSAGE: Response(MessageHeader(194,17,10,1),Reply(8,0,0,1),LittleEndianHeapChannelBuffer(ridx=36, widx=194, cap=194),ResponseInfo(-1540848884))
+2015-12-13_23:49:00 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1220242810] is stopping.
+2015-12-13_23:49:00 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2015-12-13_23:49:00 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1220242810] stopped.
+2015-12-13_23:49:15 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:49:17 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:49:18 INFO  [Executable.java:102] - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@4cee7fa0
+2015-12-13_23:49:18 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_23:49:18 INFO  [utils.scala:46] - The primary is now available
+2015-12-13_23:49:21 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_23:49:21 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-2#335977075] stopped.
+2015-12-13_23:50:30 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:50:31 INFO  [utils.scala:46] - The node set is now available
+2015-12-13_23:50:31 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2015-12-13_23:50:32 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:50:32 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2015-12-13_23:50:32 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2015-12-13_23:50:32 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:38128]
+2015-12-13_23:50:32 ERROR [AbstractProcess.java:117] - failed to call onAfterProcessStart()
+java.io.IOException: Could not start process: failed errno:48 Address already in use for socket: 0.0.0.0:38128
+2015-12-13T23:50:32.550+0800 E NETWORK  [initandlisten]   addr already in use
+
+	at de.flapdoodle.embed.mongo.AbstractMongoProcess.onAfterProcessStart(AbstractMongoProcess.java:79) [de.flapdoodle.embed.mongo-1.50.0.jar:na]
+	at de.flapdoodle.embed.process.runtime.AbstractProcess.<init>(AbstractProcess.java:114) ~[de.flapdoodle.embed.process-1.50.0.jar:na]
+	at de.flapdoodle.embed.mongo.AbstractMongoProcess.<init>(AbstractMongoProcess.java:53) [de.flapdoodle.embed.mongo-1.50.0.jar:na]
+	at de.flapdoodle.embed.mongo.MongodProcess.<init>(MongodProcess.java:50) [de.flapdoodle.embed.mongo-1.50.0.jar:na]
+	at de.flapdoodle.embed.mongo.MongodExecutable.start(MongodExecutable.java:44) [de.flapdoodle.embed.mongo-1.50.0.jar:na]
+	at de.flapdoodle.embed.mongo.MongodExecutable.start(MongodExecutable.java:34) [de.flapdoodle.embed.mongo-1.50.0.jar:na]
+	at de.flapdoodle.embed.process.runtime.Executable.start(Executable.java:101) [de.flapdoodle.embed.process-1.50.0.jar:na]
+	at utils.FakeMongo.start(FakeMongo.scala:21) [test-classes/:na]
+	at utils.FakeDB$class.startDB(FakeDB.scala:15) [test-classes/:na]
+	at services.UserServiceIntegrationTest.startDB(UserServiceIntegrationTest.scala:17) [test-classes/:na]
+	at services.UserServiceIntegrationTest.beforeAll(UserServiceIntegrationTest.scala:121) [test-classes/:na]
+	at org.scalatest.BeforeAndAfterAll$class.beforeAll(BeforeAndAfterAll.scala:187) [scalatest_2.11-2.2.5.jar:na]
+	at services.UserServiceIntegrationTest.beforeAll(UserServiceIntegrationTest.scala:17) [test-classes/:na]
+	at org.scalatest.BeforeAndAfterAll$class.run(BeforeAndAfterAll.scala:253) [scalatest_2.11-2.2.5.jar:na]
+	at services.UserServiceIntegrationTest.run(UserServiceIntegrationTest.scala:17) [test-classes/:na]
+	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:466) [scalatest_2.11-2.2.5.jar:na]
+	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:677) [scalatest_2.11-2.2.5.jar:na]
+	at sbt.TestRunner.runTest$1(TestFramework.scala:76) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestRunner.run(TestFramework.scala:85) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1$$anonfun$apply$8.apply(TestFramework.scala:202) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:185) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFramework$$anon$2$$anonfun$$init$$1.apply(TestFramework.scala:202) [testing-0.13.8.jar:0.13.8]
+	at sbt.TestFunction.apply(TestFramework.scala:207) [testing-0.13.8.jar:0.13.8]
+	at sbt.Tests$$anonfun$9.apply(Tests.scala:216) [actions-0.13.8.jar:0.13.8]
+	at sbt.Tests$$anonfun$9.apply(Tests.scala:216) [actions-0.13.8.jar:0.13.8]
+	at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44) [task-system-0.13.8.jar:0.13.8]
+	at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44) [task-system-0.13.8.jar:0.13.8]
+	at sbt.std.Transform$$anon$4.work(System.scala:63) [task-system-0.13.8.jar:0.13.8]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226) [tasks-0.13.8.jar:0.13.8]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226) [tasks-0.13.8.jar:0.13.8]
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17) [control-0.13.8.jar:0.13.8]
+	at sbt.Execute.work(Execute.scala:235) [tasks-0.13.8.jar:0.13.8]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226) [tasks-0.13.8.jar:0.13.8]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226) [tasks-0.13.8.jar:0.13.8]
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159) [tasks-0.13.8.jar:0.13.8]
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28) [tasks-0.13.8.jar:0.13.8]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_45]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_45]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_45]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_45]
+2015-12-13_23:50:32 INFO  [AbstractProcess.java:118] - construct de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@58e842dc
+2015-12-13_23:50:32 ERROR [utils.scala:50] - The entire node set is unreachable, is there a network problem?
+2015-12-13_23:50:36 ERROR [utils.scala:51] - Got an error, no more attempts to do. Completing with a failure...
+reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$: MongoError['No primary node is available!']
+	at reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$.<clinit>(actors.scala) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.7.jar:0.13.8-M5]
+	at reactivemongo.core.actors.MongoDBSystem$class.pickChannel(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.LegacyDBSystem.pickChannel(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$4.applyOrElse(actors.scala:304) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:170) ~[scala-library-2.11.7.jar:0.13.8-M5]
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:467) ~[akka-actor_2.11-2.3.13.jar:na]
+	at reactivemongo.core.actors.LegacyDBSystem.aroundReceive(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.13.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.7.jar:na]
+2015-12-13_23:50:36 ERROR [UserController.scala:52] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2015-12-13_23:50:38 ERROR [utils.scala:51] - Got an error, no more attempts to do. Completing with a failure...
+reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$: MongoError['No primary node is available!']
+	at reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$.<clinit>(actors.scala) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.7.jar:0.13.8-M5]
+	at reactivemongo.core.actors.MongoDBSystem$class.pickChannel(actors.scala:635) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.LegacyDBSystem.pickChannel(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at reactivemongo.core.actors.MongoDBSystem$$anonfun$4.applyOrElse(actors.scala:304) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:170) ~[scala-library-2.11.7.jar:0.13.8-M5]
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:467) ~[akka-actor_2.11-2.3.13.jar:na]
+	at reactivemongo.core.actors.LegacyDBSystem.aroundReceive(actors.scala:750) ~[reactivemongo_2.11-0.11.7.jar:0.11.7]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220) ~[akka-actor_2.11-2.3.13.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.13.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.7.jar:na]
+2015-12-13_23:50:38 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2015-12-13_23:50:38 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2015-12-13_23:50:38 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1458012266] is stopping.
+2015-12-13_23:50:38 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1458012266] stopped.
+2015-12-13_23:50:38 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
