@@ -21,43 +21,31 @@ class UserDaoMongo @Inject()(reactiveMongoApi: ReactiveMongoApi, counterDao: Cou
 
   val dao = new JsonDao[User, BSONObjectID](reactiveMongoApi.db, UserDaoMongo.CollectionName) {}
 
-  override def findUser(id: Long): Future[Option[User]] = dao.findOne("id" $eq id)
+  override def find(id: Long): Future[Option[User]] = dao.findOne("id" $eq id)
 
-  override def findAllUsers(): Future[List[User]] = dao.findAll()
+  override def findAll(): Future[List[User]] = dao.findAll()
 
-  override def insertUser(user: User): Future[User] = {
+  override def insert(user: User): Future[User] =
     nextUserId flatMap { newId =>
-      val userToSave = user.copy(
-        id = Some(newId),
-        createdDate = Some(ZonedDateTime.now),
-        updatedDate = Some(ZonedDateTime.now))
-
-      dao.insert(userToSave) map { result =>
-        if (result.ok) {
-          userToSave
-        }
-        else {
-          throw UserDaoException(s"Cannot insert new user $userToSave")
-        }
-      }
+      val enrichedUser = enrichUserWithId(user, newId)
+      insertUserWithId(enrichedUser)
     }
-  }
 
-  private def nextUserId: Future[Long] = {
-    counterDao.nextId(UserDaoMongo.CollectionName)
-  }
+  def enrichUserWithId(user: User, newId: Long): User =
+    user.copy(
+      id = Some(newId),
+      createdDate = Some(ZonedDateTime.now),
+      updatedDate = Some(ZonedDateTime.now))
 
-  override def removeUser(id: Long): Future[Unit] =
+  override def remove(id: Long): Future[Unit] =
     dao.remove("id" $eq id) map { lastError =>
-      if (lastError.n == 0) {
-        throw UserDaoException(s"Cannot delete user id=$id")
-      }
+      if (lastError.n == 0) throw UserDaoException(s"Cannot delete user id=$id")
     }
 
-  override def updateUser(id: Long, update: JsValue): Future[User] = {
+  override def update(id: Long, update: JsValue): Future[User] =
     dao.update("id" $eq id, obj("$set" -> update)) flatMap { lastError =>
       if (lastError.ok) {
-        findUser(id) map {
+        find(id) map {
           case Some(user) => user
           case None =>
             throw UserDaoException(s"Cannot get user id=$id after updating of collection ${UserDaoMongo.CollectionName}")
@@ -67,7 +55,14 @@ class UserDaoMongo @Inject()(reactiveMongoApi: ReactiveMongoApi, counterDao: Cou
         throw UserDaoException(s"Cannot update user with id=$id and update=$update", lastError.getCause)
       }
     }
-  }
+
+  private def nextUserId: Future[Long] =
+    counterDao.nextId(UserDaoMongo.CollectionName)
+
+  private def insertUserWithId(user: User): Future[User] =
+    dao.insert(user) map { result =>
+      if (result.ok) user else throw UserDaoException(s"Cannot insert new user $user")
+    }
 }
 
 object UserDaoMongo {

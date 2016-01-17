@@ -42,7 +42,7 @@ libraryDependencies ++= Seq(
 sources in(Compile, doc) := Seq.empty
 // avoid to publish the documentation artifact
 publishArtifact in(Compile, packageDoc) := false
-parallelExecution in Test := true
+parallelExecution in Test := false
 fork in Test := false
 
 routesGenerator := InjectedRoutesGenerator

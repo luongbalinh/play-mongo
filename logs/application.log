@@ -1214,3 +1214,75 @@ reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$: MongoError['N
 2015-12-13_23:50:38 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1458012266] is stopping.
 2015-12-13_23:50:38 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-5#1458012266] stopped.
 2015-12-13_23:50:38 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2016-01-17_11:21:41 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-01-17_11:21:41 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2016-01-17_11:21:42 INFO  [Executable.java:102] - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@7389e2ab
+2016-01-17_11:21:43 INFO  [utils.scala:46] - The node set is now available
+2016-01-17_11:21:43 INFO  [utils.scala:46] - The primary is now available
+2016-01-17_11:21:45 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2016-01-17_11:21:45 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-2#1700156898] stopped.
+2016-01-17_11:21:45 INFO  [ProcessControl.java:101] - stopOrDestroyProcess: process hasn't exited 
+2016-01-17_11:21:46 INFO  [Executable.java:102] - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@5a99739
+2016-01-17_11:21:46 INFO  [utils.scala:46] - The node set is now available
+2016-01-17_11:21:46 INFO  [utils.scala:46] - The primary is now available
+2016-01-17_11:21:46 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-01-17_11:21:46 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2016-01-17_11:21:46 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2016-01-17_11:21:46 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:38128]
+2016-01-17_11:21:47 INFO  [UserController.scala:60] - Successfully created user=User(Some(1),first1,last1,20,true,Some(2016-01-17T11:21:46.922+08:00[Asia/Singapore]),Some(2016-01-17T11:21:46.922+08:00[Asia/Singapore]))
+2016-01-17_11:21:47 ERROR [UserController.scala:52] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2016-01-17_11:21:47 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2016-01-17_11:21:47 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2016-01-17_11:21:47 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(317684035) (ignored, channel closed)
+2016-01-17_11:21:47 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-8#-537412873] is stopping.
+2016-01-17_11:21:47 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-8#-537412873] stopped.
+2016-01-17_11:21:47 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2016-01-17_11:22:35 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-01-17_11:22:36 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2016-01-17_11:22:36 INFO  [Executable.java:102] - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@54bba4de
+2016-01-17_11:22:37 INFO  [utils.scala:46] - The node set is now available
+2016-01-17_11:22:37 INFO  [utils.scala:46] - The primary is now available
+2016-01-17_11:22:39 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2016-01-17_11:22:39 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-2#-1624079759] stopped.
+2016-01-17_11:22:39 INFO  [ProcessControl.java:101] - stopOrDestroyProcess: process hasn't exited 
+2016-01-17_11:22:40 INFO  [Executable.java:102] - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@4a97af16
+2016-01-17_11:22:40 INFO  [utils.scala:46] - The node set is now available
+2016-01-17_11:22:40 INFO  [utils.scala:46] - The primary is now available
+2016-01-17_11:22:40 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-01-17_11:22:40 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2016-01-17_11:22:40 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2016-01-17_11:22:40 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:38128]
+2016-01-17_11:22:40 INFO  [UserController.scala:60] - Successfully created user=User(Some(1),first1,last1,20,true,Some(2016-01-17T11:22:40.746+08:00[Asia/Singapore]),Some(2016-01-17T11:22:40.746+08:00[Asia/Singapore]))
+2016-01-17_11:22:40 ERROR [UserController.scala:52] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2016-01-17_11:22:40 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2016-01-17_11:22:40 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2016-01-17_11:22:40 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(638069755) (ignored, channel closed)
+2016-01-17_11:22:40 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-8#506957000] is stopping.
+2016-01-17_11:22:40 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-8#506957000] stopped.
+2016-01-17_11:22:40 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]
+2016-01-17_11:22:47 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-01-17_11:22:48 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2016-01-17_11:22:49 INFO  [Executable.java:102] - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@640c1649
+2016-01-17_11:22:49 INFO  [utils.scala:46] - The node set is now available
+2016-01-17_11:22:49 INFO  [utils.scala:46] - The primary is now available
+2016-01-17_11:22:51 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2016-01-17_11:22:51 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-2#-385633363] stopped.
+2016-01-17_11:22:51 INFO  [ProcessControl.java:101] - stopOrDestroyProcess: process hasn't exited 
+2016-01-17_11:22:52 INFO  [Executable.java:102] - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@78e2860d
+2016-01-17_11:22:52 INFO  [utils.scala:46] - The node set is now available
+2016-01-17_11:22:52 INFO  [utils.scala:46] - The primary is now available
+2016-01-17_11:22:52 WARN  [GuiceApplicationBuilder.scala:76] - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-01-17_11:22:52 INFO  [Slf4jLogger.scala:80] - Slf4jLogger started
+2016-01-17_11:22:52 INFO  [ReactiveMongoPlugin.scala:38] - ReactiveMongoPlugin starting...
+2016-01-17_11:22:52 INFO  [ReactiveMongoPlugin.scala:43] - ReactiveMongoPlugin successfully started with db 'users-db'! Servers:
+		[localhost:38128]
+2016-01-17_11:22:52 INFO  [UserController.scala:60] - Successfully created user=User(Some(1),first1,last1,20,true,Some(2016-01-17T11:22:52.715+08:00[Asia/Singapore]),Some(2016-01-17T11:22:52.716+08:00[Asia/Singapore]))
+2016-01-17_11:22:52 ERROR [UserController.scala:52] - Failed to create a user due to invalid json format: {"obj.active":[{"msg":["error.path.missing"],"args":[]}],"obj.firstName":[{"msg":["error.expected.jsstring"],"args":[]}]}
+2016-01-17_11:22:52 INFO  [ReactiveMongoPlugin.scala:56] - ReactiveMongoPlugin stops, closing connections...
+2016-01-17_11:22:52 INFO  [utils.scala:46] - Received Close message, going to close connections and moving on stage Closing
+2016-01-17_11:22:52 WARN  [utils.scala:48] - (State: Closing) SPURIOUS ChannelConnected(651213414) (ignored, channel closed)
+2016-01-17_11:22:52 INFO  [utils.scala:46] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-8#-1537497871] is stopping.
+2016-01-17_11:22:52 WARN  [utils.scala:48] - MongoDBSystem Actor[akka://reactivemongo/user/Connection-8#-1537497871] stopped.
+2016-01-17_11:22:52 INFO  [ReactiveMongoPlugin.scala:61] - ReactiveMongo Connections stopped. [Success(Closed)]

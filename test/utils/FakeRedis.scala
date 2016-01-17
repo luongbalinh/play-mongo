@@ -1,11 +1,8 @@
 package utils
 
-import play.api.Logger
 import redis.embedded.RedisServer
 
 class FakeRedis {
-  private val logger= Logger(this.getClass)
-
   var redisServer: RedisServer = _
 
   def start(): Unit = {

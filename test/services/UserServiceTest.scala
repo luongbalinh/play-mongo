@@ -14,35 +14,35 @@ class UserServiceTest extends FlatSpec with ShouldMatchers with GivenWhenThen wi
   it should "allow to get a user" in {
     Given("a user")
     val mockUser: User = mock(classOf[User])
-    doReturn(Future(Some(mockUser))).when(mockUserDAO).findUser(1L)
+    doReturn(Future(Some(mockUser))).when(mockUserDAO).find(1L)
 
     When("UserService tries to read a user")
-    userService findUser 1L
+    userService find 1L
 
     Then("UserDao read() should be called once")
-    verify(mockUserDAO, times(1)) findUser 1L
+    verify(mockUserDAO, times(1)) find 1L
   }
 
   it should "allow to delete a user" in {
     Given("a user in database")
-    doReturn(Future(Success(Unit))).when(mockUserDAO).removeUser(1L)
+    doReturn(Future(Success(Unit))).when(mockUserDAO).remove(1L)
 
     When("UserService tries to delete the user")
-    userService removeUser 1L
+    userService remove 1L
 
     Then("UserDao delete() should be called once")
-    verify(mockUserDAO, times(1)) removeUser 1L
+    verify(mockUserDAO, times(1)) remove 1L
   }
 
   it should "allow to get all users" in {
     Given("a list of users")
-    doReturn(Future(List())).when(mockUserDAO).findAllUsers()
+    doReturn(Future(List())).when(mockUserDAO).findAll()
 
     When("tries to get all users")
-    userService findAllUsers()
+    userService findAll()
 
     Then("UserDao findAll() should be called once")
-    verify(mockUserDAO, times(1)) findAllUsers()
+    verify(mockUserDAO, times(1)) findAll()
   }
 
   val mockUserDAO: UserDao = mock(classOf[UserDao])

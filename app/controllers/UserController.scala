@@ -17,8 +17,8 @@ class UserController @Inject()(userService: UserService) extends Controller {
 
   private val logger = Logger(this.getClass)
 
-  def findUser(id: Long) = Action.async {
-    userService.findUser(id) map {
+  def find(id: Long) = Action.async {
+    userService.find(id) map {
       case Some(user) =>
         Ok(toJson(user))
       case None =>
@@ -27,24 +27,24 @@ class UserController @Inject()(userService: UserService) extends Controller {
     }
   }
 
-  def findAllUsers = Action.async {
-    userService.findAllUsers() map { users =>
+  def findAll = Action.async {
+    userService.findAll() map { users =>
       logger.info(s"Found ${users.size} users.")
       Ok(toJson(users))
     }
   }
 
-  def insertUser() = Action.async(parse.json) { request =>
-    request.body.validate[User] fold(invalid = handleValidationErrors, valid = saveUser)
+  def insert() = Action.async(parse.json) { request =>
+    request.body.validate[User] fold(invalid = handleValidationErrors, valid = save)
   }
 
-  def removeUser(id: Long) = Action.async {
+  def remove(id: Long) = Action.async {
     logger.info(s"Removing user with id $id")
-    userService.removeUser(id) map { _ => Ok(s"Successfully deleted user with id=$id") }
+    userService.remove(id) map { _ => Ok(s"Successfully deleted user with id=$id") }
   }
 
-  def updateUser(id: Long) = Action.async(parse.json) { request =>
-    userService.updateUser(id, request.body) map { user => Ok(toJson(user)) }
+  def update(id: Long) = Action.async(parse.json) { request =>
+    userService.update(id, request.body) map { user => Ok(toJson(user)) }
   }
 
   private def handleValidationErrors: Seq[(JsPath, Seq[ValidationError])] => Future[Result] = { errors =>
@@ -54,8 +54,8 @@ class UserController @Inject()(userService: UserService) extends Controller {
     }
   }
 
-  private def saveUser: User => Future[Result] = { user =>
-    userService.insertUser(user) map {
+  private def save: User => Future[Result] = { user =>
+    userService.insert(user) map {
       case savedUser =>
         logger.info(s"Successfully created user=$savedUser")
         Ok(toJson(savedUser))

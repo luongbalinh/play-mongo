@@ -12,7 +12,7 @@ class CacheServiceRedisIntegrationTest
 
   var cacheServiceRedis: CacheServiceRedis = _
 
-  "Cache Service Redis" should "allow to set and get user" in {
+  ignore should "allow to set and get user" in {
 
   }
 

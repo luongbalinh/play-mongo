@@ -109,5 +109,5 @@ class UserControllerTest extends PlaySpec with OneServerPerSuite with MustMatche
     userDao = new UserDaoMongo(api, new CounterDaoMongo(api))
   }
 
-  private def addUser(user: User) = awaitResult(userDao.insertUser(user))
+  private def addUser(user: User) = awaitResult(userDao.insert(user))
 }

@@ -21,7 +21,7 @@ with ShouldMatchers with GivenWhenThen with BeforeAndAfterEach with BeforeAndAft
     addUser(user01)
 
     When("tries to find that user")
-    val result: Option[User] = awaitResult(userService.findUser(1L))
+    val result: Option[User] = awaitResult(userService.find(1L))
 
     Then("the result is that user")
     result.isDefined shouldBe true
@@ -33,7 +33,7 @@ with ShouldMatchers with GivenWhenThen with BeforeAndAfterEach with BeforeAndAft
     addUser(user01)
 
     When("tries to find user with non-existing Id")
-    val result: Option[User] = awaitResult(userService.findUser(-1L))
+    val result: Option[User] = awaitResult(userService.find(-1L))
 
     Then("the result is None")
     result.isDefined shouldBe false
@@ -45,7 +45,7 @@ with ShouldMatchers with GivenWhenThen with BeforeAndAfterEach with BeforeAndAft
     addUser(user02)
 
     When("tries to get all users")
-    val result: List[User] = awaitResult(userService.findAllUsers())
+    val result: List[User] = awaitResult(userService.findAll())
 
     Then("the result contains two users with ids 1 and 2")
     result.size shouldBe 2
@@ -57,7 +57,7 @@ with ShouldMatchers with GivenWhenThen with BeforeAndAfterEach with BeforeAndAft
     Given("a new user")
 
     When("UserService tries to insert that new user")
-    val result = awaitResult(userDao.insertUser(user01))
+    val result = awaitResult(userDao.insert(user01))
     api.db.collection[BSONCollection](CounterDaoMongo.CollectionName).drop()
 
     Then("the user is inserted successfully with a id=1")
@@ -69,10 +69,10 @@ with ShouldMatchers with GivenWhenThen with BeforeAndAfterEach with BeforeAndAft
     addUser(user01)
 
     When("tries to delete that user")
-    val result = awaitResult(userService.removeUser(1L))
+    val result = awaitResult(userService.remove(1L))
 
     Then("the user is deleted successfully")
-    awaitResult(userService.findUser(1L)).isDefined shouldBe false
+    awaitResult(userService.find(1L)).isDefined shouldBe false
   }
 
   it should "return exception when deleting a non-existing user" in {
@@ -83,7 +83,7 @@ with ShouldMatchers with GivenWhenThen with BeforeAndAfterEach with BeforeAndAft
 
     Then("return exception")
     intercept[UserDaoException] {
-      awaitResult(userService.removeUser(-1L))
+      awaitResult(userService.remove(-1L))
     }
   }
 
@@ -92,7 +92,7 @@ with ShouldMatchers with GivenWhenThen with BeforeAndAfterEach with BeforeAndAft
     addUser(user01)
 
     When("tries to update that user")
-    val result: User = awaitResult(userService.updateUser(1L, obj("firstName" -> "updatedName")))
+    val result: User = awaitResult(userService.update(1L, obj("firstName" -> "updatedName")))
 
     Then("the user is updated successfully")
     result.firstName shouldBe "updatedName"
@@ -141,5 +141,5 @@ with ShouldMatchers with GivenWhenThen with BeforeAndAfterEach with BeforeAndAft
     userService = new UserServiceImpl(userDao)
   }
 
-  private def addUser(user: User) = awaitResult(userDao.insertUser(user))
+  private def addUser(user: User) = awaitResult(userDao.insert(user))
 }

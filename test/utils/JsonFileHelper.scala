@@ -14,7 +14,7 @@ import scala.reflect.io.File
 import scala.util.{Failure, Success, Try}
 
 object JsonFileHelper {
-  private val logger = Logger("JsonFileHelper")
+  private val logger = Logger(this.getClass)
 
   def insertResource(db: DB, collName: String, fileName: String)(implicit ctx: ExecutionContext): Unit = {
     import play.modules.reactivemongo.json.toBSON
@@ -26,13 +26,11 @@ object JsonFileHelper {
     awaitResult(coll.bulkInsert(bsonArray, ordered = true))
   }
 
-  def clearResource(db: DB, collName: String)(implicit ctx: ExecutionContext): Unit = {
+  def clearResource(db: DB, collName: String)(implicit ctx: ExecutionContext): Unit =
     db.collection[BSONCollection](collName).drop()
-  }
 
-  def fileToJson(fileName: String): JsValue = {
+  def fileToJson(fileName: String): JsValue =
     Json.parse(getFileAsString(fileName))
-  }
 
   def fileToClass[T](fileName: String)(implicit reads: Reads[T]): T =
     fileToJson(fileName).validate[T].get
@@ -47,7 +45,8 @@ object JsonFileHelper {
     case Success(t) => Success(t)
     case _ if n > 0 => retry(n - 1) {
       logger.info("execution failed, retrying in 3 seconds")
-      Thread.sleep(3000)
+      val threeSeconds = 3000
+      Thread.sleep(threeSeconds)
       fn
     }
     case Failure(e) => Failure(e)
