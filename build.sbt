@@ -17,8 +17,7 @@ UglifyKeys.uglifyOps := { js =>
 }
 
 resolvers ++= Seq(
-  "Sonatype Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/",
-  "rediscala" at "http://dl.bintray.com/etaty/maven"
+  "Sonatype Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
 )
 
 libraryDependencies ++= Seq(
@@ -28,7 +27,7 @@ libraryDependencies ++= Seq(
   "com.google.inject" % "guice" % "4.0",
   "org.reactivemongo" %% "play2-reactivemongo" % "0.11.2.play24",
   "org.reactivemongo" % "reactivemongo-extensions-json_2.11" % "0.11.7.play24",
-  "com.etaty.rediscala" %% "rediscala" % "1.4.2",
+  "com.github.etaty" %% "rediscala" % "1.6.0",
   "org.webjars" % "bootstrap" % "3.3.4",
   "org.webjars" % "angularjs" % "1.3.15",
   "org.webjars" % "angular-ui-bootstrap" % "0.13.0",
