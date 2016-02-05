@@ -48,4 +48,9 @@ publishArtifact in(Compile, packageDoc) := false
 parallelExecution in Test := false
 fork in Test := false
 
+scalacOptions ++= Seq(
+  "-encoding", "UTF-8", "-optimise",
+  "-deprecation", "-unchecked", "-feature", "-Xlint",
+  "-Ywarn-infer-any")
+
 routesGenerator := InjectedRoutesGenerator
