@@ -38,8 +38,6 @@ libraryDependencies ++= Seq(
   "org.mockito" % "mockito-core" % "1.10.19" % Test
 )
 
-// Speed up compilation
-
 // disable documentation generation
 sources in(Compile, doc) := Seq.empty
 // avoid to publish the documentation artifact
@@ -47,9 +45,6 @@ publishArtifact in(Compile, packageDoc) := false
 parallelExecution in Test := false
 fork in Test := false
 
-scalacOptions ++= Seq(
-  "-encoding", "UTF-8", "-optimise",
-  "-deprecation", "-unchecked", "-feature", "-Xlint",
-  "-Ywarn-infer-any")
+scalacOptions ++= Seq("-encoding", "UTF-8", "-optimise", "-deprecation", "-unchecked", "-feature", "-Xlint", "-Ywarn-infer-any")
 
 routesGenerator := InjectedRoutesGenerator

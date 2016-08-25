@@ -1,15 +1,15 @@
-Play 2.4.4 (Scala) Reactivemongo Template
-===========
+Play 2.5.4 (Scala) Reactivemongo Template
+=========================================
 
 **Play (Scala) - ReactiveMongo - Redis - Guice**
 
-A full-stack web application using Play 2.4.4 for endpoint backend, Reactivemongo for reactive MongoDB driver, Redis for Cache, Guice
+A full-stack web application using Play 2.5.4 for endpoint backend, Reactivemongo for reactive MongoDB driver, Redis for Cache, Guice
  for dependency injection, ScalaTest and Mockito for unit testing and integration testing, FlapDoodle embedded Mongo driver, embedded Redis driver, Frisby for endpoint testing, and 
  AngularJs, Bookstrap and Coffee script for frontend.
 
 
-* **PlayFramework** - a high velocity web framework for Java and Scala. This project currently uses 2.4.4 with the
-Scala API. Play 2.4.x recommends to get rid of global settings, i.e. (Global.scala), and use dependency injection as the best practices for both writing code and testing.
+* **PlayFramework** - a high velocity web framework for Java and Scala. This project currently uses 2.5.4 with the
+Scala API. Play 2.5.4 recommends to get rid of global settings, i.e. (Global.scala), and use dependency injection as the best practices for both writing code and testing.
   * [PlayFramework Docs](http://www.playframework.com/documentation/)
 
 * **PlayReactiveMongo**  a non-blocking MongoDB driver. It also provides some useful additions for handling JSON.
