@@ -1,8 +1,0 @@
-.*
-
-!.travis.yml
-
-logs
-project/project
-project/target
-target/
