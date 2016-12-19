@@ -14,23 +14,21 @@ case class User(
   active: Boolean,
   createdDate: Option[ZonedDateTime] = Some(ZonedDateTime.now),
   updatedDate: Option[ZonedDateTime] = Some(ZonedDateTime.now)
-) extends IdModelLong[User]
+) extends IdModelLong[User] {
+  override def withNewId(newId: Long): User = this.copy(id = Some(newId))
+}
 
 object User {
 
-  import utils.ZonedDateTimeReadWrite._
+  import helpers.ZonedDateTimeReadWrite._
 
   implicit val jsonFormat = Json.format[User]
 
   implicit val byteStringFormat = new ByteStringFormatter[User] {
-
-    def serialize(data: User): ByteString = {
+    def serialize(data: User): ByteString =
       ByteString(Json.toJson(data).toString)
-    }
 
-    def deserialize(bs: ByteString): User = {
-      val s = bs.utf8String
-      Json.fromJson[User](Json.parse(s)).get
-    }
+    def deserialize(bs: ByteString): User =
+      Json.fromJson[User](Json.parse(bs.utf8String)).get
   }
 }

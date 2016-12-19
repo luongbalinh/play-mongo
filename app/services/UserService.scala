@@ -10,9 +10,9 @@ trait UserService {
 
   def findAll(): Future[List[User]]
 
-  def insert(user: User): Future[User]
+  def insert(user: User): Future[Long]
 
   def remove(id: Long): Future[Unit]
 
-  def update(id: Long, update: JsValue): Future[User]
+  def update(id: Long, update: JsValue): Future[Unit]
 }

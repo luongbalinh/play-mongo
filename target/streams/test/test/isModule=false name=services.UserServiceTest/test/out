@@ -1,0 +1,13 @@
+[0m[[0minfo[0m] [0m[32mUserServiceTest:[0m[0m
+[0m[[0minfo[0m] [0m[32m- should allow to get a user[0m[0m
+[0m[[0minfo[0m] [0m[32m  + Given a user [0m[0m
+[0m[[0minfo[0m] [0m[32m  + When UserService tries to read a user [0m[0m
+[0m[[0minfo[0m] [0m[32m  + Then UserDao read() should be called once [0m[0m
+[0m[[0minfo[0m] [0m[32m- should allow to delete a user[0m[0m
+[0m[[0minfo[0m] [0m[32m  + Given a user in database [0m[0m
+[0m[[0minfo[0m] [0m[32m  + When UserService tries to delete the user [0m[0m
+[0m[[0minfo[0m] [0m[32m  + Then UserDao delete() should be called once [0m[0m
+[0m[[0minfo[0m] [0m[32m- should allow to get all users[0m[0m
+[0m[[0minfo[0m] [0m[32m  + Given a list of users [0m[0m
+[0m[[0minfo[0m] [0m[32m  + When tries to get all users [0m[0m
+[0m[[0minfo[0m] [0m[32m  + Then UserDao findAll() should be called once [0m[0m

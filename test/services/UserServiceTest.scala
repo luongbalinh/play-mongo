@@ -1,15 +1,15 @@
 package services
 
-import dao.UserDao
+import daos.UserDAO
 import models.User
 import org.mockito.Mockito.{doReturn, mock, times, verify}
-import org.scalatest.{BeforeAndAfterEach, FlatSpec, GivenWhenThen, ShouldMatchers}
+import org.scalatest._
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 import scala.util.Success
 
-class UserServiceTest extends FlatSpec with ShouldMatchers with GivenWhenThen with BeforeAndAfterEach {
+class UserServiceTest extends FlatSpec with GivenWhenThen with BeforeAndAfterEach {
 
   it should "allow to get a user" in {
     Given("a user")
@@ -22,6 +22,7 @@ class UserServiceTest extends FlatSpec with ShouldMatchers with GivenWhenThen wi
     Then("UserDao read() should be called once")
     verify(mockUserDAO, times(1)) find 1L
   }
+
 
   it should "allow to delete a user" in {
     Given("a user in database")
@@ -45,7 +46,7 @@ class UserServiceTest extends FlatSpec with ShouldMatchers with GivenWhenThen wi
     verify(mockUserDAO, times(1)) findAll()
   }
 
-  val mockUserDAO: UserDao = mock(classOf[UserDao])
+  val mockUserDAO: UserDAO = mock(classOf[UserDAO])
   val userService: UserService = new UserServiceImpl(mockUserDAO)
   val userId: Long = 1L
 }

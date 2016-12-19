@@ -1,0 +1,30 @@
+[0m[[0minfo[0m] [0m[32mUserServiceIntegrationTest:[0m[0m
+[0m[[0minfo[0m] [0m[32mUserService[0m[0m
+[0m[[0minfo[0m] [0m[32m- should find a user given its Id[0m[0m
+[0m[[0minfo[0m] [0m[32m  + Given a user [0m[0m
+[0m[[0minfo[0m] [0m[32m  + When tries to find that user [0m[0m
+[0m[[0minfo[0m] [0m[32m  + Then the result is that user [0m[0m
+[0m[[0minfo[0m] [0m[32m- should find a user with non-existing Id[0m[0m
+[0m[[0minfo[0m] [0m[32m  + Given a user [0m[0m
+[0m[[0minfo[0m] [0m[32m  + When tries to find user with non-existing Id [0m[0m
+[0m[[0minfo[0m] [0m[32m  + Then the result is None [0m[0m
+[0m[[0minfo[0m] [0m[32m- should get all users[0m[0m
+[0m[[0minfo[0m] [0m[32m  + Given two users [0m[0m
+[0m[[0minfo[0m] [0m[32m  + When tries to get all users [0m[0m
+[0m[[0minfo[0m] [0m[32m  + Then the result contains two users with ids 1 and 2 [0m[0m
+[0m[[0minfo[0m] [0m[32m- should insert a new user[0m[0m
+[0m[[0minfo[0m] [0m[32m  + Given a new user [0m[0m
+[0m[[0minfo[0m] [0m[32m  + When UserService tries to insert that new user [0m[0m
+[0m[[0minfo[0m] [0m[32m  + Then the user is inserted successfully with a id=1 [0m[0m
+[0m[[0minfo[0m] [0m[32m- should delete an existing user[0m[0m
+[0m[[0minfo[0m] [0m[32m  + Given a user [0m[0m
+[0m[[0minfo[0m] [0m[32m  + When tries to delete that user [0m[0m
+[0m[[0minfo[0m] [0m[32m  + Then the user is deleted successfully [0m[0m
+[0m[[0minfo[0m] [0m[32m- should return exception when deleting a non-existing user[0m[0m
+[0m[[0minfo[0m] [0m[32m  + Given a user [0m[0m
+[0m[[0minfo[0m] [0m[32m  + When tries to delete a non-existing user [0m[0m
+[0m[[0minfo[0m] [0m[32m  + Then return exception [0m[0m
+[0m[[0minfo[0m] [0m[32m- should update an existing user[0m[0m
+[0m[[0minfo[0m] [0m[32m  + Given a user [0m[0m
+[0m[[0minfo[0m] [0m[32m  + When tries to update that user [0m[0m
+[0m[[0minfo[0m] [0m[32m  + Then the user is updated successfully [0m[0m

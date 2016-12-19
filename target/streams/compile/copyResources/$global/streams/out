@@ -1,0 +1,6 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/Users/luongbalinh/Documents/repos/templates/play-mongo/conf/application.alpha.conf,/Users/luongbalinh/Documents/repos/templates/play-mongo/target/scala-2.11/classes/application.alpha.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/luongbalinh/Documents/repos/templates/play-mongo/conf/application.conf,/Users/luongbalinh/Documents/repos/templates/play-mongo/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/luongbalinh/Documents/repos/templates/play-mongo/conf/application.prod.conf,/Users/luongbalinh/Documents/repos/templates/play-mongo/target/scala-2.11/classes/application.prod.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/luongbalinh/Documents/repos/templates/play-mongo/conf/logback.xml,/Users/luongbalinh/Documents/repos/templates/play-mongo/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/Users/luongbalinh/Documents/repos/templates/play-mongo/conf/routes,/Users/luongbalinh/Documents/repos/templates/play-mongo/target/scala-2.11/classes/routes)[0m

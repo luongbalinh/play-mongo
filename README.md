@@ -1,15 +1,14 @@
-Play 2.5.4 (Scala) Reactivemongo Template
+Play 2.5.10 (Scala) Reactivemongo Template
 =========================================
 
 **Play (Scala) - ReactiveMongo - Redis - Guice**
 
-A full-stack web application using Play 2.5.4 for endpoint backend, Reactivemongo for reactive MongoDB driver, Redis for Cache, Guice
- for dependency injection, ScalaTest and Mockito for unit testing and integration testing, FlapDoodle embedded Mongo driver, embedded Redis driver, Frisby for endpoint testing, and 
- AngularJs, Bookstrap and Coffee script for frontend.
+A web backend application using Play 2.5.10 for endpoint backend, Reactivemongo for reactive MongoDB driver, Redis for Cache, Guice
+ for dependency injection, ScalaTest and Mockito for unit testing and integration testing, FlapDoodle embedded Mongo driver, embedded Redis driver, Frisby for endpoint testing.
 
 
-* **PlayFramework** - a high velocity web framework for Java and Scala. This project currently uses 2.5.4 with the
-Scala API. Play 2.5.4 recommends to get rid of global settings, i.e. (Global.scala), and use dependency injection as the best practices for both writing code and testing.
+* **PlayFramework** - a high velocity web framework for Java and Scala. This project currently uses 2.5.10 with the
+Scala API. Play 2.5.10 recommends to get rid of global settings, i.e. (Global.scala), and use dependency injection as the best practices for both writing code and testing.
   * [PlayFramework Docs](http://www.playframework.com/documentation/)
 
 * **PlayReactiveMongo**  a non-blocking MongoDB driver. It also provides some useful additions for handling JSON.
@@ -32,18 +31,6 @@ Scala API. Play 2.5.4 recommends to get rid of global settings, i.e. (Global.sca
   
 * **Frisby** - a framework for testing endpoints.
   * [Frisby](http://frisbyjs.com/)
-    
-* **AngularJS** - a client side javascript framework for creating complex MVC applications in Javascript, fronted with 
-Twitter bootstrap CSS framework, because well, im not a web designer.
-  * [AngularJS](http://angularjs.org/)
-
-* **Bootstrap** - Bootstrap components written in pure AngularJS
-  *  [http://angular-ui.github.io/bootstrap/](http://angular-ui.github.io/bootstrap/)
-
-* **CoffeeScript** - CoffeeScript is an attempt to expose the good parts of JavaScript in a simple way.
-  *  [http://coffeescript.org/](http://coffeescript.org/)
-
-
 
 Getting Started
 ----------
@@ -51,7 +38,7 @@ Getting Started
 Prerequisites:
 *  [Activator(SBT)](https://www.typesafe.com/get-started) - activator wraps around SBT to provide additional features 
 that make creating, building, and deploying SBT projects easier. 
-*  [MongoDB] (https://www.mongodb.org/). [Robomongo](http://robomongo.org/) is a nice MongoDB GUI tool.
+*  [MongoDB](https://www.mongodb.org/). [Robomongo](http://robomongo.org/) is a nice MongoDB GUI tool.
 
 Once the prerequisites have been installed, start Mongodb:
 

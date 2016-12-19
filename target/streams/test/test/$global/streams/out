@@ -1,0 +1,17 @@
+[0m[[0mdebug[0m] [0mRunning TaskDef(services.UserServiceIntegrationTest, org.scalatest.tools.Framework$$anon$1@30a71be1, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(controllers.UserControllerTest, org.scalatest.tools.Framework$$anon$1@30a71be1, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(services.CacheServiceRedisIntegrationTest, org.scalatest.tools.Framework$$anon$1@30a71be1, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(services.UserServiceTest, org.scalatest.tools.Framework$$anon$1@30a71be1, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0mScalaTest[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 10 seconds, 903 milliseconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mTotal number of tests run: 13[0m[0m
+[0m[[0minfo[0m] [0m[36mSuites: completed 4, aborted 0[0m[0m
+[0m[[0minfo[0m] [0m[36mTests: succeeded 13, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0minfo[0m] [0m[32mAll tests passed.[0m[0m
+[0m[[0mdebug[0m] [0mSummary for JUnit not available.[0m
+[0m[[0minfo[0m] [0mPassed: Total 13, Failed 0, Errors 0, Passed 13[0m
+[0m[[0mdebug[0m] [0mPassed tests:[0m
+[0m[[0mdebug[0m] [0m	services.UserServiceTest[0m
+[0m[[0mdebug[0m] [0m	services.CacheServiceRedisIntegrationTest[0m
+[0m[[0mdebug[0m] [0m	controllers.UserControllerTest[0m
+[0m[[0mdebug[0m] [0m	services.UserServiceIntegrationTest[0m

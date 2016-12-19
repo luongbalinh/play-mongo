@@ -1,23 +1,8 @@
-# Extracted from https://github.com/ulrich/macaron-factory/blob/master/.gitignore
-# Ignore all dotfiles...
 .*
-# except for .gitignore and .travis.yml
+
 !.gitignore
 !.travis.yml
 
-# Ignore Play! working directory #
-db
-eclipse
-lib
 logs
-precompiled
 project/project
 project/target
-target
-tutorial
-tmp
-test-result
-server.pid
-*.iml
-*.eml
-activator-*.sbt

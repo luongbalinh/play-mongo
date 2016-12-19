@@ -1,0 +1,5 @@
+[0m[[0minfo[0m] [0m[32mUserControllerTest:[0m[0m
+[0m[[0minfo[0m] [0m[32mUsers controller[0m[0m
+[0m[[0minfo[0m] [0m[32m- must insert a valid user[0m[0m
+[0m[[0minfo[0m] [0m[32m- must fail inserting a non valid json[0m[0m
+[0m[[0minfo[0m] [0m[32m- must update a valid json[0m[0m
