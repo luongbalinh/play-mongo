@@ -1,6 +1,0 @@
-#Successful Tests
-#Mon Dec 19 15:00:37 SGT 2016
-services.UserServiceIntegrationTest=1482130833979
-services.UserServiceTest=1482130836987
-controllers.UserControllerTest=1482130836685
-services.CacheServiceRedisIntegrationTest=1482130836695

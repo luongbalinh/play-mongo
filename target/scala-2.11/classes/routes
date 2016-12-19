@@ -1,7 +1,0 @@
-GET           /health           controllers.HealthController.check
-
-GET           /users/:id        controllers.UserController.find(id: Long)
-GET           /users            controllers.UserController.findAll
-POST          /users            controllers.UserController.insert
-DELETE        /users/:id        controllers.UserController.remove(id: Long)
-PUT           /users/:id        controllers.UserController.update(id: Long)
