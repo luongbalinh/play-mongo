@@ -9,9 +9,10 @@ scalaVersion := "2.11.8"
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
 resolvers ++= Seq(
-  "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/",
-  "sonatype-releases" at "https://oss.sonatype.org/content/repositories/releases/",
-  "Sonatype Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
+  Resolver.sonatypeRepo("releases"),
+  Resolver.sonatypeRepo("snapshots"),
+  Resolver.typesafeRepo("releases"),
+  Resolver.typesafeRepo("snapshots")
 )
 
 libraryDependencies ++= Seq(
