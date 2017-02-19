@@ -1,5 +1,6 @@
 
 package object helpers {
-  val testMongoHosts = List("localhost:38128")
+  val testMongoHosts = "localhost"
+  val testMongoPort = 38218
   val testUserMongoDbName = "users-db"
 }

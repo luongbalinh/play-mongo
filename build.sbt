@@ -22,9 +22,10 @@ libraryDependencies ++= Seq(
   "org.reactivemongo" %% "play2-reactivemongo" % "0.12.0",
   "com.github.etaty" %% "rediscala" % "1.7.0",
   "net.codingwell" %% "scala-guice" % "4.1.0",
+  "com.newrelic.agent.java" % "newrelic-api" % "3.36.0",
   "org.scalatest" %% "scalatest" % "3.0.1" % Test,
   "org.scalatestplus.play" %% "scalatestplus-play" % "2.0.0-M1" % Test,
-  "de.flapdoodle.embed" % "de.flapdoodle.embed.mongo" % "2.0.1-SNAPSHOT" % Test,
+  "de.flapdoodle.embed" % "de.flapdoodle.embed.mongo" % "2.0.0" % Test,
   "com.github.kstyrc" % "embedded-redis" % "0.6" % Test,
   "org.mockito" % "mockito-core" % "1.10.19" % Test
 )
@@ -73,7 +74,11 @@ fork in Test := false
 //  "-deprecation", "-unchecked", "-feature", "-Xlint",
 //  "-Ywarn-infer-any"
 //)
-
+javaOptions in Universal ++= Seq(
+  "-J-Xmx512m",
+  "-J-Xms256m",
+  "-javaagent:/Users/balinh/Documents/tools/newrelic/newrelic.jar"
+)
 // Docker
 maintainer in Docker := "LUONG Ba Linh <linhluongba@gmail.com>"
 dockerExposedPorts in Docker := Seq(9000)

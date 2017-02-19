@@ -2,6 +2,7 @@ package controllers
 
 import javax.inject.Inject
 
+import com.newrelic.api.agent.Trace
 import models._
 import play.api.Logger
 import play.api.libs.json.Json.toJson
@@ -16,6 +17,7 @@ class UserController @Inject()(userService: UserService) extends Controller with
 
   private val logger = Logger(this.getClass)
 
+  @Trace
   def find(id: Long) = Action.async {
     userService.find(id) map {
       case Some(user) =>

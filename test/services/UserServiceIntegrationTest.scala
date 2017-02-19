@@ -7,6 +7,7 @@ import helpers.UserTestFactory._
 import helpers.{EmbeddedMongo, _}
 import models.User
 import org.scalatest._
+import play.api.Configuration
 import play.api.libs.json.Json._
 import reactivemongo.api.collections.bson.BSONCollection
 
@@ -97,20 +98,20 @@ class UserServiceIntegrationTest extends FlatSpec
     result.firstName should be("updatedName")
   }
 
-  implicit val config = ConfigHelper.app.configuration
+  implicit val config: Configuration = ConfigHelper.app.configuration
 
   private var counterDAO: CounterMongo = _
   private var userDAO: UserMongo = _
 
   private var userService: UserServiceImpl = _
 
-  override def beforeAll() = {
+  override def beforeAll(): Unit = {
     startDB(testUserMongoDbName)
     initDAOs()
     initServices()
   }
 
-  override def afterAll() =
+  override def afterAll(): Unit =
     stopDB()
 
   override def beforeEach(): Unit = {

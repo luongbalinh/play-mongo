@@ -48,7 +48,7 @@ trait EmbeddedMongo {
   private def createConnection(): MongoConnection = {
     val driver = new MongoDriver
     driver.connection(ParsedURI(
-      hosts = List((bindIp, embeddedPort)),
+      hosts = List((testMongoHosts, testMongoPort)),
       options = MongoConnectionOptions(),
       ignoredOptions = List.empty[String],
       db = None,
@@ -56,13 +56,10 @@ trait EmbeddedMongo {
     ))
   }
 
-  val bindIp = "localhost"
-  val embeddedPort = 38128
-
   private def prepareExe(): MongodExecutable = MongodStarter.getDefaultInstance.prepare(
     new MongodConfigBuilder()
       .version(Version.Main.PRODUCTION)
-      .net(new Net(bindIp, embeddedPort, Network.localhostIsIPv6()))
+      .net(new Net(testMongoHosts, testMongoPort, Network.localhostIsIPv6()))
       .build())
 
 }

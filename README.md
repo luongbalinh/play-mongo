@@ -54,11 +54,11 @@ First, you need to disable the `make` process for your tests.
 
 Then, start a compile server
     
-    activator ~ test:compile
+    activator ~test:compile
     
 or
 
-    sbt ~ test:compile
+    sbt ~test:compile
 
 Again, *~* will signal SBT to automatically re-run all the tests as soon as the test changes have been saved.
 
@@ -128,6 +128,15 @@ environment variable in docker-compose.yml.
 The trick is you run the *docker-compose up* first, and get IP address of the mongo container.
 This IP address should be the same for the next time running docker compose.
 
+## Application Performance Monitoring with New Relic
+Signup and download the New Relic Java client. Set **license_key** in **newrelic.yml**
+where **license_key** value can be obtained from logging in New Relic. Note that **activator run** 
+does not work with New Relic although we set javaOptions with **-javaagent:<new_relic_directory>/newrelic/newrelic.jar**. 
 
-    
+    activator clean dist
+    cd ./target/universal
+    unzip ./*.zip
+    cd play-mongo-<version>
+    ./bin/play-mongo -J-javaagent:<new_relic_directory>/newrelic/newrelic.jar
+
       

@@ -1,4 +1,4 @@
-GET           /health           controllers.HealthController.check
+GET           /health           controllers.HealthController.isHealthy
 
 GET           /users/:id        controllers.UserController.find(id: Long)
 GET           /users            controllers.UserController.findAll

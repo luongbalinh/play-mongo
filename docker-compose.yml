@@ -1,22 +1,22 @@
 version: '2'
 services:
-  rest:
-    image: play-mongo:1.1.0
-    container_name: play-mongo_1_1_0
-    expose:
-      - 9000
-    ports:
-    - "9000:9000"
-    volumes:
-    - /Users/balinh/Desktop:/var/log
-    environment:
-      MONGO_HOST: 172.19.0.2
-    depends_on:
-      - mongo
   mongo:
     image: mongo
     container_name: mongo
     ports:
       - "27017:27017"
+  rest:
+      image: play-mongo:1.1.0
+      container_name: play-mongo_1_1_0
+      expose:
+        - 9000
+      ports:
+      - "9000:9000"
+      volumes:
+      - /Users/balinh/Desktop:/var/log
+      environment:
+        MONGO_HOST: 172.19.0.2
+      depends_on:
+        - mongo
 volumes:
   logvolume01: {}

@@ -37,7 +37,7 @@ class UserMongo @Inject()(counterDAO: CounterDAO)(implicit config: Configuration
     }
 
   override def insert(user: User): Future[Long] =
-    usersFuture flatMap { coll =>
+    usersFuture flatMap { _ =>
       getNextUserId flatMap { newId =>
         insertWithId(user
           .withNewId(newId).copy(createdDate = Some(ZonedDateTime.now), updatedDate = Some(ZonedDateTime.now)))
