@@ -156,3 +156,7 @@ provide the **skip-tests** argument to the release command
 ```
 sbt "release skip-tests with-defaults"
 ```       
+If you get error message *No tracking branch is set up. Either configure a remote tracking branch,
+or remove the pushChanges release part.*, then you need to set up a tracking branch. For example,
+    
+    git branch --set-upstream-to=origin/master master

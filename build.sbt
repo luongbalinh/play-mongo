@@ -3,8 +3,6 @@ import com.typesafe.sbt.packager.docker.Cmd
 
 name := "play-mongo"
 
-version := "1.1.0"
-
 scalaVersion := "2.11.8"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala).enablePlugins(JavaAppPackaging)
