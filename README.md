@@ -128,15 +128,31 @@ environment variable in docker-compose.yml.
 The trick is you run the *docker-compose up* first, and get IP address of the mongo container.
 This IP address should be the same for the next time running docker compose.
 
+To bring down the docker containers and clean up the associated volumes:
+ 
+    docker-compose down --volumes     
+
 ## Application Performance Monitoring with New Relic
-Signup and download the New Relic Java client. Set **license_key** in **newrelic.yml**
-where **license_key** value can be obtained from logging in New Relic. Note that **activator run** 
-does not work with New Relic although we set javaOptions with **-javaagent:<new_relic_directory>/newrelic/newrelic.jar**. 
+Signup, download the New Relic Java client, and get **license_key** from [New Relic](https://newrelic.com/). Set **license_key** in **newrelic.yml**. 
 
-    activator clean dist
-    cd ./target/universal
-    unzip ./*.zip
-    cd play-mongo-<version>
-    ./bin/play-mongo -J-javaagent:<new_relic_directory>/newrelic/newrelic.jar
+    activator -J-javaagent:/Users/balinh/Documents/tools/newrelic/newrelic.jar "~run 9000"
 
-      
+### Release
+**sbt-release** plugin simplifies the release procedure. Note that you need to commit all changes before releasing.
+To release, run the following command: 
+```
+sbt release
+```
+**with-defaults** enables a non-interactive release. In other words, you are not prompted to enter release version
+and next version, among others.
+
+```
+sbt "release with-defaults"
+```
+ 
+Sometimes, testing takes a lot of time and the fact is that Jenkins job will run all tests during deployment.
+Therefore, if you are confident that tests will pass, and want to skip tests when releasing,
+provide the **skip-tests** argument to the release command
+```
+sbt "release skip-tests with-defaults"
+```       

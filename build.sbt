@@ -77,8 +77,23 @@ fork in Test := false
 javaOptions in Universal ++= Seq(
   "-J-Xmx512m",
   "-J-Xms256m",
-  "-javaagent:/Users/balinh/Documents/tools/newrelic/newrelic.jar"
+  "-J-javaagent:/Users/balinh/Documents/tools/newrelic/newrelic.jar"
 )
 // Docker
 maintainer in Docker := "LUONG Ba Linh <linhluongba@gmail.com>"
 dockerExposedPorts in Docker := Seq(9000)
+
+import sbtrelease.ReleasePlugin.autoImport.ReleaseTransformations._
+
+releaseProcess := Seq[ReleaseStep](
+  checkSnapshotDependencies,
+  inquireVersions,
+  runClean,
+  runTest,
+  setReleaseVersion,
+  commitReleaseVersion,
+  tagRelease,
+  setNextVersion,
+  commitNextVersion,
+  pushChanges
+)
