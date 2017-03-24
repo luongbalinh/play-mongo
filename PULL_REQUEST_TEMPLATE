@@ -1,0 +1,28 @@
+## Description
+Ticket: [Implement feature XXX](https://Jira-link.com)
+
+## Implementation details
+What is going on?
+
+## Recommended reviewers
+Mention people using `@name` syntax if necessary
+
+## Review checklist
+- [] Architectural change
+- [] Internal API changes
+- [] External API changes
+- [] Changes in third party service integration
+- [] Deployment plan:
+    - [] Deployment changes
+    - [] Resources provisioning
+    - [] Data migration
+    - [] Production Test
+- [] Tests
+    - [] Unit test coverage
+    - [] Integration test coverage
+    - [] QA tests
+- [] Documentation/Update wiki page 
+- [] Possible performance impact
+- [] New libraries added/updated
+- [] JIRA status and fix version updated
+- [] Communicate stakeholders
